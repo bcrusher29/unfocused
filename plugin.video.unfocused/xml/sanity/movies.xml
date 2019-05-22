@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<item>
+    <title>[B][COLOR black]==========[/COLOR][COLOR blue]MOVIE TIME[/COLOR][COLOR black]==========[/COLOR][/B]</title>
+    <thumbnail>http://entersandman.xyz/sanitypics/icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/fanart.jpg</fanart>
+  </item>
+
+<dir>
+    <title>[COLOR blue]Netflix[/COLOR]</title>
+    <link>file://sanity/netflix.xml</link>
+    <thumbnail>http://entersandman.xyz/sanitypics/netflix.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/netflix.jpg</fanart>
+  </dir>
+
+<dir>
+  <title>[COLOR blue]Movies Trending[/COLOR]</title>
+  <trakt>https://api.trakt.tv//movies/trending</trakt>
+  <thumbnail>http://entersandman.xyz/sanitypics/trending.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/moviest.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Movies Popular[/COLOR]</title>
+  <trakt>https://api.trakt.tv/movies/popular</trakt>
+  <thumbnail>http://entersandman.xyz/sanitypics/popular.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]HB Movies[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/hb-movie-picks/items</trakt>
+  <thumbnail>http://entersandman.xyz/sanitypics/hb best.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/hb.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Movie US 1972-2016[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/all-u-s-released-movies-1972-2016/items</trakt>
+  <thumbnail>http://entersandman.xyz/sanitypics/years.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]HB TOP[/COLOR]</title>
+  <tmdb>list/86562</tmdb>
+  <thumbnail>http://entersandman.xyz/sanitypics/hb top.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/hb.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]IMDB Action Movies[/COLOR]</title>
+  <imdburl>genres/action</imdburl>
+  <thumbnail>http://entersandman.xyz/sanitypics/imdb.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Action Movies[/COLOR]</title>
+  <tmdb>genre/movies/28</tmdb>
+  <thumbnail>http://entersandman.xyz/sanitypics/action.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Star Wars Collection[/COLOR]</title>
+  <tmdb>collection/10</tmdb>
+  <thumbnail>http://entersandman.xyz/sanitypics/star wars.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/star wars.jpg</fanart>
+</dir>
+
+

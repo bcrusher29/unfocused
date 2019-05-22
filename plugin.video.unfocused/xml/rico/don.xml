@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<item>
+  <title>[B][COLOR black]============[/COLOR][COLOR orangered]DEAD OF NIGHT[/COLOR][COLOR black]============[/COLOR][/B]</title>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/the-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/the-rico-fanart.jpg</fanart>
+</item>
+
+<dir>
+  <title>[COLOR gold]Alfred Hitchcock[/COLOR]</title>
+  <tmdb>list/42795</tmdb>
+  <thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/3dsNW5rE6MdvUIHGt3BFWSvlcEj.jpg</thumbnail>
+  <fanart>http://entersandman.xyz/rico-fanart/hitchcock-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Stephen King[/COLOR]</title>
+  <tmdb>list/42844</tmdb>
+  <thumbnail>https://image.tmdb.org/t/p/w150_and_h225_bestv2/9fgh3Ns1iRzlQNYuJyK0ARQZU7w.jpg</thumbnail>
+  <fanart>http://entersandman.xyz/rico-fanart/king-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Clive Barker[/COLOR]</title>
+  <tmdb>list/42848</tmdb>
+  <thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/uikpmjGcBsMKc5fN4bqmUrNWIVO.jpg</thumbnail>
+  <fanart>http://entersandman.xyz/rico-fanart/barker-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Wes Craven[/COLOR]</title>
+  <tmdb>list/42850</tmdb>
+  <thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/1IYjbUM6m31AAN8Atoh5b7j0gze.jpg</thumbnail>
+  <fanart>http://entersandman.xyz/rico-fanart/craven-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Tobe Hooper[/COLOR]</title>
+  <tmdb>list/42876</tmdb>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/I/91ydyMVzVHL._SY445_.jpg</thumbnail>
+  <fanart>http://entersandman.xyz/rico-fanart/hooper-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Rob Zombie[/COLOR]</title>
+  <tmdb>list/42877</tmdb>
+  <thumbnail>https://i2.wp.com/robzombie.com/wp-content/uploads/2014/05/lords-salem.jpg?fit=300%2C447&ssl=1</thumbnail>
+  <fanart>http://entersandman.xyz/rico-fanart/zombie-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]John Carpenter[/COLOR]</title>
+  <tmdb>list/42878</tmdb>
+  <thumbnail>https://orig00.deviantart.net/36cb/f/2017/068/3/e/thing_21_by_p_lukaszewski-db1or8r.jpg</thumbnail>
+  <fanart>http://entersandman.xyz/rico-fanart/carpenter-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]George A. Romero[/COLOR]</title>
+  <tmdb>list/42881</tmdb>
+  <thumbnail>https://i.pinimg.com/736x/1a/b4/7f/1ab47f23449c6bc00ab9ab8c4fa12b83--zombie-movies-horror-movies.jpg</thumbnail>
+  <fanart>http://entersandman.xyz/rico-fanart/romero-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Movies To Be Afraid Of!!![/COLOR]</title>
+  <tmdb>genre/movies/27</tmdb>
+  <thumbnail>http://cdn1.sciencefiction.com/wp-content/uploads/2014/03/oculus_xlg.jpg</thumbnail>
+  <fanart>http://entersandman.xyz/rico-fanart/afraid-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Artwork Of Gross!!![/COLOR]</title>
+  <tmdb>list/46597</tmdb>
+  <thumbnail>https://pre00.deviantart.net/cf59/th/pre/i/2010/357/8/d/horror_movie_poster_by_kndrwllmsn-d35i1ph.jpg</thumbnail>
+  <fanart>http://entersandman.xyz/rico-fanart/afraid-rico-fanart.jpg</fanart>
+</dir>

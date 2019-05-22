@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<item>
+  <title>[B][COLOR black]============[/COLOR][COLOR orangered]MOVIES BY GENRE[/COLOR][COLOR black]============[/COLOR][/B]</title>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/the-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/the-rico-fanart.jpg</fanart>
+</item>
+
+<dir>
+  <title>[COLOR gold]Action[/COLOR]</title>
+  <tmdb>genre/movies/28</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Adventure[/COLOR]</title>
+  <tmdb>genre/movies/12</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Animation[/COLOR]</title>
+  <tmdb>genre/movies/16</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Comedy[/COLOR]</title>
+  <tmdb>genre/movies/35</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Crime[/COLOR]</title>
+  <tmdb>genre/movies/80</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Documentary[/COLOR]</title>
+  <tmdb>genre/movies/99</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Drama[/COLOR]</title>
+  <tmdb>genre/movies/18</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Family[/COLOR]</title>
+  <tmdb>genre/movies/10751</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Fantasy[/COLOR]</title>
+  <tmdb>genre/movies/14</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]History[/COLOR]</title>
+  <tmdb>genre/movies/36</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Horror[/COLOR]</title>
+  <tmdb>genre/movies/27</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Music[/COLOR]</title>
+  <tmdb>genre/movies/10402</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Mystery[/COLOR]</title>
+  <tmdb>genre/movies/9648</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Romance[/COLOR]</title>
+  <tmdb>genre/movies/10749</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Science Fiction[/COLOR]</title>
+  <tmdb>genre/movies/878</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]TV Movie[/COLOR]</title>
+  <tmdb>genre/movies/10770</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Thriller[/COLOR]</title>
+  <tmdb>genre/movies/53</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]War[/COLOR]</title>
+  <tmdb>genre/movies/10752</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Western[/COLOR]</title>
+  <tmdb>genre/movies/37</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+

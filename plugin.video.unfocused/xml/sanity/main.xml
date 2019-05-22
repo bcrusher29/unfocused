@@ -1,0 +1,120 @@
+<xml>
+   <item>
+    <title>[COLOR black]==========[/COLOR][COLOR blue]WELCOME TO SANITY[/COLOR][COLOR black]==========[/COLOR]</title>
+    <thumbnail>http://entersandman.xyz/sanitypics/icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/fanart.jpg</fanart>
+  </item>
+  
+  <dir>
+    <title>[COLOR blue]Movies[/COLOR]</title>
+    <link>file://sanity/movies.xml</link>
+    <thumbnail>http://entersandman.xyz/sanitypics/movies.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/moviest.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR blue]TV Shows[/COLOR]</title>
+    <link>file://sanity/tv.xml</link>
+    <thumbnail>http://entersandman.xyz/sanitypics/tv shows.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/tv shows.jpg</fanart>
+  </dir>
+  
+  <dir>
+    <title>[COLOR blue]Kids[/COLOR]</title>
+    <link>file://sanity/kids.xml</link>
+    <thumbnail>http://entersandman.xyz/sanitypics/kids.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/kids.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR blue]Music[/COLOR]</title>
+    <link>file://sanity/music.xml</link>
+    <thumbnail>http://entersandman.xyz/sanitypics/tunes.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/music.jpg</fanart>
+  </dir>
+  
+  <dir>
+    <title>[COLOR blue]Horror[/COLOR]</title>
+    <link>file://sanity/horror.xml</link>
+    <thumbnail>http://entersandman.xyz/sanitypics/horror.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/horror.jpg</fanart>
+  </dir>
+  
+  <dir>
+    <title>[COLOR blue]Hellboy Top[/COLOR]</title>
+    <link>file://sanity/hb.xml</link>
+    <thumbnail>http://entersandman.xyz/sanitypics/hb top.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/hb.jpg</fanart>
+  </dir>
+  
+  <dir>
+    <title>[COLOR blue]Productions[/COLOR]</title>
+    <link>file://sanity/production.xml</link>
+    <thumbnail>http://entersandman.xyz/sanitypics/productions.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/productions.jpg</fanart>
+  </dir>
+  
+  <dir>
+    <title>[COLOR blue]24/7 Collection[/COLOR]</title>
+    <link>file://sanity/247.xml</link>
+    <thumbnail>http://entersandman.xyz/sanitypics/247.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/24-7.jpg</fanart>
+  </dir>
+  
+  <dir>
+    <title>[COLOR blue]Tv On Demand[/COLOR]</title>
+    <link>file://sanity/networks.xml</link>
+    <thumbnail>http://entersandman.xyz/sanitypics/tv vod.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/networks.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR blue]Star Trek Collection[/COLOR]</title>
+    <link>file://sanity/star trek.xml</link>
+    <thumbnail>http://entersandman.xyz/sanitypics/star trek.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/star trek.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR blue]Stargate Collection[/COLOR]</title>
+    <link>file://sanity/stargate.xml</link>
+    <thumbnail>http://entersandman.xyz/sanitypics/sci-fi.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/stargate-2.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR blue]Best Of The Best Collection[/COLOR]</title>
+    <link>file://sanity/best of the best.xml</link>
+    <thumbnail>http://entersandman.xyz/sanitypics/botb.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/botb.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR blue]Search Trakt[/COLOR]</title>
+    <trakt>search</trakt>
+    <thumbnail>http://entersandman.xyz/sanitypics/trakt.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/settings.jpg</fanart>
+  </dir>
+   
+  <dir>
+    <title>[COLOR blue]Search TMDB[/COLOR]</title>
+    <tmdb>search</tmdb>
+    <thumbnail>http://entersandman.xyz/sanitypics/search.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/settings.jpg</fanart>
+  </dir>
+
+  <item>
+    <title>[COLOR blue]Addon Settings[/COLOR]</title>
+    <mysettings>0/0</mysettings>
+    <info>Open the Settings for the Addon</info>
+    <thumbnail>http://entersandman.xyz/sanitypics/settings.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/settings.jpg</fanart>
+  </item>
+  
+  <plugin>
+    <name>Testings</name>
+    <link>plugin://plugin.video.sanity/?action=developer</link>
+    <thumbnail></thumbnail>
+    <summary>Testings</summary>
+  </plugin>
+</xml>

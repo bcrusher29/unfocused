@@ -1,0 +1,37 @@
+<xml>
+  <dir>
+    <title>deadofnight</title>
+    <link>file://deadofnight/main.xml</link>
+  </dir>
+
+  <dir>
+    <title>justice</title>
+    <link>file://justice/main.xml</link>
+  </dir>
+  
+  <dir>
+    <title>lnl</title>
+    <link>file://lnl/lnlmain.xml</link>
+  </dir>
+	
+  <dir>
+    <title>outlaw</title>
+    <link>file://outlaw/main.xml</link>
+  </dir>
+	
+  <dir>
+    <title>rico</title>
+    <link>file://rico/ricomain.xml</link>
+  </dir>
+	
+  <dir>
+    <title>sanity</title>
+    <link>file://sanity/main.xml</link>
+  </dir>
+  
+  <dir>
+    <title>scythe</title>
+    <link>file://scythe/main.xml</link>
+  </dir>
+  
+</xml>

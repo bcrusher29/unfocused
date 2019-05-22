@@ -1,0 +1,68 @@
+<item>
+    <title>[B][COLOR maroon]========[/COLOR][COLOR orange] DONT BE SCARED [/COLOR][COLOR maroon]========[/COLOR][/B]</title>
+    <thumbnail>special://home/addons/plugin.video.scythe/resources/media/horror.png</thumbnail>
+    <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+  </item>
+
+<dir>
+<title>[COLOR orange]Benderspink Productions</title>
+<trakt>http://api.trakt.tv/users/kayaaron13/lists/benderspink-production-company/items</trakt>
+<thumbnail>special://home/addons/plugin.video.scythe/resources/media/horror.png</thumbnail>
+<fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+<title>[COLOR orange]Blumhouse Productions[/COLOR]</title>
+<trakt>http://api.trakt.tv/users/kayaaron13/lists/blumhouse-productions/items</trakt>
+<thumbnail>special://home/addons/plugin.video.scythe/resources/media/horror.png</thumbnail>
+<fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+<title>[COLOR orange]Circle of Confusion Productions[/COLOR]</title>
+<trakt>http://api.trakt.tv/users/kayaaron13/lists/circle-of-confusion-productions/items</trakt>
+<thumbnail>special://home/addons/plugin.video.scythe/resources/media/horror.png</thumbnail>
+<fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+<title>[COLOR orange]Dark Castle Entertainment[/COLOR]</title>
+<trakt>http://api.trakt.tv/users/kayaaron13/lists/dark-castle-entertainment/items</trakt>
+<thumbnail>special://home/addons/plugin.video.scythe/resources/media/horror.png</thumbnail>
+<fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+<title>[COLOR orange]Ghost House Pictures[/COLOR]</title>
+<trakt>http://api.trakt.tv/users/kayaaron13/lists/ghost-house-pictures/items</trakt>
+<thumbnail>special://home/addons/plugin.video.scythe/resources/media/horror.png</thumbnail>
+<fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+<title>[COLOR orange]Platinum Dunes Productions[/COLOR]</title>
+<trakt>http://api.trakt.tv/users/kayaaron13/lists/platinum-dunes-productions/items</trakt>
+<thumbnail>special://home/addons/plugin.video.scythe/resources/media/horror.png</thumbnail>
+<fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+<title>[COLOR orange]Rogue Pictures[/COLOR]</title>
+<trakt>http://api.trakt.tv/users/kayaaron13/lists/rogue-pictures/items</trakt>
+<thumbnail>special://home/addons/plugin.video.scythe/resources/media/horror.png</thumbnail>
+<fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+<title>[COLOR orange]Vertigo Entertainment[/COLOR]</title>
+<trakt>http://api.trakt.tv/users/kayaaron13/lists/vertigo-entertainment/items</trakt>
+<thumbnail>special://home/addons/plugin.video.scythe/resources/media/horror.png</thumbnail>
+<fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+<title>[COLOR orange]Twisted Pictures[/COLOR]</title>
+<trakt>http://api.trakt.tv/users/kayaaron13/lists/twisted-pictures/items</trakt>
+<thumbnail>special://home/addons/plugin.video.scythe/resources/media/horror.png</thumbnail>
+<fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>

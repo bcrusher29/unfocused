@@ -1,0 +1,18 @@
+
+<item>
+    <title>[B][COLOR black]==========[/COLOR][COLOR blue]ENJOY YOUR SHOW[/COLOR][COLOR black]==========[/COLOR][/B]</title>
+    <thumbnail>http://entersandman.xyz/sanitypics/icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/fanart.jpg</fanart>
+  </item>
+
+<dir>
+  <title>Season 1</title>
+  <meta>
+    <imdb>tt7161862</imdb>
+    <content>season</content>
+    <season>1</season>
+  </meta>
+  <link>file://sanity/origins/origins season 1.xml</link>
+  <thumbnail>https://image.tmdb.org/t/p/w1280//wu2J4oAzx2F6nAtGqxYD5ysq4np.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/w1280/n0yiYkNefhBi5aru3vVmHXCN4mp.jpg</fanart>
+</dir>

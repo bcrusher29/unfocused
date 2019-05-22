@@ -1,0 +1,76 @@
+<item>
+  <title>[B][COLOR black]==========[/COLOR][COLOR red]Classic Collection[/COLOR][COLOR black]==========[/COLOR][/B]</title>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart.jpg</fanart>
+</item>
+
+<dir>
+  <title>[COLOR red]Clint Eastwood Collection[/COLOR]</title>
+  <trakt>https://api.trakt.tv/people/clint-eastwood/movies</trakt>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/western.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/clint.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR red]John Wayne Collection[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/hb-john-wayne-collection/items</trakt>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/wildwest.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/wayne.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR red]The Duke Collection[/COLOR]</title>
+  <duke>all</duke>
+	<thumbnail>https://pbs.twimg.com/profile_images/1004442158248554497/k4iRjaEN_400x400.jpg</thumbnail>
+	<fanart>http://www.fullhdwpp.com/wp-content/uploads/John-Wayne-quote_www.fullhdwpp.com_.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR red]James Stewart's Collection[/COLOR]</title>
+  <imdburl>list/ls002355733/</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/popular.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/tv classic.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR red]Charles Bronson's Collection[/COLOR]</title>
+  <imdburl>list/ls009228217/</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/popular.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/tv classic.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR red]Gary Cooper's Collection[/COLOR]</title>
+  <imdburl>list/ls002339168/</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/popular.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/tv classic.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR red]Henry Fonda's Collection[/COLOR]</title>
+  <imdburl>list/ls002338082/</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/popular.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/tv classic.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR red]Robert Mitchum's Collection[/COLOR]</title>
+  <imdburl>list/ls009199570/</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/popular.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/tv classic.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR red]Steve Mcqueen Collection[/COLOR]</title>
+  <imdburl>list/ls000092696/</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/popular.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/tv classic.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR red]Burt Lancaster's Collection[/COLOR]</title>
+  <imdburl>list/ls009229454/</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/popular.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/tv classic.jpg</fanart>
+</dir>
+  

@@ -1,0 +1,27 @@
+
+<item>
+    <title>[B][COLOR black]==========[/COLOR][COLOR blue]24/7 COLLECTION[/COLOR][COLOR black]==========[/COLOR][/B]</title>
+    <thumbnail>http://entersandman.xyz/sanitypics/icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/fanart.jpg</fanart>
+  </item>
+
+    <dir>
+      <title>[COLOR blue]24/7 Movies[/COLOR]</title>
+      <arconaitv2>movies</arconaitv2>
+      <thumbnail>http://entersandman.xyz/sanitypics/247.png</thumbnail>
+      <fanart>http://entersandman.xyz/sanityfanart/24-7.jpg</fanart>
+    </dir>
+    
+    <dir>
+      <title>[COLOR blue]24/7 TV Shows[/COLOR]</title>
+      <arconaitv2>shows</arconaitv2>
+      <thumbnail>http://entersandman.xyz/sanitypics/247.png</thumbnail>
+      <fanart>http://entersandman.xyz/sanityfanart/24-7.jpg</fanart>
+    </dir>
+    
+    <dir>
+      <title>[COLOR blue]24/7 Channels[/COLOR]</title>
+      <arconaitv2>cable</arconaitv2>
+      <thumbnail>http://entersandman.xyz/sanitypics/247.png</thumbnail>
+      <fanart>http://entersandman.xyz/sanityfanart/networks.jpg</fanart>
+    </dir>

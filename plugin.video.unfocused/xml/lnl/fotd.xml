@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<item>
+  <title>**********[COLORorange]Thank You and Enjoy The HORROR[/COLOR]**********</title>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/fotd.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/fotd.jpg</fanart>
+</item>
+
+<dir>
+  <title>Alfred Hitchcock</title>
+  <tmdb>list/42795</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/fotd.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/hitchcock.jpg</fanart>
+</dir>
+
+<dir>
+  <title>Stephen King</title>
+  <tmdb>list/42844</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/fotd.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/king.jpg</fanart>
+</dir>
+
+<dir>
+  <title>Clive Barker</title>
+  <tmdb>list/42848</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/fotd.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/barker.jpg</fanart>
+</dir>
+
+<dir>
+  <title>Wes Craven</title>
+  <tmdb>list/42850</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/fotd.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/craven.jpg</fanart>
+</dir>
+
+<dir>
+  <title>Tobe Hooper</title>
+  <tmdb>list/42876</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/fotd.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/hooper.jpg</fanart>
+</dir>
+
+<dir>
+  <title>Rob Zombie</title>
+  <tmdb>list/42877</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/fotd.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/zombie.jpg</fanart>
+</dir>
+
+<dir>
+  <title>John Carpenter</title>
+  <tmdb>list/42878</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/fotd.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/carpenter.jpg</fanart>
+</dir>
+
+<dir>
+  <title>George A. Romero</title>
+  <tmdb>list/42881</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/fotd.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/romero.jpg</fanart>
+</dir>
+
+<dir>
+  <title>Movies To Be Afraid Of!!!</title>
+  <tmdb>genre/movies/27</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/fotd.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/fotd.jpg</fanart>
+</dir>
+
+<dir>
+  <title>Artwork Of Gross!!!</title>
+  <tmdb>list/46597</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/fotd.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/fotd.jpg</fanart>
+</dir>

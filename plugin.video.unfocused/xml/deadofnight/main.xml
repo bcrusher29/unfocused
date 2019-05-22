@@ -1,0 +1,65 @@
+<xml>
+  <item>
+    <title>[B][COLOR lightgray]==========[/COLOR][COLOR maroon] WELCOME TO DEAD OF NIGHT [/COLOR][COLOR lightgray]==========[/COLOR][/B]</title>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/fanart.jpg</fanart>
+  </item>
+  
+  <dir>
+    <title>[COLOR maroon]Movies[/COLOR]</title>
+    <link>file://deadofnight/movies.xml</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/movies.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/movies.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR maroon]TV Shows[/COLOR]</title>
+    <link>file://deadofnight/tv.xml</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/shows.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/shows.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR maroon]True Crime[/COLOR]</title>
+    <trakt>https://api.trakt.tv/users/topdawg40/lists/true-crime/items/</trakt>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/truecrime.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/truecrime.jpg</fanart>
+  </dir>
+  
+  <dir>
+    <title>[COLOR maroon]Documentaries[/COLOR]</title>
+    <trakt>https://api.trakt.tv/users/topdawg40/lists/horror-documentaries/items/</trakt>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/docs.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/movies.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR maroon]Search[/COLOR]</title>
+    <tmdb>search</tmdb>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/search.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/google.jpg</fanart>
+  </dir>
+  
+  <item>
+    <title>[COLOR maroon]Pair With Sites[/COLOR]</title>
+    <pairwith>pairlist</pairwith>
+     <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/pair.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/movies.jpg</fanart>
+  </item>
+  
+  <plugin>
+    <title>[COLOR maroon]Authorize Real Debrid[/COLOR]</title>
+    <link>plugin://script.module.resolveurl/?mode=auth_rd</link>
+     <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/rd.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/rd.jpg</fanart>
+  </plugin>
+  
+   
+  <item>
+    <title>[COLOR maroon]Settings[/COLOR]</title>
+    <mysettings>0/0</mysettings>
+    <info>Open the Settings for the Addon</info>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/settings.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/settings.jpg</fanart>
+  </item>
+</xml> 

@@ -1,0 +1,85 @@
+<xml>
+  <item>
+    <title>[B][COLOR gray]==========[/COLOR][COLOR orangered] WELCOME TO JUSTICE [/COLOR][COLOR gray]==========[/COLOR][/B]</title>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/fanart.jpg</fanart>
+  </item>
+
+  <dir>
+    <title>[COLOR orangered]Movies[/COLOR]</title>
+    <link>file://justice/movies.xml</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/movies.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/movies.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR orangered]TV Shows[/COLOR]</title>
+    <link>file://justice/tv.xml</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/shows.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/shows.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR orangered]Documentaries[/COLOR]</title>
+    <imdburl>/list/ls068125977/</imdburl>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/docs.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/movies.jpg</fanart>
+  </dir>
+
+  <plugin>
+    <title>[COLOR orangered]Criminals[/COLOR]</title>
+    <link>plugin://plugin.video.youtube/channel/UCs3iFCPtX0gzkKxCrobO4ig/</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/criminals.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/criminals.jpg</fanart>
+  </plugin>
+
+   <plugin>
+    <title>[COLOR orangered]Crime Watch[/COLOR]</title>
+    <link>plugin://plugin.video.youtube/channel/UC69uYUqvx-vw4luuX7aHNLQ/</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/crimewatch.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/movies.jpg</fanart>
+  </plugin>
+
+  <plugin>
+    <title>[COLOR orangered]Police Action[/COLOR]</title>
+    <link>plugin://plugin.video.youtube/channel/UCXMYxKMh3prxnM_4kYZuB3g/</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/police.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/police.jpg</fanart>
+  </plugin>
+
+  <plugin>
+    <title>[COLOR orangered]Women Who Kill[/COLOR]</title>
+    <link>plugin://plugin.video.youtube/channel/UC140PSrairHki1J_Prt2aCQ/</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/women.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/women.jpg</fanart>
+  </plugin>
+
+  <dir>
+    <title>[COLOR orangered]Search[/COLOR]</title>
+    <trakt>search</trakt>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/search.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/google.jpg</fanart>
+  </dir>
+  
+  <item>
+    <title>[COLOR orangered]Pair With Sites[/COLOR]</title>
+    <pairwith>pairlist</pairwith>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/pair.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/movies.jpg</fanart>
+  </item>
+  
+  <plugin>
+    <title>[COLOR orangered]Authorize Real Debrid[/COLOR]</title>
+    <link>plugin://script.module.resolveurl/?mode=auth_rd</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/rd.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/rd.jpg</fanart>
+  </plugin>
+   
+  <item>
+    <title>[COLOR orangered]Settings[/COLOR]</title>
+    <mysettings>0/0</mysettings>
+    <info>Open the Settings for the Addon</info>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/settings.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/settings.jpg</fanart>
+  </item>
+</xml> ��

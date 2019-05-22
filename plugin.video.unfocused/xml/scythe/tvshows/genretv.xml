@@ -1,0 +1,133 @@
+
+<dir>
+  <title>[COLOR orange]Action TV[/COLOR]</title>
+  <tmdb>genre/shows/28</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Adventure TV[/COLOR]</title>
+  <tmdb>genre/shows/12</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Animation TV[/COLOR]</title>
+  <tmdb>genre/shows/16</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Comedy TV[/COLOR]</title>
+  <tmdb>genre/shows/35</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Crime TV[/COLOR]</title>
+  <tmdb>genre/shows/80</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Documentary TV[/COLOR]</title>
+  <tmdb>genre/shows/99</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Drama TV[/COLOR]</title>
+  <tmdb>genre/shows/18</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Family TV[/COLOR]</title>
+  <tmdb>genre/shows/10751</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Fantasy TV[/COLOR]</title>
+  <tmdb>genre/shows/14</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]History TV[/COLOR]</title>
+  <tmdb>genre/shows/36</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Horror TV[/COLOR]</title>
+  <tmdb>genre/shows/27</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Music TV[/COLOR]</title>
+  <tmdb>genre/shows/10402</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Mystery TV[/COLOR]</title>
+  <tmdb>genre/shows/9648</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Real TV[/COLOR]</title>
+  <tmdb>genre/shows/10764</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Romance TV[/COLOR]</title>
+  <tmdb>genre/shows/10749</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Science Fiction[/COLOR]</title>
+  <tmdb>genre/shows/878</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Thriller TV[/COLOR]</title>
+  <tmdb>genre/shows/53</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]War TV[/COLOR]</title>
+  <tmdb>genre/shows/10752</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Western TV[/COLOR]</title>
+  <tmdb>genre/shows/37</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>

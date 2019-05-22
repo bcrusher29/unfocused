@@ -1,0 +1,107 @@
+<xml>
+  <item>
+    <title>[COLOR black]==========[/COLOR][COLOR red]WELCOME TO OUTLAW[/COLOR][COLOR black]==========[/COLOR]</title>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart.jpg</fanart>
+  </item>
+  
+  <dir>
+    <title>[COLOR red]Western Movies[/COLOR]</title>
+    <link>file://outlaw/movies.xml</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/mtime.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/movies.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR red]Western TV Shows[/COLOR]</title>
+    <link>file://outlaw/tv.xml</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/tv.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/tv.jpg</fanart>
+  </dir>
+  
+  <dir>
+    <title>[COLOR red]Classic Actor Collection[/COLOR]</title>
+    <link>file://outlaw/ctvc.xml</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/classic.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/classic.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR red]Tombstone Wild West[/COLOR]</title>
+    <tmdb>list/51515</tmdb>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/tombstone.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/tombstone.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR red]Wild West Collection[/COLOR]</title>
+    <tmdb>list/51515</tmdb>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/wildwest.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/oldwest2.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR red]Comedy Western Collection[/COLOR]</title>
+    <link>file://outlaw/comedy.xml</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/classic.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/classic.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR red]Old West Documentaries[/COLOR]</title>
+    <link>plugin://plugin.video.youtube/playlist/PLLIGciYJP_5lzD-9GAajMyLTYZAH3BXSK/</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/popular.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/classic.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR red]Black N White Movies[/COLOR]</title>
+    <bnw>movies</bnw>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/coll.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/bnw.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR red]Tv On Demand[/COLOR]</title>
+    <link>file://outlaw/networks.xml</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/vod.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/vod.jpg</fanart>
+  </dir>
+
+  <dir>
+   <title>[COLOR red]Classic TV Collection[/COLOR]</title>
+   <trakt>https://api.trakt.tv/users/topdawg40/lists/hb-classic-tv/items</trakt>
+   <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/tv.png</thumbnail>
+   <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/tv.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR red]Search Trakt[/COLOR]</title>
+    <trakt>search</trakt>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/trakt.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/trakt.png</fanart>
+  </dir>
+   
+  <dir>
+    <title>[COLOR red]Search TMDB[/COLOR]</title>
+    <tmdb>search</tmdb>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/search.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/sout.jpg</fanart>
+  </dir>
+
+  <item>
+    <title>[COLOR red]Addon Settings[/COLOR]</title>
+    <mysettings>0/0</mysettings>
+    <info>Open the Settings for the Addon</info>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/settings.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/wildwest.jpg</fanart>
+  </item>
+  
+  <plugin>
+    <name>[COLOR red]Testings[/COLOR]</name>
+    <link>plugin://plugin.video.outlaw/?action=developer</link>
+    <thumbnail></thumbnail>
+    <summary>Testings</summary>
+  </plugin>
+</xml>
+

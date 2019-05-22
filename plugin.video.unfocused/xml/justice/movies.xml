@@ -1,0 +1,47 @@
+<item>
+    <title>[B][COLOR gray]==========[/COLOR][COLOR orangered] ENJOY YOUR MOVIE [/COLOR][COLOR gray]==========[/COLOR][/B]</title>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/movies.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/movies.jpg</fanart>
+</item>
+
+<dir>
+  <title>[COLOR orangered]True Crime Movies[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/true-crime/items/</trakt>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/truecrime.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orangered]Serial Killer[/COLOR]</title>
+  <imdburl>/list/ls068235846/</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/serial.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/serial.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orangered]Viloent True Crime[/COLOR]</title>
+  <imdburl>/list/ls000018135/</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/slasher.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orangered]Based On A True Story[/COLOR]</title>
+  <imdburl>/list/ls057631565/</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/true.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/true.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orangered]Most Popular Based On A True Story[/COLOR]</title>
+  <imdburl>/list/ls000345111/</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/popular.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/true.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orangered]Lifetime Based On A True Story[/COLOR]</title>
+  <imdburl>/list/ls062016556/</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/lifetime.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/true.jpg</fanart>
+</dir>

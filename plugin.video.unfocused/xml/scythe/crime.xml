@@ -1,0 +1,62 @@
+    <item>
+    <title>[B][COLOR maroon]========[/COLOR][COLOR orange] BREAKING THE LAW [/COLOR][COLOR maroon]========[/COLOR][/B]</title>
+    <thumbnail>special://home/addons/plugin.video.scythe/resources/media/crime.png</thumbnail>
+    <fanart>special://home/addons/plugin.video.scythe/resources/media/crime.jpg</fanart>
+  </item>
+
+   <dir>
+     <title>[COLOR orange]Top Crime Dramas[/COLOR]</title>
+     <tmdb>list/40414</tmdb>
+     <thumbnail>special://home/addons/plugin.video.scythe/resources/media/crime.png</thumbnail>
+     <fanart>special://home/addons/plugin.video.scythe/resources/media/crime.jpg</fanart>
+    </dir>
+
+    <dir>
+     <title>[COLOR orange]Top Heist Movies[/COLOR]</title>
+     <trakt>https://api.trakt.tv/users/kayaaron13/lists/top-bank-robbery-movies/items</trakt>
+     <thumbnail>special://home/addons/plugin.video.scythe/resources/media/crime.png</thumbnail>
+     <fanart>special://home/addons/plugin.video.scythe/resources/media/crime.jpg</fanart>
+    </dir>
+
+    <dir>
+     <title>[COLOR orange]Top Prison Movies[/COLOR]</title>
+     <trakt>https://api.trakt.tv/users/kayaaron13/lists/ranker-top-prison-movies/items</trakt>
+     <thumbnail>special://home/addons/plugin.video.scythe/resources/media/crime.png</thumbnail>
+     <fanart>special://home/addons/plugin.video.scythe/resources/media/crime.jpg</fanart>
+    </dir>
+
+    <dir>
+     <title>[COLOR orange]Top Spy Movies[/COLOR]</title>
+     <trakt>https://api.trakt.tv/users/kayaaron13/lists/ranker-top-spy-movies/items</trakt>
+     <thumbnail>special://home/addons/plugin.video.scythe/resources/media/crime.png</thumbnail>
+     <fanart>special://home/addons/plugin.video.scythe/resources/media/crime.jpg</fanart>
+    </dir>
+    
+    <dir>
+      <title>[COLOR orange]Top War Movies[/COLOR]</title>
+      <trakt>http://api.trakt.tv/users/kayaaron13/lists/ranker-the-best-war-movies-ever-made/items</trakt>
+      <thumbnail>special://home/addons/plugin.video.scythe/resources/media/crime.png</thumbnail>
+      <fanart>special://home/addons/plugin.video.scythe/resources/media/crime.jpg</fanart>
+    </dir>
+   
+    <dir>
+     <title>[COLOR orange]Top Western Movies[/COLOR]</title>
+     <trakt>https://api.trakt.tv/users/kayaaron13/lists/ranker-top-western-movies/items</trakt>
+     <thumbnail>special://home/addons/plugin.video.scythe/resources/media/crime.png</thumbnail>
+     <fanart>special://home/addons/plugin.video.scythe/resources/media/crime.jpg</fanart>
+    </dir>
+
+    <dir>
+     <title>[COLOR orange]Top 80's Comedies[/COLOR]</title>
+     <tmdb>list/40611</tmdb>
+     <thumbnail>special://home/addons/plugin.video.scythe/resources/media/crime.png</thumbnail>
+     <fanart>special://home/addons/plugin.video.scythe/resources/media/crime.jpg</fanart>
+    </dir>
+
+    <dir>
+     <title>[COLOR orange]Serial Killer Movies[/COLOR]</title>
+     <trakt>https://api.trakt.tv/users/kayaaron13/lists/top-serial-killer-movies/items</trakt>
+     <thumbnail>special://home/addons/plugin.video.scythe/resources/media/crime.png</thumbnail>
+     <fanart>special://home/addons/plugin.video.scythe/resources/media/crime.jpg</fanart>
+    </dir>
+   

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+    <dir>
+      <title>[COLORgold]*Authorize* Your Trakt Here[/COLOR]</title>
+      <trakt>https://api.trakt.tv/users/me/lists/</trakt>
+      <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/trakt.png</thumbnail>
+      <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/trakt.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLORwhite]Trending Movies[/COLOR]</title>
+      <trakt>https://api.trakt.tv/movies/trending</trakt>
+      <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/trakt.png</thumbnail>
+      <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/trakt.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLORwhite]Popular Movies[/COLOR]</title>
+      <trakt>https://api.trakt.tv/movies/popular</trakt>
+      <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/trakt.png</thumbnail>
+      <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/trakt.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLORwhite]Movie Watchlist[/COLOR]</title>
+      <trakt>https://api.trakt.tv/sync/watchlist/movies</trakt>
+      <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/trakt.png</thumbnail>
+      <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/trakt.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLORwhite]Movie Collection[/COLOR]</title>
+      <trakt>https://api.trakt.tv/sync/collection/movies</trakt>
+      <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/trakt.png</thumbnail>
+      <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/trakt.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLORwhite]Trending Shows[/COLOR]</title>
+      <trakt>https://api.trakt.tv/shows/trending</trakt>
+      <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/trakt.png</thumbnail>
+      <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/trakt.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLORwhite]Popular Shows[/COLOR]</title>
+      <trakt>https://api.trakt.tv/shows/popular</trakt>
+      <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/trakt.png</thumbnail>
+      <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/trakt.jpg</fanart>
+    </dir>
+	
+    <dir>
+      <title>[COLORwhite]TV Watchlist[/COLOR]</title>
+      <trakt>https://api.trakt.tv/sync/watchlist/shows</trakt>
+      <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/trakt.png</thumbnail>
+      <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/trakt.jpg</fanart> 
+    </dir>
+
+    <dir>
+      <title>[COLORwhite]TV Collection[/COLOR]</title>
+      <trakt>https://api.trakt.tv/sync/collection/shows</trakt>
+      <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/trakt.png</thumbnail>
+      <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/trakt.jpg</fanart>
+    </dir>
+	
+    <dir>
+      <title>[COLORwhite]My lists[/COLOR]</title>
+      <trakt>https://api.trakt.tv/users/me/lists/</trakt>
+      <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/trakt.png</thumbnail>
+      <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/trakt.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLORwhite]My Liked Lists[/COLOR]</title>
+      <trakt>https://api.trakt.tv/users/likes/lists</trakt>
+      <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/trakt.png</thumbnail>
+      <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/trakt.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLORwhite]Search Trakt[/COLOR]</title>
+      <trakt>search</trakt>
+      <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/trakt.png</thumbnail>
+      <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/trakt.jpg</fanart>
+    </dir>

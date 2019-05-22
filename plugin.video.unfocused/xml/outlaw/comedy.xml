@@ -1,0 +1,34 @@
+<item>
+  <title>[B][COLOR black]==========[/COLOR][COLOR red]Comedy Collection[/COLOR][COLOR black]==========[/COLOR][/B]</title>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart.jpg</fanart>
+</item>
+
+<dir>
+  <title>[COLOR red]Best of Western Comedy[/COLOR]</title>
+  <imdburl>list/ls076152497/</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/popular.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/tv classic.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR red]Top Comedy Western[/COLOR]</title>
+  <imdburl>list/ls050634447/</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/popular.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/tv classic.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR red]Comedy Westerns[/COLOR]</title>
+  <link>plugin://plugin.video.youtube/playlist/PLzz8mS1OieNzGTAcgBQ1bO_IDOdvyKbIi/</link>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/popular.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/classic.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR red]Unusual Westerns[/COLOR]</title>
+  <imdburl>list/ls060613727/</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/popular.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/tv classic.jpg</fanart>
+</dir>
+

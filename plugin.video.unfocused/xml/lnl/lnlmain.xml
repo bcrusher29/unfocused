@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <item>
+    <title>**********[COLORmaroon]Thank You and Enjoy Lock N Load[/COLOR]**********</title>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/icon.png</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/fanart.jpg</fanart>
+    </item>
+
+    <dir>
+    <title>[COLORgold]Search Movies/ TV Shows/ People[/COLOR]</title>
+    <tmdb>search</tmdb>
+	<thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/search.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/search.jpg</fanart>
+    </dir>
+	
+	<dir>
+    <title>[COLORgold]Movies[/COLOR]</title>
+    <link>file://lnl/movies.xml</link>
+	<thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/movies.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/movies.jpg</fanart>
+    </dir>
+
+	<dir>
+    <title>[COLORgold]TV Shows[/COLOR]</title>
+    <link>file://lnl/tv.xml</link>
+	<thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/tvshows.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/tv.jpg</fanart>
+    </dir>
+	
+	<dir>
+    <title>[COLORgold]Trakt Portal[/COLOR]</title>
+    <link>file://lnl/trakt.xml</link>
+	<thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/trakt.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/trakt.jpg</fanart>
+	</dir>
+	
+    <dir>
+    <title>[COLORgold]Netflix Original Series[/COLOR]</title>
+    <tmdb>network/shows/213</tmdb>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/netflix.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/netflix.jpg</fanart>
+    </dir>
+
+    <dir>
+    <title>[COLORgold]Movie Boxsets[/COLOR]</title>
+    <link>file://lnl/moviecollections.xml</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/movieboxsets.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/movieboxsets.jpg</fanart>
+    </dir>
+	
+    <dir>
+    <title>[COLORgold]Kids Boxsets[/COLOR]</title>
+    <link>file://lnl/kidsboxset.xml</link>
+	<thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/kidsboxsets.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/kidsboxsets.jpg</fanart>
+    </dir>
+	
+	<dir>
+    <title>[COLORgold]Looney For Toons[/COLOR]</title>
+    <tmdb>list/62311</tmdb>
+	<thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/toons.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/toons.jpg</fanart>
+    </dir>
+
+    <dir>
+    <title>[COLORgold]Wild West[/COLOR]</title>
+    <tmdb>list/51515</tmdb>
+	<thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/wildwest.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/wildwest.jpg</fanart>
+    </dir>
+	
+    <dir>
+    <title>[COLORgold]Fear Of The Dark[/COLOR]</title>
+    <link>file://lnl/fotd.xml</link>
+	<thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/fotd.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/fotd.jpg</fanart>
+	</dir>
+
+    <dir>
+    <title>[COLORgold]Abandoned Places[/COLOR]</title>
+    <link>file://lnl/abandoned.xml</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/abandoned.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/abandoned.jpg</fanart>
+    </dir>
+
+    <dir>
+    <title>[COLORgold]World Of Wheels[/COLOR]</title>
+    <tmdb>list/47031</tmdb>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/wow.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/wow.jpg</fanart>
+    </dir>
+
+    <dir>
+    <title>[COLORgold]Call Of The Wild[/COLOR]</title>
+    <tmdb>list/80464</tmdb>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/cotw.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/cotw.jpg</fanart>
+    </dir>
+	
+	<dir>
+    <title>[COLORgold]Music Box[/COLOR]</title>
+    <link>file://lnl/musicvids.xml</link>
+	<thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/music.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/music.jpg</fanart>
+	</dir>
+	  
+    <plugin>
+    <name>[COLORgold]Settings[/COLOR]</name>
+    <link>plugin://plugin.video.lnl/?action=openSettings</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/settings.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/settings.jpg</fanart>
+    <summary>Settings For Lock n Load Addon</summary>
+    </plugin>

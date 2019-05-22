@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<item>
+  <title>*****[COLORorange]Thank You and Enjoy the Movie[/COLOR]*****</title>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/movies.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/movies.jpg</fanart>
+</item>
+	
+<dir>
+  <title>[COLORwhite]Popular[/COLOR]</title>
+  <tmdb>movies/popular</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/popular.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/movies.jpg</fanart>
+ </dir>
+
+<dir>
+  <title>[COLORwhite]Now Playing[/COLOR]</title>
+  <tmdb>movies/now_playing</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/nowplaying.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLORwhite]Top Rated[/COLOR]</title>
+  <tmdb>movies/top_rated</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/toprated.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLORwhite]Movies By Genre[/COLOR]</title>
+  <link>file://lnl/genremovies.xml</link>
+	<thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/genre.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLORwhite]Movies By Years[/COLOR]</title>
+  <link>file://lnl/movieyears.xml</link>
+	<thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/years.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLORwhite]Movies By Actors[/COLOR]</title>
+  <link>file://lnl/actors.xml</link>
+	<thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/actors.png</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/movies.jpg</fanart>
+</dir>
+	
+<dir>
+  <title>[COLORwhite]Movies By Production[/COLOR]</title>
+  <link>file://lnl/production.xml</link>
+	<thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/productions.png</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/movies.jpg</fanart>
+</dir>
+	
+<dir>  
+  <title>[COLORwhite]L.N.L Movie Picks[/COLOR]</title>
+  <tmdb>list/38955</tmdb>
+	<thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/moviepicks.png</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/movies.jpg</fanart>
+</dir>

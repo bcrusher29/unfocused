@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<item>
+  <title>[B][COLOR black]============[/COLOR][COLOR orangered]TV SHOWS BY GENRE[/COLOR][COLOR black]============[/COLOR][/B]</title>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/the-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/the-rico-fanart.jpg</fanart>
+</item>
+
+<dir>
+  <title>[COLOR gold]Action TV[/COLOR]</title>
+  <tmdb>genre/shows/28</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Adventure TV[/COLOR]</title>
+  <tmdb>genre/shows/12</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Animation TV[/COLOR]</title>
+  <tmdb>genre/shows/16</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Comedy TV[/COLOR]</title>
+  <tmdb>genre/shows/35</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Crime TV[/COLOR]</title>
+  <tmdb>genre/shows/80</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Documentary TV[/COLOR]</title>
+  <tmdb>genre/shows/99</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Drama TV[/COLOR]</title>
+  <tmdb>genre/shows/18</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Family TV[/COLOR]</title>
+  <tmdb>genre/shows/10751</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Fantasy TV[/COLOR]</title>
+  <tmdb>genre/shows/14</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]History TV[/COLOR]</title>
+  <tmdb>genre/shows/36</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Horror TV[/COLOR]</title>
+  <tmdb>genre/shows/27</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Music TV[/COLOR]</title>
+  <tmdb>genre/shows/10402</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Mystery TV[/COLOR]</title>
+  <tmdb>genre/shows/9648</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Real TV[/COLOR]</title>
+  <tmdb>genre/shows/10764</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Romance TV[/COLOR]</title>
+  <tmdb>genre/shows/10749</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Science Fiction[/COLOR]</title>
+  <tmdb>genre/shows/878</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Thriller TV[/COLOR]</title>
+  <tmdb>genre/shows/53</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]War TV[/COLOR]</title>
+  <tmdb>genre/shows/10752</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Western TV[/COLOR]</title>
+  <tmdb>genre/shows/37</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+</dir>

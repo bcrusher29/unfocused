@@ -1,0 +1,147 @@
+
+<item>
+    <title>[B][COLOR black]=============[/COLOR][COLOR blue]STARGATE COLLECTION[/COLOR][COLOR black]=============[/COLOR][/B]</title>
+    <thumbnail>http://entersandman.xyz/sanitypics/icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/fanart.jpg</fanart>
+  </item>
+
+<item>
+    <title>[B][COLOR black]==========[/COLOR][COLOR blue]STARGATE MOVIE COLLECTION[/COLOR][COLOR black]==========[/COLOR][/B]</title>
+    <thumbnail>http://entersandman.xyz/sanitypics/icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/fanart.jpg</fanart>
+  </item>
+
+<item>
+  <title>[COLOR blue]Stargate[/COLOR]</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0111282</imdb>
+    <title>Stargate</title>
+    <year>1994</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/w1280//39WsfbB5BshvdbPAYRFXdsjC481.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/w1280//vgnrUb8KbV3S8gVUcq6rXng9cnz.jpg</fanart>
+</item>
+
+<item>
+  <title>[COLOR blue]Stargate: Continuum[/COLOR]</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0929629</imdb>
+    <title>Stargate: Continuum</title>
+    <year>2008</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/w1280//tk1jYOK6DRvBHAoHCueUVL3RSEe.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/w1280//iA5RfBnIzzpvwDPy5LHPrUKRl71.jpg</fanart>
+</item>
+
+<item>
+  <title>[COLOR blue]Stargate: The Ark of Truth[/COLOR]</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0942903</imdb>
+    <title>Stargate: The Ark of Truth</title>
+    <year>2008</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/w1280//nOKvsS77gOFEtmEVUBcqgpmlxIV.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/w1280//bT7wr22WUcHhj2Etw61qVVjra9f.jpg</fanart>
+</item>
+
+<item>
+  <title>[COLOR blue]Stargate SG-1: Children of the Gods - Final Cut[/COLOR]</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt1483803</imdb>
+    <title>Stargate SG-1: Children of the Gods - Final Cut</title>
+    <year>2009</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/w1280//s0It0VWkxLyLgIyGCK3y1m8dKFM.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/w1280//6RaZiwLj8z4ZTiPgdieH678Frmx.jpg</fanart>
+</item>
+
+<item>
+    <title>[B][COLOR black]==========[/COLOR][COLOR blue]STARGATE TV SHOWS COLLECTION[/COLOR][COLOR black]==========[/COLOR][/B]</title>
+    <thumbnail>http://entersandman.xyz/sanitypics/icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/fanart.jpg</fanart>
+  </item>
+
+<dir>
+  <title>[COLOR blue]Stargate Origins[/COLOR]</title>
+  <meta>
+    <content>tvshow</content>
+    <imdb>tt7161862</imdb>
+    <tvshowtitle>Stargate Origins</tvshowtitle>
+    <year>2018</year>
+  </meta>
+  <link>file://sanity/origins seasons.xml</link>
+  <thumbnail>https://image.tmdb.org/t/p/w1280//woDNw7wSgfrrw0luIiHSUzANyoV.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/w1280/n0yiYkNefhBi5aru3vVmHXCN4mp.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Stargate SG-1[/COLOR]</title>
+  <meta>
+    <content>tvshow</content>
+    <imdb>tt0118480</imdb>
+    <tvshowtitle>Stargate SG-1</tvshowtitle>
+    <year>1997</year>
+  </meta>
+  <link>file://sanity/sg-1 seasons.xml</link>
+  <thumbnail>https://image.tmdb.org/t/p/w1280//rst5xc4f7v1KiDiQjzDiZqLtBpl.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/w1280/qOc3Y92gNfhIXSH59GCIKqkVhSK.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Stargate Atlantis[/COLOR]</title>
+  <meta>
+    <content>tvshow</content>
+    <imdb>tt0374455</imdb>
+    <tvshowtitle>Stargate Atlantis</tvshowtitle>
+    <year>2004</year>
+  </meta>
+  <link>file://sanity/atlantis seasons.xml</link>
+  <thumbnail>https://image.tmdb.org/t/p/w1280//dcofw4ByyS0o2CZrYjzhgV2Pgd0.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/w1280/oMDLAbjhFw1my2L1AO4hHS1ZJNz.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Stargate Universe[/COLOR]</title>
+  <meta>
+    <content>tvshow</content>
+    <imdb>tt1286039</imdb>
+    <tvshowtitle>Stargate Universe</tvshowtitle>
+    <year>2009</year>
+  </meta>
+  <link>file://sanity/universe seasons.xml</link>
+  <thumbnail>https://image.tmdb.org/t/p/w1280//rsVo9mMayCXTXP4X266zcKkf4dz.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/w1280/pYo9nYRPLvMArDnpy292PgiIYXh.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Stargate: Infinity[/COLOR]</title>
+  <meta>
+    <content>tvshow</content>
+    <imdb>tt0320969</imdb>
+    <tvshowtitle>Stargate: Infinity</tvshowtitle>
+    <year>2002</year>
+  </meta>
+  <link>trakt_tv_show(2564, 2002, Stargate: Infinity, 2580, tt0320969)</link>
+  <thumbnail>https://image.tmdb.org/t/p/w1280//tl6RfsEfU5RwbubO9nE551viIjq.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/w1280/uoZ5djfaQBsXkGGKWywqGRuFlnN.jpg</fanart>
+</dir>

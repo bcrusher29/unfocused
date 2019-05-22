@@ -1,0 +1,75 @@
+<item>
+    <title>[B][COLOR lightgray]==========[/COLOR][COLOR maroon] ENJOY YOUR MOVIE [/COLOR][COLOR lightgray]==========[/COLOR][/B]</title>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/movies.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/movies.jpg</fanart>
+</item>
+
+<dir>
+  <title>[COLOR maroon]Horror Movies[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/horror-movies/items/</trakt>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/horror.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/horror.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR maroon]Zombie Movies[/COLOR]</title>
+  <link>file://deadofnight/zombies.xml</link>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/zombie.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/zombie.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR maroon]Featured[/COLOR]</title>
+  <imdburl>http://www.imdb.com/search/title?title_type=feature&genres=horror&num_votes=1000,&production_status=released&release_date=date[365],date[60]&sort=moviemeter,asc&count=40&start=1</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/featured.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR maroon]Top Rated[/COLOR]</title>
+  <imdburl>https://www.imdb.com/search/title?title_type=feature&genres=horror&production_status=released&count=40&start=1&sort=boxoffice_gross_us,desc</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/toprated.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR maroon]Most Popular[/COLOR]</title>
+  <imdburl>http://www.imdb.com/search/title?title_type=feature&genres=horror&num_votes=1000,&production_status=released&groups=top_1000&sort=moviemeter,asc&count=40&start=1</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/popular.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR maroon]Comedy[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/horror-comedy/items/</trakt>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/comedy.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/comedy.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR maroon]Animated[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/anime-horror/items/</trakt>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/anime.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/anime.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR maroon]Oscar Winners[/COLOR]</title>
+  <imdburl>http://www.imdb.com/search/title?title_type=feature,tv_movie,documentary&genres=horror&groups=oscar_winner</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/oscars.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/oscars.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR maroon]Franchises[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/horror-movie-franchises/items</trakt>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/franchise.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR maroon]Horror Studios[/COLOR]</title>
+  <link>file://deadofnight/studios.xml</link>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/docs.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/movies.jpg</fanart>
+</dir>

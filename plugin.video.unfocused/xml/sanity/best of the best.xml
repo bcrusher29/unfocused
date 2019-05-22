@@ -1,0 +1,27 @@
+<xml>
+   <item>
+    <title>[COLOR black]==========[/COLOR][COLOR blue]BEST OF THE BEST[/COLOR][COLOR black]==========[/COLOR]</title>
+    <thumbnail>http://entersandman.xyz/sanitypics/icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/fanart.jpg</fanart>
+  </item>
+
+  <dir>
+    <title>[COLOR blue]JACKIE CHAN[/COLOR]</title>
+    <link>file://sanity/actcollec/jackie chan.xml</link>
+    <thumbnail>http://entersandman.xyz/sanitypics/botb.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/sanityfanart/moviest.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR blue]ROBIN WILLIAMS[/COLOR]</title>
+    <link>file://sanity/actcollec/robin williams.xml</link>
+    <thumbnail>http://entersandman.xyz/sanitypics/botb.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/sanityfanart/moviest.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR blue]WESILEY SNIPES[/COLOR]</title>
+    <link>file://sanity/actcollec/wesiley snipes.xml</link>
+    <thumbnail>http://entersandman.xyz/sanitypics/botb.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/sanityfanart/moviest.jpg</fanart>
+  </dir>

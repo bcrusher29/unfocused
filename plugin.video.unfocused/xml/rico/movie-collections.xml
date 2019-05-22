@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<item>
+    <title>[B][COLOR black]=========[/COLOR][COLOR orangered]MOVIES COLLECTIONS[/COLOR][COLOR black]=========[/COLOR][/B]</title>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/the-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/the-rico-fanart.jpg</fanart>
+</item>
+
+    <dir>
+      <title>[COLOR gold]Disney Classic Collection[/COLOR]</title>
+      <tmdb>list/338</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/bKPtXn9n4M4s8vvZrbw40mYsefB.jpg</thumbnail>
+      <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Animal Kingdom Collection[/COLOR]</title>
+      <tmdb>list/13488</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/54SKV7ALfiVGJBzoStGTLYkRZEM.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Night at the Museum Collection[/COLOR]</title>
+      <tmdb>collection/85943</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/q2nwE0Qi8U6tsU5HDmiWS2D3dSJ.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Home Alone Collection[/COLOR]</title>
+      <tmdb>collection/9888</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/zYPsleQJo1n1rBPlecJBRb3iwSO.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]The Pink Panther Collection[/COLOR]</title>
+      <tmdb>collection/937</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/xu6gZ0zGUSR8SC2QLKFaUrX2niM.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Scooby-Doo Collection[/COLOR]</title>
+      <tmdb>collection/86860</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/YAuhbJKSG1R42QHJmbGsNQ80Fd.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Wallace n Gromit Collection[/COLOR]</title>
+      <tmdb>collection/529</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/993pCCMO9g9RQUtNDxQgE1B330H.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Beethoven Collection[/COLOR]</title>
+      <tmdb>collection/168880</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/pdaH4A7ecsThnSX5sOpwrcntziF.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Herbie The Love Bug Collection[/COLOR]</title>
+      <tmdb>collection/12087</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/uFvt8t7HlB6BzjiJDU6ea1eI28L.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]The Santa Clause Collection[/COLOR]</title>
+      <tmdb>collection/53159</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/1h8iA6i2DpPhsHC65nUB2voVnm5.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+   <item>
+      <title>[B][COLOR black]=====[/COLOR][COLOR orangered]SUPER HERO COLLECTION[/COLOR][COLOR black]=====[/COLOR][/B]</title>
+      <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/the-rico-icon.png</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>            
+   </item>
+
+    <dir>
+      <title>[COLOR gold]Batman Collection[/COLOR]</title>
+      <tmdb>collection/120794</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/adQxUvQW8HXNsvMG5aj71pHh9T.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Superman Collection[/COLOR]</title>
+      <tmdb>collection/8537</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/fgTdu62v1jjNDPh68V9TJZMgXbo.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Thor Collection[/COLOR]</title>
+      <tmdb>collection/131296</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/yw7gr7DhHHVTLlO8Se8uH17TDMA.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Iron Man Collection[/COLOR]</title>
+      <tmdb>collection/131292</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/fbeJ7f0aD4A112Bc1tnpzyn82xO.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Spider-Man Collection[/COLOR]</title>
+      <tmdb>collection/556</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/aNknE3vw8QC5gDHBRYpOz9gzuPc.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Spider-Man Collection[/COLOR]</title>
+      <tmdb>collection/531241</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/aNknE3vw8QC5gDHBRYpOz9gzuPc.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]X-Men Collection[/COLOR]</title>
+      <tmdb>collection/748</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/1Zo4J5SAni8lyXt7NxJwJZ0f0ip.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+   <item>
+      <title>[B][COLOR black]=====[/COLOR][COLOR orangered]SCIENCE FICTION COLLECTION[/COLOR][COLOR black]=====[/COLOR][/B]</title>
+      <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/the-rico-icon.png</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+   </item>
+
+    <dir>
+      <title>[COLOR gold]Science Fiction Flix[/COLOR]</title>
+      <tmdb>list/3945</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/h2mhfbEBGABSHo2vXG1ECMKAJa7.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Star Wars Collection[/COLOR]</title>
+      <tmdb>collection/10</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/ghd5zOQnDaDW1mxO7R5fXXpZMu.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Alien Collection[/COLOR]</title>
+      <tmdb>collection/8091</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/iVzIeC3PbG9BtDAudpwSNdKAgh6.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]The Planet Of The Apes Collection[/COLOR]</title>
+      <tmdb>collection/1709</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/7OvC0TNbINmhfEmi3lMYEnGWNOr.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+	
+    <dir>
+      <title>[COLOR gold]Transformers Collection[/COLOR]</title>
+      <tmdb>collection/8650</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/vOUPHWV8aGXq4yYQ2csje5LdT6g.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+	
+    <dir>
+      <title>[COLOR gold]Star Trek: Alternate Reality Collection[/COLOR]</title>
+      <tmdb>collection/115575</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/w2IVqa43Ge49mrY3qSaJWpyDtz6.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]The Matrix Collection[/COLOR]</title>
+      <tmdb>collection/2344</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/lh4aGpd3U9rm9B8Oqr6CUgQLtZL.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+	
+    <dir>
+      <title>[COLOR gold]Back To The Future Collection[/COLOR]</title>
+      <tmdb>collection/264</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/lxVx97WUvmJzQmgyLxwF2EWnYJ5.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+   <item>
+      <title>[B][COLOR black]=====[/COLOR][COLOR orangered]ACTIN/ADVENTURE COLLECTION[/COLOR][COLOR black]=====[/COLOR][/B]</title>
+      <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/the-rico-icon.png</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+   </item>
+
+     <dir>
+      <title>[COLOR gold]Rocky Collection[/COLOR]</title>
+      <tmdb>collection/1575</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/mu8p4RCdzse2jD8ZYMpnQBTVjpA.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+     </dir>
+
+     <dir>
+      <title>[COLOR gold]Indiana Jones Collection[/COLOR]</title>
+      <tmdb>list/41876</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/lpxDrACKJhbbGOlwVMNz5YCj6SI.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+     </dir>
+
+     <dir>
+      <title>[COLOR gold]Jurassic Park Collection[/COLOR]</title>
+      <tmdb>collection/328</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/qIm2nHXLpBBdMxi8dvfrnDkBUDh.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+	
+    <dir>
+      <title>[COLOR gold]Rambo Collection[/COLOR]</title>
+      <tmdb>collection/5039</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/feGOEOVrOLyjtEnVa88rQLgD3XY.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]The Lord of the Rings Collection[/COLOR]</title>
+      <tmdb>collection/119</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/p4UokEk2XnjjRTdXGe6DLYXlbI1.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+	
+    <dir>
+      <title>[COLOR gold]The Hunger Games Collection[/COLOR]</title>
+      <tmdb>collection/131635</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/ttbKy12hDjSHQcM7sCoeW1WsDlW.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+	
+    <dir>
+      <title>[COLOR gold]The Twilight Collection[/COLOR]</title>
+      <tmdb>collection/33514</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/2o4zgGjVryMOPdNqLZWsSPqRkOH.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Hellboy Collection[/COLOR]</title>
+      <tmdb>collection/17235</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/81B1OdGY7f3TVN06eKra25vHzYk.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Predator Collection[/COLOR]</title>
+      <tmdb>collection/399</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/6Z7lASptoiRVxiCFvZaFgH9qp7u.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+	
+    <dir>
+      <title>[COLOR gold]Anaconda Collection[/COLOR]</title>
+      <tmdb>collection/105995</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/4ezsTWnemx5AfWHsn3LrszVseK8.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]xXx Collection[/COLOR]</title>
+      <tmdb>collection/52785</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/omRo1Pw4phlELRgYOQ7RyAlccLt.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Sharknado Collection[/COLOR]</title>
+      <tmdb>collection/286023</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/l525ueVZgelZoCSMgPZKKOEJMEC.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+	
+    <dir>
+      <title>[COLOR gold]Divergent Collection[/COLOR]</title>
+      <tmdb>collection/283579</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/nXuCj7NcsC2bPJlwD6t2l9ZTDnt.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <item>
+      <title>[B][COLOR black]=====[/COLOR][COLOR orangered]CRIME COLLECTIONS[/COLOR][COLOR black]=====[/COLOR][/B]</title>
+      <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/the-rico-icon.png</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </item>
+
+    <dir>
+      <title>[COLOR gold]Dirty Harry Collection[/COLOR]</title>
+      <tmdb>collection/10456</tmdb>
+	<thumbnail>http://image.tmdb.org/t/p/w185_and_h278_bestv2/bS1ioomHh2emKAZ6vWn17UZnhDx.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]James Bond Collection[/COLOR]</title>
+      <tmdb>collection/645</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/HORpg5CSkmeQlAolx3bKMrKgfi.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]The Godfather Collection[/COLOR]</title>
+      <tmdb>collection/230</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/rPdtLWNsZmAtoZl9PK7S2wE3qiS.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]The Bourne Collection[/COLOR]</title>
+      <tmdb>collection/31562</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/pM3qZEpxqeK7oawg3mkRQJLVFhJ.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Mission Impossible Collection[/COLOR]</title>
+      <tmdb>collection/87359</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/gwyJPIhCK4Xz2WogeBnhCSQfUek.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+	
+    <dir>
+      <title>[COLOR gold]Fast n Furious Collection[/COLOR]</title>
+      <tmdb>collection/9485</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/uv63yAGg1zETAs1XQsOQpava87l.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <item>
+      <title>[B][COLOR black]=====[/COLOR][COLOR orangered]RATED R COLLECTIONS[/COLOR][COLOR black]=====[/COLOR][/B]</title>
+      <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/the-rico-icon.png</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </item>
+
+    <dir>
+      <title>[COLOR gold]Friday Collection[/COLOR]</title>
+      <tmdb>collection/43563</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/cJUiqO2Z0PDL6cZ2Ic04F1i4gnb.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg<</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]American Pie Collection[/COLOR]</title>
+      <tmdb>collection/2806</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/nslDuX1WeBp0pJcYLwrLaAhtfX8.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Jackass Collection[/COLOR]</title>
+      <tmdb>collection/17178</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/olpnvtLgoScLiCg3YHJ3f27F98f.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+	
+    <dir>
+      <title>[COLOR gold]Cheech n Chong Collection[/COLOR]</title>
+      <tmdb>collection/33071</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/mI9ggvzjaDIGN1qcrM9fvATHVmZ.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Harold n Kumar Collection[/COLOR]</title>
+      <tmdb>collection/30663</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/9OBP4MQBAXnBZ1uXLZykIWRGnBb.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <item>
+      <title>[B][COLOR black]=====[/COLOR][COLOR orangered]HORROR COLLECTIONS[/COLOR][COLOR black]=====[/COLOR][/B]</title>
+      <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/the-rico-icon.png</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+   </item>	  
+	  
+     <dir>
+      <title>[COLOR gold]Friday the 13th Collection[/COLOR]</title>
+      <tmdb>collection/9735</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/uobgqpLQff9WvxGKE2OSvXv1RHm.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+     </dir>
+
+     <dir>
+      <title>[COLOR gold]Halloween Collection[/COLOR]</title>
+      <tmdb>collection/91361</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/2uqHV6YcD9jEL2WuJYjXiiuRDqd.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]A Nightmare on Elm Street Collection[/COLOR]</title>
+      <tmdb>collection/8581</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/BcgmrOz69AUBRukw5LLGeYsOgo.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+	
+    <dir>
+      <title>[COLOR gold]Creepshow Collection[/COLOR]</title>
+      <tmdb>collection/107725</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/wvoSFYgc36Zz2j8eDvysKDW1FZ.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]The Purge Collection[/COLOR]</title>
+      <tmdb>collection/256322</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/nP3c8mTSxlis4vfg0UjlkK8LRG9.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Psycho Collection[/COLOR]</title>
+      <tmdb>collection/119674</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/29pDqAgmb4idzWzuZncoT7LZplA.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Hostel Collection[/COLOR]</title>
+      <tmdb>collection/86578</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/2jLQFRlH8CC9cptcANY5cEtC1q8.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Insidious Collection[/COLOR]</title>
+      <tmdb>collection/228446</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/w1213HKk1XKSwHiBgjkWghn9biC.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Saw Collection[/COLOR]</title>
+      <tmdb>collection/656</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/xmC2A7qPEfiOkQC58fZh8srWQ5v.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Hellraiser Collection[/COLOR]</title>
+      <tmdb>collection/8917</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/lIK0UgJsA18Z5I1PwpucXzgyF3A.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Child's Play Collection[/COLOR]</title>
+      <tmdb>collection/10455</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/50aqbDvbOtdlZrje6Qk4ZvKM7dM.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Phantasm Collection[/COLOR]</title>
+      <tmdb>collection/47770</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/xqgAkKmQRrk0UaIbWMak4RRSQm7.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Scream Collection[/COLOR]</title>
+      <tmdb>collection/2602</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/3DjOcwfd8cTcKBkWTcNntAZajEg.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]The Jaws Collection[/COLOR]</title>
+      <tmdb>collection/2366</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/fgraZdDCvAtBr0MHczmL6raonHd.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Underworld Collection[/COLOR]</title>
+      <tmdb>collection/2326</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/aK8qq0X0pZbf5ncE3JLQ27hdC4F.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLOR gold]Scary Movie Collection[/COLOR]</title>
+      <tmdb>collection/4246</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/w185_and_h278_bestv2/rFOREADs0En0sdyj149V4E7n9aV.jpg</thumbnail>
+	<fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+    </dir>

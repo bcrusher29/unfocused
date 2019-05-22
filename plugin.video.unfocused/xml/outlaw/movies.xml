@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<item>
+  <title>[B][COLOR black]==========[/COLOR][COLOR red]WESTERN MOVIES[/COLOR][COLOR black]==========[/COLOR][/B]</title>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart.jpg</fanart>
+</item>
+
+<dir>
+  <title>[COLOR red]Modern Wild West Movies[/COLOR]</title>
+  <imdburl>list/ls055895628/</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/modern.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/modern.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR red]Best OF Western Movies[/COLOR]</title>
+  <imdburl>list/ls045729301/</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/best.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/bofb.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR red]Wild West Movies[/COLOR]</title>
+  <imdburl>list/ls045731303/</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/wildwest.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/west2.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR red]Ladies Western Movies[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/hb-saddle-up-ladies-westerns/items</trakt>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/wildwest.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/cowgirl.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR red]Western Colletion[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/hb-westerns/items</trakt>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/coll.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/coll.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR red]Top Western Movies[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/kayaaron13/lists/ranker-top-western-movies/items</trakt>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/western.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw//fanart/top.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR red]Westerns[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/shanstark71/lists/western-movies/items</trakt>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.outlaw/icon/movies.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.outlaw/fanart/western.jpg</fanart>
+</dir>
+

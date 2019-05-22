@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<item>
+    <title>[B][COLOR black]=========[/COLOR][COLOR orangered]WELCOME TO RICOCHET[/COLOR][COLOR black]=========[/COLOR][/B]</title>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/the-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/the-rico-fanart.jpg</fanart>
+</item>
+	
+  <dir>
+    <title>[COLOR gold]Movies[/COLOR]</title>
+    <link>file://rico/movies.xml</link>
+	  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/movies-rico-icon.png</thumbnail>
+	  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+  </dir>
+	
+  <dir>
+    <title>[COLOR gold]Viceland[/COLOR]</title>
+    <tmdb>network/shows/1339</tmdb>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/vice-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/vice-rico-fanart.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR gold]TV Shows[/COLOR]</title>
+    <link>file://rico/tv.xml</link>
+	  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/tvshows-rico-icon.png</thumbnail>
+	  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tv1-rico-fanart.jpg</fanart>
+  </dir>
+	
+  <dir>
+    <title>[COLOR gold]Music Plus[/COLOR]</title>
+    <link>file://rico/music-vids.xml</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/music-vids-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/music-vids-rico-fanart.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR gold]Trakt Portal[/COLOR]</title>
+    <link>file://rico/trakt.xml</link>
+	  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/trakt-rico-icon.png</thumbnail>
+	  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/trakt-rico-fanart.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR gold]Kids Boxsets[/COLOR]</title>
+    <link>file://rico/kids_boxset.xml</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/kidsboxsets-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/kidsboxsets-rico-fanart.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR gold]Toon Time[/COLOR]</title>
+    <tmdb>list/62311</tmdb>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/toons-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/toons-rico-fanart.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR gold]Dead Of Night[/COLOR]</title>
+    <link>file://rico/don.xml</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/don-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/don-rico-fanart.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR gold]Tombstone[/COLOR]</title>
+    <tmdb>list/51515</tmdb>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/tombstone-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/tombstone-rico-fanart.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR gold]Movie Boxsets[/COLOR]</title>
+    <link>file://rico/movie-collections.xml</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/movieboxsets-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movieboxsets-rico-fanart.jpg</fanart>
+  </dir>
+	
+  <dir>
+    <title>[COLOR gold]Cartoon Network[/COLOR]</title>
+    <tmdb>network/shows/56</tmdb>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/cn-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/cn-rico-fanart.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR gold]Netflix Original Series [/COLOR]</title>
+    <tmdb>network/shows/213</tmdb>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/netflix-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/netflix-rico-fanart.jpg</fanart>
+  </dir>
+	
+  <dir>
+    <title>[COLOR gold]Amazon Prime Originals [/COLOR]</title>
+    <tmdb>network/shows/1024</tmdb>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/amazon-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/amazon-rico-fanart.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR gold]NOVA- Documentary Series[/COLOR]</title>
+    <tmdb>list/82332</tmdb>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/nova-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/nova-rico-fanart.jpg</fanart>
+  </dir>
+	
+  <dir>
+    <title>[COLOR gold]Search Movies/ TV Shows/ People[/COLOR]</title>
+    <tmdb>search</tmdb>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/search-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/search-rico-fanart.jpg</fanart>
+  </dir>
+  
+<plugin>
+    <name>[COLOR gold]Settings[/COLOR]</name>
+    <link>plugin://plugin.video.rico/?action=openSettings</link>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/settings-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/settings-rico-fanart.jpg</fanart>
+    <summary>Settings for Ricochet Addon</summary>
+</plugin>

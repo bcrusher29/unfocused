@@ -1,0 +1,47 @@
+<item>
+  <title>[B][COLOR maroon]========[/COLOR][COLOR orange] ENJOY YOUR MOVIE [/COLOR][COLOR maroon]========[/COLOR][/B]</title>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</item>
+
+<dir>
+  <title>[COLOR orange] In Theaters [/COLOR]</title>
+  <tmdb>movies/now_playing</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/theaters.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Popular[/COLOR]</title>
+  <trakt>https://api.trakt.tv/movies/popular</trakt>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/popular.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Top Rated[/COLOR]</title>
+  <tmdb>movies/top_rated</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/top.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Genres[/COLOR]</title>
+  <link>file://scythe/genres-movies.xml</link>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Years[/COLOR]</title>
+  <link>file://scythe/movie-years.xml</link>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/years.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Productions[/COLOR]</title>
+  <link>file://scythe/production.xml</link>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/production.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>

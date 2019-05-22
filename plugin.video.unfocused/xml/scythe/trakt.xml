@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<dir>
+    <title>[B][COLOR maroon]========[/COLOR][COLOR orange] *Authorize* Your Trakt Here [/COLOR][COLOR maroon]========[/COLOR][/B]</title>
+    <trakt>https://api.trakt.tv/users/me/lists/</trakt>
+    <thumbnail>https://francisuniverse.files.wordpress.com/2017/07/trakttvthumbmail.png?w=1200</thumbnail>
+    <fanart>http://entersandman.xyz/scythefanart/trakt.jpg</fanart>
+</dir>
+
+<dir>
+    <title>[COLOR orange]Trending Movies[/COLOR]</title>
+    <thumbnail>https://francisuniverse.files.wordpress.com/2017/07/trakttvthumbmail.png?w=1200</thumbnail>
+    <fanart>http://entersandman.xyz/scythefanart/trakt.jpg</fanart>
+    <trakt>https://api.trakt.tv/movies/trending</trakt>
+</dir>
+
+<dir>
+    <title>[COLOR orange]Popular Movies[/COLOR]</title>
+    <thumbnail>https://francisuniverse.files.wordpress.com/2017/07/trakttvthumbmail.png?w=1200</thumbnail>
+    <fanart>http://entersandman.xyz/scythefanart/trakt.jpg</fanart>
+    <trakt>https://api.trakt.tv/movies/popular</trakt>
+</dir>
+
+<dir>
+    <title>[COLOR orange]Movie Watchlist[/COLOR]</title>
+    <thumbnail>https://francisuniverse.files.wordpress.com/2017/07/trakttvthumbmail.png?w=1200</thumbnail>
+    <fanart>http://entersandman.xyz/scythefanart/trakt.jpg</fanart>
+    <trakt>https://api.trakt.tv/sync/watchlist/movies</trakt>
+</dir>
+
+<dir>
+    <title>[COLOR orange]Movie Collection[/COLOR]</title>
+    <thumbnail>https://francisuniverse.files.wordpress.com/2017/07/trakttvthumbmail.png?w=1200</thumbnail>
+    <fanart>http://entersandman.xyz/scythefanart/trakt.jpg</fanart>
+    <trakt>https://api.trakt.tv/sync/collection/movies</trakt>
+</dir>
+
+<dir>
+    <title>[COLOR orange]Trending Shows[/COLOR]</title>
+    <thumbnail>https://francisuniverse.files.wordpress.com/2017/07/trakttvthumbmail.png?w=1200</thumbnail>
+    <fanart>http://entersandman.xyz/scythefanart/trakt.jpg</fanart>
+    <trakt>https://api.trakt.tv/shows/trending</trakt>
+</dir>
+
+<dir>
+    <title>[COLOR orange]Popular Shows[/COLOR]</title>
+    <thumbnail>https://francisuniverse.files.wordpress.com/2017/07/trakttvthumbmail.png?w=1200</thumbnail>
+    <fanart>http://entersandman.xyz/scythefanart/trakt.jpg</fanart>
+    <trakt>https://api.trakt.tv/shows/popular</trakt>
+</dir>
+	
+<dir>
+    <title>[COLOR orange]TV Watchlist[/COLOR]</title>
+    <thumbnail>https://francisuniverse.files.wordpress.com/2017/07/trakttvthumbmail.png?w=1200</thumbnail>
+    <fanart>http://entersandman.xyz/scythefanart/trakt.jpg</fanart>
+    <trakt>https://api.trakt.tv/sync/watchlist/shows</trakt>
+</dir>
+
+<dir>
+    <title>[COLOR orange]TV Collection[/COLOR]</title>
+    <thumbnail>https://francisuniverse.files.wordpress.com/2017/07/trakttvthumbmail.png?w=1200</thumbnail>
+    <fanart>http://entersandman.xyz/scythefanart/trakt.jpg</fanart>
+    <trakt>https://api.trakt.tv/sync/collection/shows</trakt>
+</dir>
+	
+<dir>
+    <title>[COLOR orange]My lists[/COLOR]</title>
+    <thumbnail>https://francisuniverse.files.wordpress.com/2017/07/trakttvthumbmail.png?w=1200</thumbnail>
+    <fanart>http://entersandman.xyz/scythefanart/trakt.jpg</fanart>
+    <trakt>https://api.trakt.tv/users/me/lists/</trakt>
+</dir>
+
+<dir>
+    <title>[COLOR orange]My Liked Lists[/COLOR]</title>
+    <thumbnail>https://francisuniverse.files.wordpress.com/2017/07/trakttvthumbmail.png?w=1200</thumbnail>
+    <fanart>http://entersandman.xyz/scythefanart/trakt.jpg</fanart>
+    <trakt>https://api.trakt.tv/users/likes/lists</trakt>
+</dir>
+
+<dir>
+    <title>[COLOR orange]Search Trakt[/COLOR]</title>
+    <thumbnail>https://francisuniverse.files.wordpress.com/2017/07/trakttvthumbmail.png?w=1200</thumbnail>
+    <fanart>http://entersandman.xyz/scythefanart/trakt.jpg</fanart>
+    <trakt>search</trakt>
+</dir>

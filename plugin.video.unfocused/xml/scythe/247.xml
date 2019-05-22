@@ -1,0 +1,26 @@
+    <item>
+      <title>[B][COLOR maroon]========[/COLOR][COLOR orange] ALL NIGHT LONG [/COLOR][COLOR maroon]========[/COLOR][/B]</title>
+      <thumbnail>special://home/addons/plugin.video.scythe/resources/media/247.png</thumbnail>
+      <fanart>special://home/addons/plugin.video.scythe/resources/media/247.jpg</fanart>
+    </item>
+
+    <dir>
+      <title>[COLOR orange]24/7 Movies[/COLOR]</title>
+      <arconaitv2>movies</arconaitv2>
+      <thumbnail>special://home/addons/plugin.video.scythe/resources/media/247.png</thumbnail>
+      <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+    </dir>
+    
+    <dir>
+      <title>[COLOR orange]24/7 TV Shows[/COLOR]</title>
+      <arconaitv2>shows</arconaitv2>
+      <thumbnail>special://home/addons/plugin.video.scythe/resources/media/247.png</thumbnail>
+      <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+    </dir>
+    
+    <dir>
+      <title>[COLOR orange]24/7 Channels[/COLOR]</title>
+      <arconaitv2>cable</arconaitv2>
+      <thumbnail>special://home/addons/plugin.video.scythe/resources/media/247.png</thumbnail>
+      <fanart>special://home/addons/plugin.video.scythe/resources/media/livetv.jpg</fanart>
+    </dir>

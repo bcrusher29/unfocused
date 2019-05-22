@@ -1,0 +1,40 @@
+<item>
+  <title>[B][COLOR lightgray]==========[/COLOR][COLOR maroon] ENJOY YOUR SHOW [/COLOR][COLOR lightgray]==========[/COLOR][/B]</title>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/shows.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/shows.jpg</fanart>
+</item>
+
+<dir>
+  <title>[COLOR maroon]Horror Shows[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/horror-tv-shows/items/</trakt>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/horror.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/horror.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR maroon]Top rated[/COLOR]</title>
+  <imdburl>http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=horror&num_votes=5000,&release_date=,date[0]&sort=user_rating,desc&count=40&start=1</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/toprated.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/shows.jpg</fanart>
+</dir>
+  
+<dir>
+  <title>[COLOR maroon]Popular[/COLOR]</title>
+  <imdburl>http://www.imdb.com/search/title?title_type=tv_series,mini_series&num_votes=100,&release_date=,date[0]&genres=horror&sort=moviemeter,asc&count=40&start=1</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/popular.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR maroon]Most Voted[/COLOR]</title>
+  <imdburl>http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=horror&num_votes=100,&release_date=,date[0]&sort=num_votes,desc&count=40&start=1</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/voted.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR maroon]Anime[/COLOR]</title>
+  <imdburl>http://www.imdb.com/search/title?title_type=tv_series&genres=horror&keywords=anime</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.deadofnight/icons/anime.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.deadofnight/fanart/anime.jpg</fanart>
+</dir>

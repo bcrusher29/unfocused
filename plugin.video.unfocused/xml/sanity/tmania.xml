@@ -1,0 +1,69 @@
+
+<item>
+    <title>[B][COLOR black]==========[/COLOR][COLOR blue]ENJOY YOUR SHOW[/COLOR][COLOR black]==========[/COLOR][/B]</title>
+    <thumbnail>http://entersandman.xyz/sanitypics/icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/fanart.jpg</fanart>
+  </item>
+
+  <dir>
+     <title>[COLOR blue]New Movies[/COLOR]</title>
+     <toonmania>category/GetNewMovies</toonmania>
+     <thumbnail>http://entersandman.xyz/sanitypics/movies.png</thumbnail>
+     <fanart>http://entersandman.xyz/sanityfanart/cartoon.jpg</fanart>
+  </dir>
+
+  <dir>
+     <title>[COLOR blue]All Movies[/COLOR]</title>
+     <toonmania>category/GetAllMovies</toonmania>
+     <thumbnail>http://entersandman.xyz/sanitypics/movies.png</thumbnail>
+     <fanart>http://entersandman.xyz/sanityfanart/kcollectons.jpg</fanart>
+  </dir>
+
+  <dir>
+     <title>[COLOR blue]Popular Movies[/COLOR]</title>
+     <toonmania>category/GetPopularMovies</toonmania>
+     <thumbnail>http://entersandman.xyz/sanitypics/popular.png</thumbnail>
+     <fanart>http://entersandman.xyz/sanityfanart/cartoon.jpg</fanart>
+  </dir>
+
+  <dir>
+     <title>[COLOR blue]New Cartoons[/COLOR]</title>
+     <toonmania>category/GetNewCartoon</toonmania>
+     <thumbnail>http://entersandman.xyz/sanitypics/airing.png</thumbnail>
+     <fanart>http://entersandman.xyz/sanityfanart/cartoon.jpg</fanart>
+  </dir>
+
+  <dir>
+     <title>[COLOR blue]All Cartoons[/COLOR]</title>
+     <toonmania>category/GetAllCartoon</toonmania>
+     <thumbnail>http://entersandman.xyz/sanitypics/networks.png</thumbnail>
+     <fanart>http://entersandman.xyz/sanityfanart/kcollectons.jpg</fanart>
+  </dir>
+
+  <dir>
+     <title>[COLOR blue]Popular Cartoons[/COLOR]</title>
+     <toonmania>category/GetPopularCartoon</toonmania>
+     <thumbnail>http://entersandman.xyz/sanitypics/movies.png</thumbnail>
+     <fanart>http://entersandman.xyz/sanityfanart/cartoon.jpg</fanart>
+  </dir>
+
+  <dir>
+     <title>[COLOR blue]New Anime[/COLOR]</title>
+     <toonmania>category/GetNewDubbed</toonmania>
+     <thumbnail>http://entersandman.xyz/sanitypics/anime.png</thumbnail>
+     <fanart>http://entersandman.xyz/sanityfanart/kids.jpg</fanart>
+  </dir>
+
+  <dir>
+     <title>[COLOR blue]All Anime[/COLOR]</title>
+     <toonmania>category/GetAllDubbed</toonmania>
+     <thumbnail>http://entersandman.xyz/sanitypics/airing.png</thumbnail>
+     <fanart>http://entersandman.xyz/sanityfanart/cartoon.jpg</fanart>
+  </dir>
+
+  <dir>
+     <title>[COLOR blue]Popular Anime[/COLOR]</title>
+     <toonmania>category/GetPopularDubbed</toonmania>
+     <thumbnail>http://entersandman.xyz/sanitypics/popular.png</thumbnail>
+     <fanart>http://entersandman.xyz/sanityfanart/kcollectons.jpg</fanart>
+  </dir>

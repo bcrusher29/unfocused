@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<item>
+  <title>[B][COLOR black]============[/COLOR][COLOR orangered]MOVIES TIME[COLOR black]============[/COLOR][/B]</title>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/the-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/the-rico-fanart.jpg</fanart>
+</item>
+
+<dir>
+  <title>[COLOR gold]Popular[/COLOR]</title>
+  <tmdb>movies/popular</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/popular-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Now Playing[/COLOR]</title>
+  <tmdb>movies/now_playing</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/nowplaying-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Top Rated[/COLOR]</title>
+  <tmdb>movies/top_rated</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/toprated-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Movies By Genre[/COLOR]</title>
+  <link>file://rico/genre_movies.xml</link>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/genre-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Movies By Years[/COLOR]</title>
+  <link>file://rico/movie-years.xml</link>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/years-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR gold]Movies By Actors[/COLOR]</title>
+  <link>file://rico/actors.xml</link>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/actors-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+	
+<dir>
+  <title>[COLOR gold]Movies By Studios[/COLOR]</title>
+  <link>file://rico/studios.xml</link>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/studios-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>  
+  <title>[COLOR gold]Ricochet Movie Picks[/COLOR]</title>
+  <tmdb>list/38955</tmdb>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/moviepicks-rico-icon.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/movies-rico-fanart.jpg</fanart>
+</dir>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<item>
+    <title>[B][COLOR black]==========[/COLOR][COLOR blue]KIDS TIME[/COLOR][COLOR black]==========[/COLOR][/B]</title>
+    <thumbnail>http://entersandman.xyz/sanitypics/icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/fanart.jpg</fanart>
+  </item>
+
+<dir>
+  <title>[COLOR blue]Cartoon Movies[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/kartoon-moviez/items</trakt>
+  <thumbnail>http://entersandman.xyz/sanitypics/movies.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/cartoon.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Animated Movies[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/kids-animated-movies/items</trakt>
+  <thumbnail>http://entersandman.xyz/sanitypics/animation.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/kids.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Kids Collection[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/hb-plex_movies_kids/items</trakt>
+  <thumbnail>http://entersandman.xyz/sanitypics/lists.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/kcollectons.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Kids Boxsets[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/kids-boxsets/items</trakt>
+  <thumbnail>http://entersandman.xyz/sanitypics/fantasy.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/kids.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Kids Time[/COLOR]</title>
+  <link>plugin://plugin.video.youtube/playlist/PLjygzGIObj88PYKIQcctaZtTIqyHjtiJ1/</link>
+  <thumbnail>http://entersandman.xyz/sanitypics/popular.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/kcollectons.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]kids Zone[/COLOR]</title>
+  <link>file://sanity/kids/kids_boxset.xml</link>
+  <thumbnail>http://entersandman.xyz/sanitypics/lists.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/sanityfanart/kcollectons.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Toonmania[/COLOR]</title>
+  <link>file://sanity/kids/tmania.xml</link>
+  <thumbnail>http://entersandman.xyz/sanitypics/animation.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/sanityfanart/kcollectons.jpg</fanart>
+</dir>

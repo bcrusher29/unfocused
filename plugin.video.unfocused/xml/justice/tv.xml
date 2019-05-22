@@ -1,0 +1,26 @@
+<item>
+  <title>[B][COLOR gray]==========[/COLOR][COLOR orangered] ENJOY YOUR SHOW [/COLOR][COLOR gray]==========[/COLOR][/B]</title>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/shows.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/shows.jpg</fanart>
+</item>
+
+<dir>
+  <title>[COLOR orangered]True Crime Shows[/COLOR]</title>
+   <imdburl>/list/ls027714461/</imdburl>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/crime.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/crime.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orangered]Slasher Shows[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/slasher-tv/items/</trakt>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/slasher.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/movies.jpg</fanart>
+</dir>
+  
+<dir>
+  <title>[COLOR orangered]Top 50 Shows[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/top-50-true-crime-shows/items/</trakt>
+  <thumbnail>http://entersandman.xyz/sm/plugin.video.justice/icons/toprated.png</thumbnail>
+  <fanart>http://entersandman.xyz/sm/plugin.video.justice/fanart/shows.jpg</fanart>
+</dir>

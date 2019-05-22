@@ -1,0 +1,132 @@
+<dir>
+  <title>[COLOR orange]Action[/COLOR]</title>
+  <tmdb>genre/movies/28</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Adventure[/COLOR]</title>
+  <tmdb>genre/movies/12</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Animation[/COLOR]</title>
+  <tmdb>genre/movies/16</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Comedy[/COLOR]</title>
+  <tmdb>genre/movies/35</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Crime[/COLOR]</title>
+  <tmdb>genre/movies/80</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Documentary[/COLOR]</title>
+  <tmdb>genre/movies/99</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Drama[/COLOR]</title>
+  <tmdb>genre/movies/18</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Family[/COLOR]</title>
+  <tmdb>genre/movies/10751</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Fantasy[/COLOR]</title>
+  <tmdb>genre/movies/14</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]History[/COLOR]</title>
+  <tmdb>genre/movies/36</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Horror[/COLOR]</title>
+  <tmdb>genre/movies/27</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Music[/COLOR]</title>
+  <tmdb>genre/movies/10402</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Mystery[/COLOR]</title>
+  <tmdb>genre/movies/9648</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Romance[/COLOR]</title>
+  <tmdb>genre/movies/10749</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Science Fiction[/COLOR]</title>
+  <tmdb>genre/movies/878</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]TV Movie[/COLOR]</title>
+  <tmdb>genre/movies/10770</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Thriller[/COLOR]</title>
+  <tmdb>genre/movies/53</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]War[/COLOR]</title>
+  <tmdb>genre/movies/10752</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Western[/COLOR]</title>
+  <tmdb>genre/movies/37</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+</dir>

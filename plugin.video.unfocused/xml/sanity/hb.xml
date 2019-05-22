@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<item>
+    <title>[B][COLOR black]==========[/COLOR][COLOR blue]HB TOP[/COLOR][COLOR black]==========[/COLOR][/B]</title>
+    <thumbnail>http://entersandman.xyz/sanitypics/icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/fanart.jpg</fanart>
+  </item>
+
+<dir>
+  <title>[COLOR blue]WWE Collection[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/wwe-network/items/</trakt>
+  <thumbnail>http://entersandman.xyz/sanitypics/wwe.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/wwe.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Extreme Sports[/COLOR]</title>
+  <link>plugin://plugin.video.youtube/playlist/PLmbvVWptdFm192NUMYfco3vwnZKaVGHe2/</link>
+  <thumbnail>http://entersandman.xyz/sanitypics/extreme.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/extreme.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Mopar Racing[/COLOR]</title>
+  <link>plugin://plugin.video.youtube/playlist/PLT5yZqLt_8eRWypobStvuSIL0pVX4YskP/</link>
+  <thumbnail>http://entersandman.xyz/sanitypics/drag race.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/mdrags.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Drag Racing[/COLOR]</title>
+  <link>plugin://plugin.video.youtube/playlist/PLkekz7OLX4Q499UaQ2nwBEGLbBpKaP8AX/</link>
+  <thumbnail>http://entersandman.xyz/sanitypics/drag race.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/drags.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Tips To Survival[/COLOR]</title>
+  <link>plugin://plugin.video.youtube/playlist/PLZLagqylZ3j5ElIjYloDSmrnA1DtqJobe/</link>
+  <thumbnail>http://entersandman.xyz/sanitypics/survival.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/survival.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]OutDoor Survival[/COLOR]</title>
+  <link>plugin://plugin.video.youtube/playlist/PLi9Gy0TQkj_rRy-P8rEqRQdz0rERWhIu7/</link>
+  <thumbnail>http://entersandman.xyz/sanitypics/survival.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/survival.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]BushCraft Survival[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/robertmbalzli/lists/bushcraft-survival-prepper/items</trakt>
+  <thumbnail>http://entersandman.xyz/sanitypics/bushcraft.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/bushcraft.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Reality Shows[/COLOR]</title>
+  <tmdb>genre/shows/10764</tmdb>
+  <thumbnail>http://entersandman.xyz/sanitypics/reality.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/reality tv.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Nat Geo Shows[/COLOR]</title>
+  <tmdb>network/shows/43</tmdb>
+  <thumbnail>http://entersandman.xyz/sanitypics/tv shows.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/hb.jpg</fanart>
+</dir>
+

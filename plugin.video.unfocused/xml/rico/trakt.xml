@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<dir>
+    <title>[B][COLOR black]========[/COLOR][COLOR orangered]AUTHORIZE YOUR TRAKT[/COLOR][COLOR black]========[/COLOR][/B]</title>
+    <trakt>https://api.trakt.tv/users/me/lists/</trakt>
+    <thumbnail>https://francisuniverse.files.wordpress.com/2017/07/trakttvthumbmail.png?w=1200</thumbnail>
+    <fanart>https://i.imgur.com/zEaS69Ol.png</fanart>
+</dir>
+
+<dir>
+    <title>[COLOR gold]Trending Movies[/COLOR]</title>
+    <trakt>https://api.trakt.tv/movies/trending</trakt>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/trakt-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/trakt-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+    <title>[COLOR gold]Popular Movies[/COLOR]</title>
+    <trakt>https://api.trakt.tv/movies/popular</trakt>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/trakt-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/trakt-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+    <title>[COLOR gold]Movie Watchlist[/COLOR]</title>
+    <trakt>https://api.trakt.tv/sync/watchlist/movies</trakt>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/trakt-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/trakt-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+    <title>[COLOR gold]Movie Collection[/COLOR]</title>
+    <trakt>https://api.trakt.tv/sync/collection/movies</trakt>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/trakt-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/trakt-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+    <title>[COLOR gold]Trending Shows[/COLOR]</title>
+    <trakt>https://api.trakt.tv/shows/trending</trakt>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/trakt-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/trakt-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+    <title>[COLOR gold]Popular Shows[/COLOR]</title>
+    <trakt>https://api.trakt.tv/shows/popular</trakt>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/trakt-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/trakt-rico-fanart.jpg</fanart>
+</dir>
+	
+<dir>
+    <title>[COLOR gold]TV Watchlist[/COLOR]</title>
+    <trakt>https://api.trakt.tv/sync/watchlist/shows</trakt>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/trakt-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/trakt-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+    <title>[COLOR gold]TV Collection[/COLOR]</title>
+    <trakt>https://api.trakt.tv/sync/collection/shows</trakt>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/trakt-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/trakt-rico-fanart.jpg</fanart>
+</dir>
+	
+<dir>
+    <title>[COLOR gold]My lists[/COLOR]</title>
+    <trakt>https://api.trakt.tv/users/me/lists/</trakt>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/trakt-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/trakt-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+    <title>[COLOR gold]My Liked Lists[/COLOR]</title>
+    <trakt>https://api.trakt.tv/users/likes/lists</trakt>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/trakt-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/trakt-rico-fanart.jpg</fanart>
+</dir>
+
+<dir>
+    <title>[COLOR gold]Search Trakt[/COLOR]</title>
+    <trakt>search</trakt>
+    <thumbnail>http://entersandman.xyz/sm/plugin.video.rico/rico-icon/trakt-rico-icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/plugin.video.rico/rico-fanart/trakt-rico-fanart.jpg</fanart>
+</dir>

@@ -1,0 +1,47 @@
+<item>
+    <title>[B][COLOR maroon]========[/COLOR][COLOR orange] ENJOY YOUR SHOW [/COLOR][COLOR maroon]========[/COLOR][/B]</title>
+    <thumbnail>special://home/addons/plugin.video.scythe/resources/media/tvshows.png</thumbnail>
+    <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</item>
+  
+<dir>
+  <title>[COLOR orange]Trending[/COLOR]</title>
+  <trakt>https://api.trakt.tv/shows/trending</trakt>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/trending.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Popular[/COLOR]</title>
+  <trakt>https://api.trakt.tv/shows/popular</trakt>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/popular.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Top Rated[/COLOR]</title>
+  <tmdb>tv/top_rated</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/top.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Airing Today[/COLOR]</title>
+  <tmdb>tv/today</tmdb>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/airing.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Genres[/COLOR]</title>
+  <link>file://scythe/tvshows/genretv.xml</link>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/genres.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR orange]Networks[/COLOR]</title>
+  <link>file://scythe/tvshows/networks.xml</link>
+  <thumbnail>special://home/addons/plugin.video.scythe/resources/media/networks.png</thumbnail>
+  <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+</dir>

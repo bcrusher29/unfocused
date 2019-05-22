@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <item>
+      <title>**********[COLORorange]Thank You and Enjoy The Show[/COLOR]**********</title>
+      <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/tvshows.png</thumbnail>
+	  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/tv.jpg</fanart>
+    </item>
+
+    <dir>
+      <title>[COLORwhite]Popular[/COLOR]</title>
+      <tmdb>tv/popular</tmdb>
+	  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/popular.png</thumbnail>
+	  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/tv.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLORwhite]Top Rated[/COLOR]</title>
+      <tmdb>tv/top_rated</tmdb>
+	  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/toprated.png</thumbnail>
+	  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/tv.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLORwhite]Airing Today[/COLOR]</title>
+      <tmdb>tv/today</tmdb>
+	  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/airingtoday.png</thumbnail>
+	  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/tv.jpg</fanart>
+    </dir>
+	
+    <dir>
+      <title>[COLORwhite]TV Genre[/COLOR]</title>
+      <link>file://lnl/genretv.xml</link>
+	  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/genre.png</thumbnail>
+	  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/tv.jpg</fanart>
+    </dir>
+
+    <dir>
+      <title>[COLORwhite]Hot TV Shows[/COLOR]</title>
+      <tmdb>list/42075</tmdb>
+	  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/hottv.png</thumbnail>
+	  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/tv.jpg</fanart>
+	</dir>
+	  
+	 <dir>
+      <title>[COLORwhite]Breaking Law[/COLOR]</title>
+      <tmdb>list/48187</tmdb>
+	  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/breakinglaw.png</thumbnail>
+	  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/tv.jpg</fanart>
+	 </dir>
+	  
+	<dir>
+      <title>[COLORwhite]World Of Wheels[/COLOR]</title>
+      <tmdb>list/47031</tmdb>
+	  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/wow.png</thumbnail>
+	  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/tv.jpg</fanart>
+	</dir>
+	  
+	  <dir>
+      <title>[COLORwhite]Reality TV[/COLOR]</title>
+      <tmdb>list/46074</tmdb>
+	  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/reality.png</thumbnail>
+	  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/tv.jpg</fanart>
+	</dir>
+	  
+    <dir>
+      <title>[COLORwhite]TV Networks[/COLOR]</title>
+      <link>file://lnl/networks.xml</link>
+	  <thumbnail>http://entersandman.xyz/sm/plugin.video.lnl/icon/networks.png</thumbnail>
+	  <fanart>http://entersandman.xyz/sm/plugin.video.lnl/fanart/tv.jpg</fanart>
+    </dir>

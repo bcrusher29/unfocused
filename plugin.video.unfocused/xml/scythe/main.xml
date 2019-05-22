@@ -1,0 +1,106 @@
+<xml>
+  <item>
+    <title>[B][COLOR maroon]========[/COLOR][COLOR orange] WELCOME TO SCYTHE [/COLOR][COLOR maroon]========[/COLOR][/B]</title>
+    <thumbnail>special://home/addons/plugin.video.scythe/resources/media/icon.png</thumbnail>
+    <fanart>special://home/addons/plugin.video.scythe/resources/media/fanart.jpg</fanart>
+  </item>
+  
+  <dir>
+    <title>[COLOR orange]Movies[/COLOR]</title>
+    <link>file://scythe/movies.xml</link>
+    <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+    <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR orange]TV Shows[/COLOR]</title>
+    <link>file://scythe/tv.xml</link>
+    <thumbnail>special://home/addons/plugin.video.scythe/resources/media/tvshows.png</thumbnail>
+    <fanart>special://home/addons/plugin.video.scythe/resources/media/shows.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR orange]Movie Collections[/COLOR]</title>
+    <link>file://scythe/movie-collections.xml</link>
+    <thumbnail>special://home/addons/plugin.video.scythe/resources/media/movies.png</thumbnail>
+    <fanart>special://home/addons/plugin.video.scythe/resources/media/movies.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR orange]24/7[/COLOR]</title>
+    <link>file://scythe/247.xml</link>
+    <thumbnail>special://home/addons/plugin.video.scythe/resources/media/247.png</thumbnail>
+    <fanart>special://home/addons/plugin.video.scythe/resources/media/247.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR orange]Kids Boxsets[/COLOR]</title>
+    <link>file://scythe/kidsboxset.xml</link>
+    <thumbnail>special://home/addons/plugin.video.scythe/resources/media/kids.png</thumbnail>
+    <fanart>special://home/addons/plugin.video.scythe/resources/media/kids.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR orange]Crime[/COLOR]</title>
+    <link>file://scythe/crime.xml</link>
+    <thumbnail>special://home/addons/plugin.video.scythe/resources/media/crime.png</thumbnail>
+    <fanart>special://home/addons/plugin.video.scythe/resources/media/crime.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR orange]Horror Studios[/COLOR]</title>
+    <link>file://scythe/horrorstudios.xml</link>
+    <thumbnail>special://home/addons/plugin.video.scythe/resources/media/horror.png</thumbnail>
+    <fanart>special://home/addons/plugin.video.scythe/resources/media/horror.jpg</fanart>
+  </dir>
+  
+   <dir>
+    <title>[COLOR orange]Documenatries[/COLOR]</title>
+    <link>file://scythe/docs.xml</link>
+    <thumbnail>special://home/addons/plugin.video.scythe/resources/media/doc.png</thumbnail>
+    <fanart>special://home/addons/plugin.video.scythe/resources/media/doc.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR orange]Star Wars Portal[/COLOR]</title>
+    <link>file://scythe/starwars.xml</link>
+    <thumbnail>special://home/addons/plugin.video.scythe/resources/media/sw.png</thumbnail>
+    <fanart>special://home/addons/plugin.video.scythe/resources/media/sw.jpg</fanart>
+  </dir>
+
+  <dir>
+    <title>[COLOR orange]Trakt Portal[/COLOR]</title>
+    <link>file://scythe/trakt.xml</link>
+	<thumbnail>special://home/addons/plugin.video.scythe/resources/media/trakt.png</thumbnail>
+    <fanart>special://home/addons/plugin.video.scythe/resources/media/trakt.jpg</fanart>
+  </dir>
+  
+  <dir>
+    <title>[COLOR orange]Search[/COLOR]</title>
+    <trakt>search</trakt>
+    <thumbnail>special://home/addons/plugin.video.scythe/resources/media/search.png</thumbnail>
+    <fanart>special://home/addons/plugin.video.scythe/resources/media/google.jpg</fanart>
+  </dir>
+
+  <item>
+    <title>[COLOR orange]Pair With Sites[/COLOR]</title>
+    <pairwith>pairlist</pairwith>
+    <thumbnail>special://home/addons/plugin.video.scythe/resources/media/pairing.png</thumbnail>
+    <fanart>special://home/addons/plugin.video.scythe/resources/media/settings.jpg</fanart>
+  </item>
+  
+  <item>
+    <title>[COLOR orange]Settings[/COLOR]</title>
+    <mysettings>0/0</mysettings>
+    <info>Open the Settings for the Addon</info>
+    <thumbnail>special://home/addons/plugin.video.scythe/resources/media/tools.png</thumbnail>
+    <fanart>special://home/addons/plugin.video.scythe/resources/media/settings.jpg</fanart>
+  </item>
+  
+  <plugin>
+    <name>Testings</name>
+    <link>plugin://plugin.video.scythe/?action=developer</link>
+    <thumbnail></thumbnail>
+    <summary>Testings</summary>
+  </plugin>
+</xml> 

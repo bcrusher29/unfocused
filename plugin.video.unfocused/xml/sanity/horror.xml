@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<item>
+    <title>[B][COLOR black]==========[/COLOR][COLOR blue]ENJOY YOUR SCARE[/COLOR][COLOR black]==========[/COLOR][/B]</title>
+    <thumbnail>http://entersandman.xyz/sanitypics/icon.png</thumbnail>
+    <fanart>http://entersandman.xyz/sanityfanart/fanart.jpg</fanart>
+  </item>
+
+<dir>
+  <title>[COLOR blue]Horror Collection[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/horror-collection/items</trakt>
+  <thumbnail>http://entersandman.xyz/sanitypics/movies.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/horror.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Horror Franchies[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/horror-movie-franchises/items</trakt>
+  <thumbnail>http://entersandman.xyz/sanitypics/productions.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/horror.jpg</fanart>
+</dir>
+
+<dir>
+    <title>[COLOR blue]Horror Studios[/COLOR]</title>
+    <link>file://sanity/horror/hstudios.xml</link>
+    <thumbnail>http://entersandman.xyz/sanitypics/horror.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/sanityfanart/horror.jpg</fanart>
+  </dir>
+
+<dir>
+  <title>[COLOR blue]Horror Tv Shows[/COLOR]</title>
+  <trakt>https://api.trakt.tv/users/topdawg40/lists/horror-tv-shows/items</trakt>
+  <thumbnail>http://entersandman.xyz/sanitypics/tv shows.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/horror.jpg</fanart>
+</dir>
+
+<dir>
+  <title>[COLOR blue]Horror Random[/COLOR]</title>
+  <link>plugin://plugin.video.youtube/playlist/PLkzvgsq3ySHBduUI5DSAwpJylNKkGYjqg/</link>
+  <thumbnail>http://entersandman.xyz/sanitypics/lists.png</thumbnail>
+  <fanart>http://entersandman.xyz/sanityfanart/horror.jpg</fanart>
+</dir>
+
+<dir>
+    <title>[COLOR blue]Zombie Movies[/COLOR]</title>
+    <link>file://sanity/horror/zombie movies.xml</link>
+    <thumbnail>http://entersandman.xyz/sanitypics/horror.png</thumbnail>
+    <fanart>http://entersandman.xyz/sm/sanityfanart/horror.jpg</fanart>
+  </dir>
+
+
