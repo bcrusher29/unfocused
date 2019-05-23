@@ -1,6 +1,0 @@
-[B]Version 2.1[/B]
-
-- This is for hosting24
-
-[B]Version 1.0[/B]
-- Initial version
