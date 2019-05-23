@@ -1,5 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="plugin.audio.mp3streams" name="MP3 Streams" version="2017.09.09" provider-name="qahanik, kinkin, art by Marquerite">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.t0mm0.common" version="1.1.0"/>
+        <import addon="script.module.mutagen"/>
+        <import addon="script.module.requests" version="1.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.service" library="playerMP3.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>A music streaming collection</summary>
+        <description>Browse, stream or download your favourite songs and albums</description>
+        <news>fixed by qahanik (thank you very much!) / changed versioning to date-format / fixed album downloading / minor cosmetic cleanups</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.audio.musicbox" name="Music Box" version="0.2.1" provider-name="techdealer">
+  <requires>
+    <import addon="xbmc.python" version="2.20.0"/>
+    <import addon="script.module.simple.downloader" version="1.9.4"/>
+    <import addon="plugin.video.youtube" version="2.9.2"/>
+    <import addon="script.module.mutagen"/>
+    <import addon="script.module.requests" version="2.3.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Music Box</summary>
+    <summary lang="es">Music Box</summary>
+    <description lang="en">Music box is a new way to listen and discover music thought KODI.</description>
+    <description lang="es">Music box es una nueva forma de escuchar y descubrir música a través de Kodi.</description>
+    <language>en</language>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.AnArchy" version="7.7.7" name="[COLOR white]A[/COLOR][COLOR red]n[/COLOR][COLOR white]A[/COLOR][COLOR red]r[/COLOR][COLOR white]C[/COLOR][COLOR red]h[/COLOR][COLOR white]Y[/COLOR]" provider-name="E-G Boogeyman">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -25,6 +69,37 @@
 
 		<assets>
 			<icon>icon.gif</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
+
+<addon id="plugin.video.bonecrusher" version="1.0.10" name="BoneCrusher" provider-name="BoneCrusher">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.bonecrusher" />
+		<import addon="script.bonecrusher.artwork" version="1.0.0" />
+		<import addon="script.bonecrusher.metadata" version="1.0.0" />
+		<import addon="script.module.resolveurl" version="3.0.0" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="script.module.bonecrusherscrapers"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="bonecrusher.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">bonecrusher</summary>
+		<description lang="en">Please Kindly note that bonecrusher is not an official part of the media player you are running, and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum></forum>
+		<website></website>
+		<assets>
+			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news></news>
@@ -58,39 +133,6 @@
 			<screenshot></screenshot>
 		</assets>
 		<news></news>
-	</extension>
-</addon>
-
-<addon id="plugin.video.odin" version="1.0.2" name="odin" provider-name="B.C S.S">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.module.odin" />
-		<import addon="script.odin.artwork" />
-		<import addon="script.odin.metadata" />
-		<import addon="script.module.resolveurl" />
-		<import addon="script.module.requests" />
-		<import addon="script.module.metahandler" version="1.0.0" />
-		<import addon="script.module.crucialmindsscrapers"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="odin.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">odin</summary>
-		<description lang="en">odin</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<forum></forum>
-		<website></website>
-		<source></source>
-		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-		<news>
-		</news>
 	</extension>
 </addon>
 
@@ -147,6 +189,162 @@
 	</extension>
 </addon>
 
+<addon id="script.bonecrusher.artwork" version="1.0.8" name="bonecrusher Artwork" provider-name="bonecrusher">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the bonecrusher Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.bonecrusher.metadata" version="1.0.1" name="bonecrusher Metadata" provider-name="bonecrusher">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the bonecrusher Addon</summary>
+		<description>Metadata for bonecrusher are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.bonecrushergoo"
+	   name="bonecrusher goo"
+	   version="1.0.2"
+	   provider-name=" ">
+  <extension point="xbmc.python.pluginsource"
+			 library="default.py">
+    	<provides>all</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Adult(18+) videos from www.hotgoo.com</summary>
+    <description>Adult(18+) videos from www.hotgoo.com</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.boneinfo" name="Bone Info Mod " version="1.0.0" provider-name="Bonecrusher">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.pil" version="1.1.7"/>
+    <import addon="script.module.requests" version="2.9.1"/>
+    <import addon="script.module.simplejson" version="2.0.10"/>
+    <import addon="script.module.resolveurl"/>
+    <import addon="script.module.youtube.dl"/>
+    <import addon="plugin.program.super.favourites"/>
+    <import addon="plugin.video.youtube" version="6.2.2"/>
+    <import addon="resource.images.studios.white" version="0.0.18"/>
+    <import addon="plugin.video.boneplayer"/>
+  </requires>
+  <extension point="xbmc.python.script"             library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.python.library"            library="default.py" />
+  <extension point="xbmc.python.pluginsource"       library="plugin.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language/>
+    <summary lang="en">boneinfo script to work with plugin.video.boneplayer</summary>
+    <description>This addon is a fork of Metal Gear Solid for the upcoming build im doing. Boneinfo script to work with plugin.video.boneplayer</description>
+    <platform>all</platform>
+    <reuselanguageinvoker>false</reuselanguageinvoker>
+    <license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+  </extension>
+</addon>
+
+<addon id="script.bonesports" name="BoneCrusher Sports" version="1.0" provider-name="BoneCrusher">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.universalscrapers" version="1.0.0" />
+        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+        <import addon="script.module.beautifulsoup" version="3.2.1" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
+        <import addon="script.module.dateutil" />
+        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+        <import addon="script.module.resolveurl" />
+        <!--<import addon="script.module.urlresolver" />-->
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>all</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Tell Me I Cant And I Will </summary>
+        <description lang="en">As I Said I would I Am doing it </description>
+        <disclaimer lang="en">You Still Want To Play Games We Will Play </disclaimer>
+        <platform>all</platform>
+        <website/>
+        <video_guide></video_guide>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+    </extension>
+</addon>
+
+<addon id="script.bonetv" name="BoneCrusher TV" version="1.0" provider-name="BoneCrusher">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.universalscrapers" version="1.0.0" />
+        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+        <import addon="script.module.beautifulsoup" version="3.2.1" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
+        <import addon="script.module.dateutil" />
+        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+        <import addon="script.module.resolveurl" />
+        <!--<import addon="script.module.urlresolver" />-->
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>all</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Tell Me I Cant And I Will </summary>
+        <description lang="en">As I Said I would I Am doing it </description>
+        <disclaimer lang="en">You Still Want To Play Games We Will Play </disclaimer>
+        <platform>all</platform>
+        <website/>
+        <video_guide></video_guide>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+    </extension>
+</addon>
+
+<addon id="script.bonexxx2" name="BoneCrusher XXX " version="1.0" provider-name="BoneCrusher">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.universalscrapers" version="1.0.0" />
+        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+        <import addon="script.module.beautifulsoup" version="3.2.1" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
+        <import addon="script.module.dateutil" />
+        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+        <import addon="script.module.resolveurl" />
+        <!--<import addon="script.module.urlresolver" />-->
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>all</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Tell Me I Cant And I Will </summary>
+        <description lang="en">As I Said I would I Am doing it </description>
+        <disclaimer lang="en">You Still Want To Play Games We Will Play </disclaimer>
+        <platform>all</platform>
+        <website/>
+        <video_guide></video_guide>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+    </extension>
+</addon>
+
 <addon id="script.genesis.artwork" version="1.0.7" name="genesis Artwork" provider-name="genesis">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
@@ -169,6 +367,41 @@
 		<description>Metadata for genesisresurrected are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="script.module.bonecrusher" name="bonecrusher Module" version="1.00.12" provider-name="bonecrusher">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">bonecrusher</summary>
+	</extension>
+</addon>
+
+<addon id="script.module.bonecrusherscrapers" name="bonecrusher scraping Module" version="1.1.1.0" provider-name="bonecrusher">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.beautifulsoup4"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py">
+        <provides>executable</provides>
+    </extension>
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <summary lang="en">Scrapers Module</summary>
+            <description></description>
+                <disclaimer lang="en"></disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart></fanart>
+    </assets>
+    <news></news>
+    </extension>
 </addon>
 
 <addon id="script.module.crucialmindsscrapers" name="Crucialminds scraping Module" version="1.1.0" provider-name="Crucialminds">
@@ -225,7 +458,7 @@
 
 <addon id="script.module.mutagen"
        name="mutagen"
-       version="1.22.0"
+       version="1.21.0"
        provider-name="Joe Wreschnig">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -234,38 +467,8 @@
              library="lib" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <language></language>
-    <summary lang="en">Mutagen is a Python module to handle audio metadata.</summary>
-    <description lang="en">Mutagen is a Python module to handle audio metadata. It supports ASF, FLAC,
-M4A, Monkey's Audio, MP3, Musepack, Ogg Opus, Ogg FLAC, Ogg Speex, Ogg
-Theora, Ogg Vorbis, True Audio, WavPack and OptimFROG audio files. All
-versions of ID3v2 are supported, and all standard ID3v2.4 frames are
-parsed. It can read Xing headers to accurately calculate the bitrate and
-length of MP3s. ID3 and APEv2 tags can be edited regardless of audio
-format. It can also manipulate Ogg streams on an individual packet/page
-level.</description>
-    <disclaimer lang="en">Code taken from http://code.google.com/p/mutagen/</disclaimer>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <website>http://code.google.com/p/mutagen/</website>
-    <source>https://bitbucket.org/lazka/mutagen/overview</source>
+    <source>https://github.com/Giftie/script.module.mutagen</source>
   </extension>
-</addon>
-
-<addon id="script.module.odin" name="odin Module" version="1.0.2" provider-name="B.C S.S">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.beautifulsoup4"/>
-		<import addon="script.module.simplejson"/>
-		<import addon="script.module.python.koding.aio" version="0.9.6.6" />
-		<import addon="script.module.requests" version="2.9.1" />
-		<import addon="script.module.xmltodict" version="0.9.0" />
-		<import addon="plugin.video.SportsDevil"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">odin Plugin For Movies TV Shows Playlists</summary>
-	</extension>
 </addon>
 
 <addon id="script.module.pyamf"
@@ -352,27 +555,18 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
   </extension>
 </addon>
 
-<addon id="script.odin.artwork" version="1.0.2" name="odin Artwork" provider-name="B.C S.S">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Themes for the odin Addon</summary>
-		<description></description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="script.odin.metadata" version="1.0.1" name="odin Metadata" provider-name="B.C S.S">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Metadata for the odin Addon</summary>
-		<description>Metadata for odin are maintained separately to make distribution of the the addon itself easier/faster.</description>
-		<platform>all</platform>
-	</extension>
+<addon id="script.module.t0mm0.common"
+	     name="t0mm0's common stuff"
+	     version="2.1.1"
+	     provider-name="t0mm0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Collection of commonly used addon routines</summary>
+    <description lang="en">Collection of commonly used addon routines to simplify addon development.</description>
+  </extension>
 </addon>
 </addons>
