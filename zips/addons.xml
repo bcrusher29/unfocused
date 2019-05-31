@@ -715,7 +715,7 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
 	</extension>
 </addon>
 
-<addon id="skin.nightmare.nox" version="1.0.1" name="NightMare Nox" provider-name="NightMare">
+<addon id="skin.nightmare.nox" version="1.0.2" name="NightMare Nox" provider-name="NightMare">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
