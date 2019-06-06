@@ -198,6 +198,40 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.s_i_r" version="1.0.0" name="Still i Rise" provider-name="BoneCrusher">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.s_i_r" />
+		<import addon="script.s_i_r.artwork" version="1.0.0" />
+		<import addon="script.module.crucialmindsscrapers"/>
+		<import addon="script.s_i_r.metadata" version="1.0.0" />
+		<import addon="script.module.resolveurl" version="3.0.0" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="example.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Still i Rise</summary>
+		<description lang="en">Kindly note that Still i Rise is not an official part of the media player you are running, and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum></forum>
+		<website></website>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+    			<screenshot></screenshot>
+    			<screenshot></screenshot>
+    			<screenshot></screenshot>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
+
 <addon id="resource.images.recordlabels.white" name="Recordlabel Icons - White" version="0.0.7" provider-name="Team Kodi">
 	<extension point="kodi.resource.images" compile="true" type="recordlabels" />
 	<requires>
@@ -675,6 +709,17 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
   </extension>
 </addon>
 
+<addon id="script.module.s_i_r" name="Still i Rise Module" version="1.0.0" provider-name="BoneCrusher">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Still i Rise</summary>
+	</extension>
+</addon>
+
 <addon id="script.module.t0mm0.common"
 	     name="t0mm0's common stuff"
 	     version="2.1.1"
@@ -756,6 +801,30 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
 		<icon>icon.png</icon>
 		<fanart>fanart.jpg</fanart>
 	</assets>
+	</extension>
+</addon>
+
+<addon id="script.s_i_r.artwork" version="1.0.0" name="Still i Rise Artwork" provider-name="BoneCrusher">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Still i Rise Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.s_i_r.metadata" version="1.0.0" name="Still i Rise Metadata" provider-name="BoneCrusher">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Still i Rise Addon</summary>
+		<description>Metadata for Still i Rise are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
 	</extension>
 </addon>
 
