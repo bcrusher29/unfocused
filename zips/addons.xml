@@ -136,6 +136,39 @@
 	</extension>
 </addon>
 
+<addon id="plugin.video.odin" version="1.0.2" name="odin" provider-name="B.C S.S">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.odin" />
+		<import addon="script.odin.artwork" />
+		<import addon="script.odin.metadata" />
+		<import addon="script.module.resolveurl" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="script.module.crucialmindsscrapers"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="odin.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">odin</summary>
+		<description lang="en">odin</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>
+		</news>
+	</extension>
+</addon>
+
 <addon
   id="plugin.video.SportsDevil"
   version="2019.04.22"
@@ -541,6 +574,23 @@
   </extension>
 </addon>
 
+<addon id="script.module.odin" name="odin Module" version="1.0.3" provider-name="B.C S.S">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup4"/>
+		<import addon="script.module.simplejson"/>
+		<import addon="script.module.python.koding.aio" version="0.9.6.6" />
+		<import addon="script.module.requests" version="2.9.1" />
+		<import addon="script.module.xmltodict" version="0.9.0" />
+		<import addon="plugin.video.SportsDevil"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">odin Plugin For Movies TV Shows Playlists</summary>
+	</extension>
+</addon>
+
 <addon id="script.module.pyamf"
        name="PyAMF"
        version="0.6.2"
@@ -638,6 +688,30 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
     <summary lang="en">Collection of commonly used addon routines</summary>
     <description lang="en">Collection of commonly used addon routines to simplify addon development.</description>
   </extension>
+</addon>
+
+<addon id="script.odin.artwork" version="1.0.2" name="odin Artwork" provider-name="B.C S.S">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the odin Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.odin.metadata" version="1.0.1" name="odin Metadata" provider-name="B.C S.S">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the odin Addon</summary>
+		<description>Metadata for odin are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="script.skinshortcuts" name="Skin Shortcuts" version="1.0.17" provider-name="BigNoid,marcelveldt">
