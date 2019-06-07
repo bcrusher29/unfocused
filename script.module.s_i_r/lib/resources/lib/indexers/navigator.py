@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-    Still i Rise Add-on
+    example Add-on
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -41,7 +41,16 @@ class navigator:
     def root(self):
         self.addDirectoryItem(32001, 'movieNavigator', 'movies.png', 'DefaultMovies.png')
         self.addDirectoryItem(32002, 'tvNavigator', 'tvshows.png', 'DefaultTVShows.png')
-
+        self.addDirectoryItem('NightMare Reborn', 'nightmareNavigator', 'fre.png', 'DefaultMovies.png')
+        self.addDirectoryItem('Buffalo Bills True Love', 'bbtlNavigator', 'bbtl.png', 'DefaultMovies.png')
+        self.addDirectoryItem('Jasons Camping Activites', 'jcanavigator', 'jas.png', 'DefaultMovies.png')
+        self.addDirectoryItem('Deep Space', 'deepnavigator', 'ds.png', 'DefaultMovies.png')
+        self.addDirectoryItem('Haddonfield Murder Mysteries', 'hddmnavigator', 'hdd.png', 'DefaultMovies.png')
+        self.addDirectoryItem('Laughing IT Up', 'liunavigator', 'liu.png', 'DefaultMovies.png')
+        self.addDirectoryItem('Leatherfaces Crime Scenes ', 'lfcsnavigator', 'lf.png', 'DefaultMovies.png')
+        self.addDirectoryItem('Dracula And Friends', 'dracnavigator', 'drac.png', 'DefaultMovies.png')
+        self.addDirectoryItem('Jigsaws PlayTime', 'jsptnavigator', 'js.png', 'DefaultMovies.png')
+        self.addDirectoryItem('GhostTown', 'gtnavigator', 'gticon.png', 'DefaultMovies.png')
         if not control.setting('lists.widget') == '0':
             self.addDirectoryItem(32003, 'mymovieNavigator', 'mymovies.png', 'DefaultVideoPlaylists.png')
             self.addDirectoryItem(32004, 'mytvNavigator', 'mytvshows.png', 'DefaultVideoPlaylists.png')
@@ -67,16 +76,6 @@ class navigator:
 
     def movies(self, lite=False):
         self.addDirectoryItem(32011, 'movieGenres', 'genres.png', 'DefaultMovies.png')
-        self.addDirectoryItem('Leather Faces Love Stories', 'lflsNavigator', 'lf.png', 'DefaultMovies.png')
-        self.addDirectoryItem('Dracula And Friends', 'Dafmnav', 'drac.png', 'DefaultMovies.png')
-        self.addDirectoryItem('Laughing IT Up', 'lhmovies', 'liu.png', 'DefaultMovies.png')
-        self.addDirectoryItem('Jasons Camping Activites', 'jcamNavigator', 'jas.png', 'DefaultMovies.png')
-        self.addDirectoryItem('Haddonfield Murder Mysteries', 'hadmovNavigator', 'hdd.png', 'DefaultMovies.png')
-        self.addDirectoryItem('Jigsaws PlayTime', 'jptmovNavigator', 'js.png', 'DefaultMovies.png')
-        self.addDirectoryItem('Deep Space', 'deepmovNavigator', 'ds.png', 'DefaultMovies.png')
-        self.addDirectoryItem('NightMare Reborn', 'nightmovNavigator', 'fre.png', 'DefaultMovies.png')
-        self.addDirectoryItem('GhostTown', 'gtmovNavigator', 'gticon.png', 'DefaultMovies.png')
-
         self.addDirectoryItem(32012, 'movieYears', 'years.png', 'DefaultMovies.png')
         self.addDirectoryItem(32013, 'moviePersons', 'people.png', 'DefaultMovies.png')
         self.addDirectoryItem(32014, 'movieLanguages', 'languages.png', 'DefaultMovies.png')
@@ -132,150 +131,10 @@ class navigator:
             self.addDirectoryItem(32010, 'movieSearch', 'search.png', 'DefaultMovies.png')
 
         self.endDirectory()
-##################################lfls################################
-    def lfls(self, lite=False):
-        self.addDirectoryItem(32011, 'movieGenresdrama', 'lf.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32012, 'movieYearsdrama', 'lf.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32014, 'movieLanguagesdrama', 'lf.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32015, 'movieCertificatesdrama', 'lf.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32018, 'dkmov&url=populardrama', 'lf.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32019, 'dkmov&url=viewsdrama', 'lf.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32020, 'dkmov&url=boxofficedrama', 'lf.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32021, 'dkmov&url=oscarsdrama', 'lf.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32022, 'dkmov&url=theatersdrama', 'lf.png', 'DefaultRecentlyAddedMovies.png')
-        self.addDirectoryItem(32011, 'movieGenresrom', 'lf.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32012, 'movieYearsrom', 'lf.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32014, 'movieLanguagesrom', 'lf.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32015, 'movieCertificatesrom', 'lf.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32017, 'dkmov&url=trendingrom', 'lf.png', 'DefaultRecentlyAddedMovies.png')
-        self.addDirectoryItem(32018, 'dkmov&url=popularrom', 'lf.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32019, 'dkmov&url=viewsrom', 'lf.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32020, 'dkmov&url=boxofficerom', 'lf.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32021, 'dkmov&url=oscarsrom', 'lf.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32022, 'dkmov&url=theatersrom', 'lf.png', 'DefaultRecentlyAddedMovies.png')
 
-        self.endDirectory()
-####################################################################################
-##################################lfls################################
-    def gtm(self, lite=False):
-        self.addDirectoryItem(32011, 'gtmovGenres', 'gticon.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32012, 'gtmovYears', 'gticon.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32014, 'gtmovLanguages', 'gticon.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32015, 'gtmovCertificates', 'gticon.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32018, 'wwmovies&url=popular', 'gticon.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32019, 'wwmovies&url=views', 'gticon.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32020, 'wwmovies&url=boxoffice', 'gticon.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32021, 'wwmovies&url=oscars', 'gticon.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32022, 'wwmovies&url=theaters', 'gticon.png', 'DefaultRecentlyAddedMovies.png')
-        self.addDirectoryItem(32017, 'wwmovies&url=trending', 'gticon.png', 'DefaultRecentlyAddedMovies.png')
 
-        self.endDirectory()
-####################################################################################
-##################################lfls################################
-    def dafm(self, lite=False):
-        self.addDirectoryItem('50s to 60s Movies', 'movieGenres50', 'drac.png', 'Defaultmovies.png')
-        self.addDirectoryItem('60s to 70s Movies', 'movieGenres60', 'drac.png', 'Defaultmovies.png')
-        self.addDirectoryItem('70s to 80s Movies', 'movieGenres70', 'drac.png', 'Defaultmovies.png')		
-        self.addDirectoryItem('80s to 90s Movies', 'movieGenres80', 'drac.png', 'Defaultmovies.png')
-        self.endDirectory()
-####################################################################################
-##################################lfls################################
-    def hfmm(self, lite=False):
-        self.addDirectoryItem(32011, 'hadmovGenres', 'hdd.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32012, 'hadmovYears', 'hdd.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32014, 'hadmovLanguages', 'hdd.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32015, 'hadmovCertificates', 'hdd.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32018, 'hmmm&url=popular', 'hdd.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32019, 'hmmm&url=views', 'hdd.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32020, 'hmmm&url=boxoffice', 'hdd.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32021, 'hmmm&url=oscars', 'hdd.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32022, 'hmmm&url=theaters', 'hdd.png', 'DefaultRecentlyAddedMovies.png')
-        self.addDirectoryItem(32017, 'hmmm&url=trending', 'hdd.png', 'DefaultRecentlyAddedMovies.png')
-        self.endDirectory()
-####################################################################################
-##################################lfls################################
-    def nightmov(self, lite=False):
-        self.addDirectoryItem(32011, 'nightmovGenres', 'fre.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32012, 'nightmovYears', 'fre.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32014, 'nightmovLanguages', 'fre.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32015, 'nightmovCertificates', 'fre.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32018, 'nmaremov&url=popular', 'fre.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32019, 'nmaremov&url=views', 'fre.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32020, 'nmaremov&url=boxoffice', 'fre.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32021, 'nmaremov&url=oscars', 'fre.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32022, 'nmaremov&url=theaters', 'fre.png', 'DefaultRecentlyAddedMovies.png')
-        self.addDirectoryItem(32017, 'nmaremov&url=trending', 'fre.png', 'DefaultRecentlyAddedMovies.png')
-        self.endDirectory()
-####################################################################################
-##################################lfls################################
-    def jcam(self, lite=False):
-        self.addDirectoryItem(32011, 'jcamGenres', 'jas.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32012, 'jcamYears', 'jas.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32014, 'jcamLanguages', 'jas.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32015, 'jcamCertificates', 'jas.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32018, 'apmovies&url=popular', 'jas.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32019, 'apmovies&url=views', 'jas.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32020, 'apmovies&url=boxoffice', 'jas.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32021, 'apmovies&url=oscars', 'jas.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32022, 'apmovies&url=theaters', 'jas.png', 'DefaultRecentlyAddedMovies.png')
-        self.addDirectoryItem(32017, 'apmovies&url=trending', 'jas.png', 'DefaultRecentlyAddedMovies.png')
-	
-        self.endDirectory()
-####################################################################################
-##################################lfls################################
-    def jptm(self, lite=False):
-        self.addDirectoryItem(32011, 'jptmovGenres', 'js.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32012, 'jptmovYears', 'js.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32014, 'jptmovLanguages', 'js.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32015, 'jptmovCertificates', 'js.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32018, 'odintoons&url=popular', 'js.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32019, 'odintoons&url=views', 'js.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32020, 'odintoons&url=boxoffice', 'js.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32021, 'odintoons&url=oscars', 'js.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32022, 'odintoons&url=theaters', 'js.png', 'DefaultRecentlyAddedMovies.png')
-        self.addDirectoryItem(32017, 'odintoons&url=trending', 'js.png', 'DefaultRecentlyAddedMovies.png')
-        self.endDirectory()
-####################################################################################
-##################################lfls################################
-    def deepmov(self, lite=False):
-        self.addDirectoryItem(32011, 'deepmovGenres', 'ds.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32012, 'deepmovYears', 'ds.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32014, 'deepmovLanguages', 'ds.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32015, 'deepmovCertificates', 'ds.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32018, 'asmovies&url=popular', 'ds.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32019, 'asmovies&url=views', 'ds.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32020, 'asmovies&url=boxoffice', 'dss.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32021, 'asmovies&url=oscars', 'ds.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32022, 'asmovies&url=theaters', 'ds.png', 'DefaultRecentlyAddedMovies.png')
-        self.addDirectoryItem(32017, 'asmovies&url=trending', 'ds.png', 'DefaultRecentlyAddedMovies.png')
-	
-        self.endDirectory()
-######################################################################################################################lfls################################
-    def liumov(self, lite=False):
-        self.addDirectoryItem(32011, 'movieGenreslh', 'liu.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32012, 'movieYearslh', 'liu.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32014, 'movieLanguageslh', 'liu.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32015, 'movieCertificateslh', 'liu.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32018, 'lhmovies&url=popular', 'liu.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32019, 'lhmovies&url=views', 'liu.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32020, 'lhmovies&url=boxoffice', 'liu.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32021, 'lhmovies&url=oscars', 'liu.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32022, 'lhmovies&url=theaters', 'liu.png', 'DefaultRecentlyAddedMovies.png')
-        self.addDirectoryItem(32017, 'lhmovies&url=trending', 'liu.png', 'DefaultRecentlyAddedMovies.png')
-
-        self.endDirectory()
-####################################################################################
     def tvshows(self, lite=False):
         self.addDirectoryItem(32011, 'tvGenres', 'genres.png', 'DefaultTVShows.png')
-        self.addDirectoryItem('Leather Faces Love Stories', 'lflstvNavigator', 'lf.png', 'DefaultMovies.png')
-        self.addDirectoryItem('Dracula And Friends', 'Daftvnav', 'drac.png', 'DefaultMovies.png')
-        self.addDirectoryItem('Laughing IT up', 'lhtv', 'liu.png', 'DefaultMovies.png')
-        self.addDirectoryItem('Jasons Camping Activites', 'jcatvNavigator', 'jas.png', 'DefaultMovies.png')
-        self.addDirectoryItem('Haddonfield Murder Mysteries', 'hadtvnav', 'hdd.png', 'DefaultMovies.png')
-        self.addDirectoryItem('Jigsaws PlayTime', 'jpttvnav', 'js.png', 'DefaultMovies.png')
-        self.addDirectoryItem('Deep Space', 'deeptvnav', 'dsds.png', 'DefaultMovies.png')
-        self.addDirectoryItem('NightMare ReBorn', 'nighttvnav', 'fre.png', 'DefaultMovies.png')
-        self.addDirectoryItem('Ghost Town', 'gttvnav', 'gticon.png', 'DefaultMovies.png')
         self.addDirectoryItem(32016, 'tvNetworks', 'networks.png', 'DefaultTVShows.png')
         self.addDirectoryItem(32014, 'tvLanguages', 'languages.png', 'DefaultTVShows.png')
         self.addDirectoryItem(32015, 'tvCertificates', 'certificates.png', 'DefaultTVShows.png')
@@ -298,128 +157,7 @@ class navigator:
 
         self.endDirectory()
 
-##################################lfls################################
-    def lflstv(self, lite=False):
-        self.addDirectoryItem('tv', 'tvGenresdrama', 'lf.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32016, 'tvNetworks', 'lf.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32014, 'tvLanguagesdrama', 'lf.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32018, 'dktvshows&url=populardrama', 'lf.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32023, 'dktvshows&url=ratingdrama', 'lf.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32019, 'dktvshows&url=viewsdrama', 'lf.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32024, 'dktvshows&url=airingdrama', 'lf.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32026, 'dktvshows&url=premieredrama', 'lf.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32011, 'tvGenresrom', 'lf.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32016, 'tvNetworksrom', 'lf.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32014, 'tvLanguagesrom', 'lf.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32015, 'tvCertificatesrom', 'lf.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32017, 'dktvshows&url=trendingrom', 'lf.png', 'DefaultRecentlyAddedEpisodes.png')
-        self.addDirectoryItem(32018, 'dktvshows&url=popularrom', 'lf.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32023, 'dktvshows&url=ratingrom', 'lf.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32019, 'dktvshows&url=viewsrom', 'lf.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32024, 'dktvshows&url=airingrom', 'lf.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32026, 'dktvshows&url=premiererom', 'lf.png', 'DefaultTVShows.png')
-        self.endDirectory()
-####################################################################################
-##################################lfls################################
-    def gttv(self, lite=False):
-        self.addDirectoryItem('tv', 'gttvGenres', 'gticon.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32016, 'gttvNetworks', 'gticon.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32014, 'gttvLanguages', 'gticon.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32018, 'wwtvshows&url=popular', 'gticon.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32023, 'wwtvshows&url=rating', 'gticon.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32019, 'wwtvshows&url=views', 'gticon.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32024, 'wwtvshows&url=airing', 'gticon.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32026, 'wwtvshows&url=premiere', 'gticon.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32012, 'gttvYears', 'gticon.png', 'DefaultMovies.png')
-        self.endDirectory()
-####################################################################################
-##################################lfls################################
-    def daftv(self, lite=False):
-        self.addDirectoryItem('50s to 60s TV Shows', 'tvGenres50', 'drac.png', 'Defaultmovies.png')		
-        self.addDirectoryItem('60s to 70s TV Shows', 'tvGenres60', 'drac.png', 'Defaultmovies.png')		
-        self.addDirectoryItem('70s to 80s TV Shows', 'tvGenres70', 'drac.png', 'Defaultmovies.png')		
-        self.addDirectoryItem('80s to 90s TV Shows', 'tvGenres80', 'drac.png', 'Defaultmovies.png')
-        self.endDirectory()
-####################################################################################
-##################################lfls################################
-    def hfmmtv(self, lite=False):
-        self.addDirectoryItem(32011, 'hadtvGenres', 'hdd.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32016, 'hadtvNetworks', 'hdd.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32014, 'hadtvLanguages', 'hdd.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32018, 'hmmtv&url=popular', 'hdd.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32023, 'hmmtv&url=rating', 'hdd.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32019, 'hmmtv&url=views', 'hdd.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32024, 'hmmtv&url=airing', 'hdd.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32026, 'hmmtv&url=premiere', 'hdd.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32012, 'hadtvYears', 'hdd.png', 'DefaultMovies.png')
-        self.endDirectory()
-####################################################################################
-##################################lfls################################
-    def nighttv(self, lite=False):
-        self.addDirectoryItem(32011, 'nighttvGenres', 'fre.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32016, 'nighttvNetworks', 'fre.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32014, 'nighttvLanguages', 'fre.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32018, 'nmaretv&url=popular', 'fre.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32023, 'nmaretv&url=rating', 'fre.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32019, 'nmaretv&url=views', 'fre.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32024, 'nmaretv&url=airing', 'fre.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32026, 'nmaretv&url=premiere', 'fre.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32012, 'nighttvYears', 'fre.png', 'DefaultMovies.png')
-        self.endDirectory()
-####################################################################################
-##################################lfls################################
-    def jcatv(self, lite=False):
-        self.addDirectoryItem(32011, 'jcatvGenres', 'jas.pngjas.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32016, 'jcatvNetworks', 'jas.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32014, 'jcatvLanguages', 'jas.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32018, 'aptvshows&url=popular', 'jas.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32023, 'aptvshows&url=rating', 'jas.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32019, 'aptvshows&url=views', 'jas.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32024, 'aptvshows&url=airing', 'jas.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32026, 'aptvshows&url=premiere', 'jas.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32012, 'jcatvYears', 'jas.png', 'DefaultMovies.png')
 
-        self.endDirectory()
-####################################################################################
-##################################lfls################################
-    def jpttv(self, lite=False):
-        self.addDirectoryItem(32011, 'jpttvGenres', 'js.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32016, 'jpttvNetworks', 'js.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32014, 'jpttvLanguages', 'js.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32018, 'odintvtoons&url=popular', 'js.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32023, 'odintvtoons&url=rating', 'js.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32019, 'odintvtoons&url=views', 'js.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32024, 'odintvtoons&url=airing', 'js.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32026, 'odintvtoons&url=premiere', 'js.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32012, 'jpttvYears', 'js.png', 'DefaultMovies.png')
-        self.endDirectory()
-####################################################################################
-##################################lfls################################
-    def deeptv(self, lite=False):
-        self.addDirectoryItem(32011, 'deeptvGenres', 'dsds.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32016, 'deeptvNetworks', 'dsds.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32014, 'deeptvLanguages', 'dsds.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32018, 'astvshows&url=popular', 'dsds.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32023, 'astvshows&url=rating', 'dsds.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32019, 'astvshows&url=views', 'dsds.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32024, 'astvshows&url=airing', 'dsds.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32026, 'astvshows&url=premiere', '.dsdspng', 'DefaultTVShows.png')
-        self.addDirectoryItem(32012, 'deeptvYears', 'dsds.png', 'DefaultMovies.png')
-
-        self.endDirectory()
-######################################################################################################################lfls################################
-    def liutv(self, lite=False):
-        self.addDirectoryItem(32015, 'tvCertificateslh', 'liu.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32011, 'tvGenreslh', 'liu.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32012, 'tvYearslh', 'liu.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32014, 'tvLanguageslh', 'liu.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32018, 'lhtvshows&url=popular', 'liu.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32023, 'lhtvshows&url=rating', 'liu.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32019, 'lhtvshows&url=views', 'liu.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32024, 'lhtvshows&url=airing', 'liu.png', 'DefaultTVShows.png')
-        self.addDirectoryItem(32026, 'lhtvshows&url=premiere', 'liu.png', 'DefaultTVShows.png')
-        self.endDirectory()
-####################################################################################
     def mytvshows(self, lite=False):
         self.accountCheck()
 

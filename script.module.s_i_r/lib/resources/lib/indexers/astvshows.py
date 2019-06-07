@@ -1,7 +1,4 @@
-# -*- coding: utf-8 -*-
-
-
-
+# -*- coding: UTF-8 -*-
 
 from resources.lib.modules import trakt
 from resources.lib.modules import cleantitle
@@ -9,6 +6,7 @@ from resources.lib.modules import cleangenre
 from resources.lib.modules import control
 from resources.lib.modules import client
 from resources.lib.modules import cache
+from resources.lib.modules import log_utils
 from resources.lib.modules import metacache
 from resources.lib.modules import playcount
 from resources.lib.modules import workers
@@ -22,6 +20,7 @@ params = dict(urlparse.parse_qsl(sys.argv[2].replace('?',''))) if len(sys.argv) 
 
 action = params.get('action')
 
+control.moderator()
 
 
 class tvshows:
@@ -31,8 +30,8 @@ class tvshows:
         self.imdb_link = 'http://www.imdb.com'
         self.trakt_link = 'http://api.trakt.tv'
         self.tvmaze_link = 'http://www.tvmaze.com'
-
-        self.tvdb_key = 'MTQ4RENEM0JENjIzMjE4RA=='
+        self.logo_link = 'https://i.imgur.com/'
+        self.tvdb_key = 'MDRBMTI5QUVENTJFMEUyMw=='
         self.datetime = (datetime.datetime.utcnow() - datetime.timedelta(hours = 5))
         self.trakt_user = control.setting('trakt.user').strip()
         self.imdb_user = control.setting('imdb.user').replace('ur', '')
@@ -49,63 +48,22 @@ class tvshows:
         self.tvdb_by_query = 'http://thetvdb.com/api/GetSeries.php?seriesname=%s'
         self.tvdb_image = 'http://thetvdb.com/banners/'
 
-
         self.persons_link = 'http://www.imdb.com/search/name?count=100&name='
         self.personlist_link = 'http://www.imdb.com/search/name?count=100&gender=male,female'
-        self.popular_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&num_votes=100,&release_date=,date[0]&genres=sci-fi&sort=moviemeter,asc&count=40&start=1'
-        self.airing_link = 'http://www.imdb.com/search/title?title_type=tv_episode&release_date=date[1],date[0]&sort=moviemeter,asc&count=40&start=1'
-        self.active_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&num_votes=10,&production_status=active&sort=moviemeter,asc&count=40&start=1'
-        self.premiere_link = 'http://www.imdb.com/search/title?title_type=tv_series,tv_special,tv_miniseries&genres=sci-fi&languages=en&num_votes=10,&release_date=date[60],date[0]sort=alpha,asc'
-        self.rating_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=sci-fi&num_votes=5000,&release_date=,date[0]&sort=user_rating,desc&count=40&start=1'
-        self.views_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=sci-fi&num_votes=100,&release_date=,date[0]&sort=num_votes,desc&count=40&start=1'
-        self.person_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&release_date=,date[0]&role=%s&sort=year,desc&count=40&start=1'
-        self.genre_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&release_date=,date[0]&genres=sci-fi,%s&sort=moviemeter,asc&count=40&start=1&sort=alpha,asc'
-        self.keyword_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&release_date=,date[0]&keywords=%s&sort=moviemeter,asc&count=40&start=1'
-        self.language_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&num_votes=100,&production_status=released&primary_language=%s&sort=moviemeter,asc&count=40&start=1'
-        self.certification_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&release_date=,date[0]&certificates=us:%s&sort=moviemeter,asc&count=40&start=1'
+        self.popular_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&num_votes=100,&genres=sci-fi,fantasy&release_date=,date[0]&sort=year,asc&count=40&start=1'
+        self.airing_link = 'http://www.imdb.com/search/title?title_type=tv_episode&release_date=date[1],date[0]&genres=sci-fi,fantasy&sort=year,asc&count=40&start=1'
+        self.active_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&num_votes=10,&genres=sci-fi,fantasy&production_status=active&sort=year,asc&count=40&start=1'
+        #self.premiere_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&languages=en&num_votes=10,&release_date=date[60],date[0]&sort=year,asc&count=40&start=1'
+        self.premiere_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=sci-fi,fantasy&languages=en&num_votes=10,&release_date=date[60],date[0]&sort=release_date,desc&count=40&start=1'
+        self.rating_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=sci-fi,fantasy&num_votes=5000,&release_date=,date[0]&sort=user_rating,desc&count=40&start=1'
+        self.views_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=sci-fi,fantasy&num_votes=100,&release_date=,date[0]&sort=num_votes,desc&count=40&start=1'
+        self.person_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=sci-fi,fantasy&release_date=,date[0]&role=%s&sort=year,desc&count=40&start=1'
+        self.genre_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&release_date=,date[0]&genres=horror,%s&sort=moviemeter,asc&count=40&start=1&sort=alpha,asc'
+        self.keyword_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=sci-fi,fantasy&release_date=,date[0]&keywords=%s&sort=year,asc&count=40&start=1'
+        self.language_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=sci-fi,fantasy&num_votes=100,&production_status=released&primary_language=%s&sort=year,asc&count=40&start=1'
+        #self.certification_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&release_date=,date[0]&certificates=us:%s&sort=year,asc&count=40&start=1'
         self.trending_link = 'http://api.trakt.tv/shows/trending?limit=40&page=1'
-        self.popular2_link = 'http://api.trakt.tv/shows/popular?limit=40&page=1'
-        self.anticipated_link = 'http://api.trakt.tv/shows/anticipated?limit=40&page=1'
-        self.update_link = 'http://api.trakt.tv/shows/updates/%s?limit=40&page=1'
-        self.played1_link = 'http://api.trakt.tv/shows/played/weekly?limit=40&page=1'
-        self.played2_link = 'http://api.trakt.tv/shows/played/monthly?limit=40&page=1'
-        self.played3_link = 'http://api.trakt.tv/shows/played/yearly?limit=40&page=1'
-        self.played4_link = 'http://api.trakt.tv/shows/played/all?limit=40&page=1'
-        self.collected1_link = 'http://api.trakt.tv/shows/collected/weekly?limit=40&page=1'
-        self.collected2_link = 'http://api.trakt.tv/shows/collected/monthly?limit=40&page=1'
-        self.collected3_link = 'http://api.trakt.tv/shows/collected/yearly?limit=40&page=1'
-        self.collected4_link = 'http://api.trakt.tv/shows/collected/all?limit=40&page=1'
-        self.watched1_link = 'http://api.trakt.tv/shows/watched/weekly?limit=40&page=1'
-        self.watched2_link = 'http://api.trakt.tv/shows/watched/monthly?limit=40&page=1'
-        self.watched3_link = 'http://api.trakt.tv/shows/watched/yearly?limit=40&page=1'
-        self.watched4_link = 'http://api.trakt.tv/shows/watched/all?limit=40&page=1'
-        self.genre2_link = 'http://api.trakt.tv/shows/genres/%s?limit=40&page=1'
-        self.recommendations_link = 'http://api.trakt.tv/shows/recommendations/%s?limit=40&page=1'
-        self.search2_link = 'http://api.trakt.tv/shows/search/%s?limit=40&page=1'
-        self.calendar_link = 'http://api.trakt.tv/calendars/all/shows?limit=40&page=1'
-        self.premieres_link = 'http://api.trakt.tv/calendars/all/shows/premieres?limit=40&page=1'
-        self.anime_link = 'http://www.imdb.com/search/title?title_type=tv_series&genres=sci-fi&keywords=anime'			
-        self.year_link = 'http://www.imdb.com/search/title?title_type=tv_series,tv_special,tv_miniseries&production_status=released&genres=sci-fi&year=%s,%s&sort=moviemeter,asc&count=40&start=1&languages=en'
-        self.STARTREK_link = 'http://www.imdb.com/list/ls021157975?sort=release_date&mode=detail&page=1'
-        self.STARWARS_link = 'http://www.imdb.com/list/ls021157942?sort=release_date&mode=detail&page=1'
-        self.THEOUTERLIMITS_link = 'http://www.imdb.com/list/ls021157853?sort=release_date&mode=detail&page=1'
-        self.THETWILIGHTZONE_link = 'http://www.imdb.com/list/ls021157816?sort=release_date&mode=detail&page=1'
-        self.DOCTORWHO_link = 'http://www.imdb.com/list/ls021157820?sort=release_date&mode=detail&page=1'
-        self.BATTLESTARGALACTICA_link = 'http://www.imdb.com/list/ls021157840?sort=release_date&mode=detail&page=1'
-        self.PLANETOFTHEAPES_link = 'http://www.imdb.com/list/ls021151000?sort=release_date&mode=detail&page=1'
-        self.STARGATE_link = 'http://www.imdb.com/list/ls021151078?sort=release_date&mode=detail&page=1'
-        self.FLASHGORDON_link = 'http://www.imdb.com/list/ls021151066?sort=release_date&mode=detail&page=1'
-        self.BACKTOTHEFUTURE_link = 'http://www.imdb.com/list/ls021151046?sort=release_date&mode=detail&page=1'
-        self.THEXFILES_link = 'http://www.imdb.com/list/ls021151086?sort=release_date&mode=detail&page=1'
-        self.FIREFLY_link = 'http://www.imdb.com/list/ls021151557?sort=release_date&mode=detail&page=1'
-        self.THETERMINATOR_link = 'http://www.imdb.com/list/ls021151751?sort=release_date&mode=detail&page=1'
-        self.JURASSICPARK_link = 'http://www.imdb.com/list/ls021151746?sort=release_date&mode=detail&page=1'
-        self.BABYLON_link = 'http://www.imdb.com/list/ls021151794?sort=release_date&mode=detail&page=1'
-        self.MADMAX_link = 'http://www.imdb.com/list/ls021151108?sort=release_date&mode=detail&page=1'
-        self.THEMATRIX_link = 'http://www.imdb.com/list/ls021151112/?sort=release_date&mode=detail&page=1'
-
-
-
+        self.year_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=comedy&num_votes=100,&production_status=released&year=%s,%s&sort=moviemeter,asc&count=40&start=1'
         self.traktlists_link = 'http://api.trakt.tv/users/me/lists'
         self.traktlikedlists_link = 'http://api.trakt.tv/users/likes/lists?limit=1000000'
         self.traktlist_link = 'http://api.trakt.tv/users/%s/lists/%s/items'
@@ -117,7 +75,11 @@ class tvshows:
         self.imdblist2_link = 'http://www.imdb.com/list/%s/?view=detail&sort=date_added,desc&title_type=tvSeries,miniSeries&start=1'
         self.imdbwatchlist_link = 'http://www.imdb.com/user/ur%s/watchlist?sort=alpha,asc' % self.imdb_user
         self.imdbwatchlist2_link = 'http://www.imdb.com/user/ur%s/watchlist?sort=date_added,desc' % self.imdb_user
-
+        self.certificationtvpg_link = 'https://www.imdb.com/search/title?title_type=tv_series,tv_miniseries&genres=sci-fi,fantasy&certificates=US%3ATV-PG'
+        self.certificationtvpgt_link = 'https://www.imdb.com/search/title?title_type=tv_series,tv_miniseries&genres=sci-fi,fantasy&certificates=US%3ATV-14'
+        self.certificationtvr_link = 'https://www.imdb.com/search/title?title_type=tv_series,tv_miniseries&genres=sci-fi,fantasy&certificates=US%3ATV-MA'
+        self.certificationtvncseven_link = 'https://www.imdb.com/search/title?title_type=tv_series,tv_miniseries&genres=sci-fi,fantasy&certificates=US%3ANC-17&adult=include'
+        
 
     def get(self, url, idx=True, create_directory=True):
         try:
@@ -168,10 +130,46 @@ class tvshows:
             return self.list
         except:
             pass
+			
+    def years(self):
+        year = (self.datetime.strftime('%Y'))
 
-
+        for i in range(int(year)-0, 1900, -1): self.list.append({'name': str(i), 'url': self.year_link % (str(i), str(i)), 'image': 'ds.png', 'action': 'tvshows'})
+        self.addDirectory(self.list)
+        return self.list
+		
     def search(self):
+
+        navigator.navigator().addDirectoryItem(32603, 'tvSearchnew', 'ds.png', 'DefaultTVShows.png')
+        try: from sqlite3 import dbapi2 as database
+        except: from pysqlite2 import dbapi2 as database
+        
+        dbcon = database.connect(control.searchFile)
+        dbcur = dbcon.cursor()
+             
         try:
+            dbcur.executescript("CREATE TABLE IF NOT EXISTS tvshow (ID Integer PRIMARY KEY AUTOINCREMENT, term);")
+        except:
+            pass
+            
+        dbcur.execute("SELECT * FROM tvshow ORDER BY ID DESC")
+        
+        lst = []
+        
+        delete_option = False
+        for (id,term) in dbcur.fetchall():
+            if term not in str(lst):
+                delete_option = True
+                navigator.navigator().addDirectoryItem(term, 'tvSearchterm&name=%s' % term, 'ds.png', 'DefaultTVShows.png')
+                lst += [(term)]
+        dbcur.close()
+        
+        if delete_option:
+            navigator.navigator().addDirectoryItem(32605, 'clearCacheSearch', 'ds.png', 'DefaultAddonProgram.png')
+
+        navigator.navigator().endDirectory()
+        
+    def search_new(self):
             control.idle()
 
             t = control.lang(32010).encode('utf-8')
@@ -179,20 +177,25 @@ class tvshows:
             q = k.getText() if k.isConfirmed() else None
 
             if (q == None or q == ''): return
-
+            
+            try: from sqlite3 import dbapi2 as database
+            except: from pysqlite2 import dbapi2 as database
+            
+            dbcon = database.connect(control.searchFile)
+            dbcur = dbcon.cursor()
+            dbcur.execute("INSERT INTO tvshow VALUES (?,?)", (None,q))
+            dbcon.commit()
+            dbcur.close()
             url = self.search_link + urllib.quote_plus(q)
             url = '%s?action=tvshowPage&url=%s' % (sys.argv[0], urllib.quote_plus(url))
             control.execute('Container.Update(%s)' % url)
-        except:
-            return
 
-    def years(self):
-        year = (self.datetime.strftime('%Y'))
+    def search_term(self, name):
+            control.idle()
 
-        for i in range(int(year)-0, 1950, -1): self.list.append({'name': str(i), 'url': self.year_link % (str(i), str(i)), 'image': 'ds.png', 'action': 'tvshows'})
-        self.addDirectory(self.list)
-        return self.list
-
+            url = self.search_link + urllib.quote_plus(name)
+            url = '%s?action=tvshowPage&url=%s' % (sys.argv[0], urllib.quote_plus(url))
+            control.execute('Container.Update(%s)' % url)
 
     def person(self):
         try:
@@ -211,30 +214,31 @@ class tvshows:
         except:
             return
 
-
     def genres(self):
         genres = [
-            ('Sci-Fi Action', 'action', True),
-            ('Sci-Fi Adventure', 'adventure', True),
-            ('Sci-Fi Animation', 'animation', True),
-            ('Sci-Fi Biography', 'biography', True),
-            ('Sci-Fi Comedy', 'comedy', True),
-            ('Sci-Fi Crime', 'crime', True),
-            ('Sci-Fi Drama', 'drama', True),
-            ('Sci-Fi Family', 'family', True),
-            ('Sci-Fi Fantasy', 'fantasy', True),
-            ('Sci-Fi Game-Show', 'game_show', True),
-            ('Sci-Fi History', 'history', True),
-            ('Sci-Fi Music ', 'music', True),
-            ('Sci-Fi Mystery', 'mystery', True),
-            ('Sci-Fi Reality-TV', 'reality_tv', True),
-            ('Sci-Fi Romance', 'romance', True),
-            ('Sci-Fi Science Fiction', 'sci_fi', True),
-            ('Sci-Fi Talk-Show', 'talk_show', True),
-            ('Sci-Fi Thriller', 'thriller', True),
-            ('Sci-Fi War', 'war', True),
-            ('Sci-Fi Western', 'western', True)
-
+            ('Action', 'action', True),
+            ('Adventure', 'adventure', True),
+            ('Animation', 'animation', True),
+            ('Anime', 'anime', False),
+            ('Biography', 'biography', True),
+            ('Comedy', 'comedy', True),
+            ('Crime', 'crime', True),
+            ('Drama', 'drama', True),
+            ('Family', 'family', True),
+            ('Game-Show', 'game_show', True),
+            ('History', 'history', True),
+            ('Horror', 'horror', True),
+            ('Music ', 'music', True),
+            ('Musical', 'musical', True),
+            ('Mystery', 'mystery', True),
+            ('News', 'news', True),
+            ('Reality-TV', 'reality_tv', True),
+            ('Romance', 'romance', True),
+            ('Sport', 'sport', True),
+            ('Talk-Show', 'talk_show', True),
+            ('Thriller', 'thriller', True),
+            ('War', 'war', True),
+            ('Western', 'western', True)
         ]
 
         for i in genres: self.list.append(
@@ -248,11 +252,80 @@ class tvshows:
         self.addDirectory(self.list)
         return self.list
 
+    def networks(self):
+        networks = [
+        ('A&E', '/networks/29/ae', 'https://i.imgur.com/xLDfHjH.png'),
+        ('ABC', '/networks/3/abc', 'https://i.imgur.com/qePLxos.png'),
+        ('AMC', '/networks/20/amc', 'https://i.imgur.com/ndorJxi.png'),
+        ('AT-X', '/networks/167/at-x', 'https://i.imgur.com/JshJYGN.png'),
+        ('Adult Swim', '/networks/10/adult-swim', 'https://i.imgur.com/jCqbRcS.png'),
+        ('Amazon', '/webchannels/3/amazon', 'https://i.imgur.com/ru9DDlL.png'),
+        ('Animal Planet', '/networks/92/animal-planet', 'https://i.imgur.com/olKc4RP.png'),
+        ('Audience', '/networks/31/audience-network', 'https://i.imgur.com/5Q3mo5A.png'),
+        ('BBC America', '/networks/15/bbc-america', 'https://i.imgur.com/TUHDjfl.png'),
+        ('BBC Four', '/networks/51/bbc-four', 'https://i.imgur.com/PNDalgw.png'),
+        ('BBC One', '/networks/12/bbc-one', 'https://i.imgur.com/u8x26te.png'),
+        ('BBC Three', '/webchannels/71/bbc-three', 'https://i.imgur.com/SDLeLcn.png'),
+        ('BBC Two', '/networks/37/bbc-two', 'https://i.imgur.com/SKeGH1a.png'),
+        ('BET', '/networks/56/bet', 'https://i.imgur.com/ZpGJ5UQ.png'),
+        ('Bravo', '/networks/52/bravo', 'https://i.imgur.com/TmEO3Tn.png'),
+        ('CBC', '/networks/36/cbc', 'https://i.imgur.com/unQ7WCZ.png'),
+        ('CBS', '/networks/2/cbs', 'https://i.imgur.com/8OT8igR.png'),
+        ('CTV', '/networks/48/ctv', 'https://i.imgur.com/qUlyVHz.png'),
+        ('CW', '/networks/5/the-cw', 'https://i.imgur.com/Q8tooeM.png'),
+        ('CW Seed', '/webchannels/13/cw-seed', 'https://i.imgur.com/nOdKoEy.png'),
+        ('Cartoon Network', '/networks/11/cartoon-network', 'https://i.imgur.com/zmOLbbI.png'),
+        ('Channel 4', '/networks/45/channel-4', 'https://i.imgur.com/6ZA9UHR.png'),
+        ('Channel 5', '/networks/135/channel-5', 'https://i.imgur.com/5ubnvOh.png'),
+        ('Cinemax', '/networks/19/cinemax', 'https://i.imgur.com/zWypFNI.png'),
+        ('Comedy Central', '/networks/23/comedy-central', 'https://i.imgur.com/ko6XN77.png'),
+        ('Crackle', '/webchannels/4/crackle', 'https://i.imgur.com/53kqZSY.png'),
+        ('Discovery Channel', '/networks/66/discovery-channel', 'https://i.imgur.com/8UrXnAB.png'),
+        ('Discovery ID', '/networks/89/investigation-discovery', 'https://i.imgur.com/07w7BER.png'),
+        ('Disney Channel', '/networks/78/disney-channel', 'https://i.imgur.com/ZCgEkp6.png'),
+        ('Disney XD', '/networks/25/disney-xd', 'https://i.imgur.com/PAJJoqQ.png'),
+        ('E! Entertainment', '/networks/43/e', 'https://i.imgur.com/3Delf9f.png'),
+        ('E4', '/networks/41/e4', 'https://i.imgur.com/frpunK8.png'),
+        ('FOX', '/networks/4/fox', 'https://i.imgur.com/6vc0Iov.png'),
+        ('FX', '/networks/13/fx', 'https://i.imgur.com/aQc1AIZ.png'),
+        ('Freeform', '/networks/26/freeform', 'https://i.imgur.com/f9AqoHE.png'),
+        ('HBO', '/networks/8/hbo', 'https://i.imgur.com/Hyu8ZGq.png'),
+        ('HGTV', '/networks/192/hgtv', 'https://i.imgur.com/INnmgLT.png'),
+        ('Hallmark', '/networks/50/hallmark-channel', 'https://i.imgur.com/zXS64I8.png'),
+        ('History Channel', '/networks/53/history', 'https://i.imgur.com/LEMgy6n.png'),
+        ('ITV', '/networks/35/itv', 'https://i.imgur.com/5Hxp5eA.png'),
+        ('Lifetime', '/networks/18/lifetime', 'https://i.imgur.com/tvYbhen.png'),
+        ('MTV', '/networks/22/mtv', 'https://i.imgur.com/QM6DpNW.png'),
+        ('NBC', '/networks/1/nbc', 'https://i.imgur.com/yPRirQZ.png'),
+        ('National Geographic', '/networks/42/national-geographic-channel', 'https://i.imgur.com/XCGNKVQ.png'),
+        ('Netflix', '/webchannels/1/netflix', 'https://i.imgur.com/jI5c3bw.png'),
+        ('Nickelodeon', '/networks/27/nickelodeon', 'https://i.imgur.com/OUVoqYc.png'),
+        ('PBS', '/networks/85/pbs', 'https://i.imgur.com/r9qeDJY.png'),
+        ('Showtime', '/networks/9/showtime', 'https://i.imgur.com/SawAYkO.png'),
+        ('Sky1', '/networks/63/sky-1', 'https://i.imgur.com/xbgzhPU.png'),
+        ('Starz', '/networks/17/starz', 'https://i.imgur.com/Z0ep2Ru.png'),
+        ('Sundance', '/networks/33/sundance-tv', 'https://i.imgur.com/qldG5p2.png'),
+        ('Syfy', '/networks/16/syfy', 'https://i.imgur.com/9yCq37i.png'),
+        ('TBS', '/networks/32/tbs', 'https://i.imgur.com/RVCtt4Z.png'),
+        ('TLC', '/networks/80/tlc', 'https://i.imgur.com/c24MxaB.png'),
+        ('TNT', '/networks/14/tnt', 'https://i.imgur.com/WnzpAGj.png'),
+        ('TV Land', '/networks/57/tvland', 'https://i.imgur.com/1nIeDA5.png'),
+        ('Travel Channel', '/networks/82/travel-channel', 'https://i.imgur.com/mWXv7SF.png'),
+        ('TruTV', '/networks/84/trutv', 'https://i.imgur.com/HnB3zfc.png'),
+        ('USA', '/networks/30/usa-network', 'https://i.imgur.com/Doccw9E.png'),
+        ('VH1', '/networks/55/vh1', 'https://i.imgur.com/IUtHYzA.png'),
+        ('WGN', '/networks/28/wgn-america', 'https://i.imgur.com/TL6MzgO.png')
+        ]
+
+        for i in networks: self.list.append({'name': i[0], 'url': self.tvmaze_link + i[1], 'image': i[2], 'action': 'tvshows'})
+        self.addDirectory(self.list)
+        return self.list
 
 
     def languages(self):
         languages = [
         ('Arabic', 'ar'),
+        ('Bosnian', 'bs'),
         ('Bulgarian', 'bg'),
         ('Chinese', 'zh'),
         ('Croatian', 'hr'),
@@ -276,6 +349,7 @@ class tvshows:
         ('Punjabi', 'pa'),
         ('Romanian', 'ro'),
         ('Russian', 'ru'),
+        ('Serbian', 'sr'),
         ('Spanish', 'es'),
         ('Swedish', 'sv'),
         ('Turkish', 'tr'),
@@ -296,11 +370,13 @@ class tvshows:
 
 
     def persons(self, url):
+        log_utils.log('url : ' + str(url))
         if url == None:
             self.list = cache.get(self.imdb_person_list, 24, self.personlist_link)
         else:
             self.list = cache.get(self.imdb_person_list, 1, url)
 
+        log_utils.log('url : ' + str(len(self.list)))
         for i in range(0, len(self.list)): self.list[i].update({'action': 'tvshows'})
         self.addDirectory(self.list)
         return self.list
@@ -495,7 +571,7 @@ class tvshows:
             return
 
         try:
-            next = client.parseDOM(result, 'a', ret='href', attrs = {'class': 'lister-page-next next-page'})
+            next = client.parseDOM(result, 'a', ret='href', attrs = {'class': '.+?lister-page-next.+?'})
 
             if len(next) == 0:
                 next = client.parseDOM(result, 'div', attrs = {'class': 'pagination'})[0]
@@ -735,7 +811,7 @@ class tvshows:
         self.meta = []
         total = len(self.list)
 
-        self.fanart_tv_headers = {'api-key': 'NTI1MzI3N2U2MDQyOTQ5Y2U5NmYwNDI3NTMyNzM0MTY='.decode('base64')}
+        self.fanart_tv_headers = {'api-key': 'NDZkZmMyN2M1MmE0YTc3MjY3NWQ4ZTMyYjdiY2E2OGU='.decode('base64')}
         if not self.fanart_tv_user == '':
             self.fanart_tv_headers.update({'client-key': self.fanart_tv_user})
 

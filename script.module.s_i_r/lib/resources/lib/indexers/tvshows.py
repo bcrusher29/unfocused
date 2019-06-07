@@ -1,17 +1,4 @@
 # -*- coding: UTF-8 -*-
-#######################################################################
- # ----------------------------------------------------------------------------
- # "THE BEER-WARE LICENSE" (Revision 42):
- # @tantrumdev wrote this file.  As long as you retain this notice you
- # can do whatever you want with this stuff. If we meet some day, and you think
- # this stuff is worth it, you can buy me a beer in return. - Muad'Dib
- # ----------------------------------------------------------------------------
-#######################################################################
-
-# Addon Name: Placenta
-# Addon id: plugin.video.placenta
-# Addon Provider: MuadDib
-
 
 from resources.lib.modules import trakt
 from resources.lib.modules import cleantitle
@@ -44,7 +31,7 @@ class tvshows:
         self.trakt_link = 'http://api.trakt.tv'
         self.tvmaze_link = 'http://www.tvmaze.com'
         self.logo_link = 'https://i.imgur.com/'
-        self.tvdb_key = 'MTQ4RENEM0JENjIzMjE4RA=='
+        self.tvdb_key = 'MDRBMTI5QUVENTJFMEUyMw=='
         self.datetime = (datetime.datetime.utcnow() - datetime.timedelta(hours = 5))
         self.trakt_user = control.setting('trakt.user').strip()
         self.imdb_user = control.setting('imdb.user').replace('ur', '')
@@ -63,20 +50,20 @@ class tvshows:
 
         self.persons_link = 'http://www.imdb.com/search/name?count=100&name='
         self.personlist_link = 'http://www.imdb.com/search/name?count=100&gender=male,female'
-        self.popular_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&num_votes=100,&release_date=,date[0]&sort=moviemeter,asc&count=40&start=1'
-        self.airing_link = 'http://www.imdb.com/search/title?title_type=tv_episode&release_date=date[1],date[0]&sort=moviemeter,asc&count=40&start=1'
-        self.active_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&num_votes=10,&production_status=active&sort=moviemeter,asc&count=40&start=1'
-        #self.premiere_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&languages=en&num_votes=10,&release_date=date[60],date[0]&sort=moviemeter,asc&count=40&start=1'
-        self.premiere_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&languages=en&num_votes=10,&release_date=date[60],date[0]&sort=release_date,desc&count=40&start=1'
-        self.rating_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&num_votes=5000,&release_date=,date[0]&sort=user_rating,desc&count=40&start=1'
-        self.views_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&num_votes=100,&release_date=,date[0]&sort=num_votes,desc&count=40&start=1'
-        self.person_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&release_date=,date[0]&role=%s&sort=year,desc&count=40&start=1'
-        self.genre_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&release_date=,date[0]&genres=%s&sort=moviemeter,asc&count=40&start=1'
-        self.keyword_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&release_date=,date[0]&keywords=%s&sort=moviemeter,asc&count=40&start=1'
-        self.language_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&num_votes=100,&production_status=released&primary_language=%s&sort=moviemeter,asc&count=40&start=1'
-        self.certification_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&release_date=,date[0]&certificates=us:%s&sort=moviemeter,asc&count=40&start=1'
+        self.popular_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&num_votes=100,&&release_date=,date[0]&sort=year,asc&count=40&start=1'
+        self.airing_link = 'http://www.imdb.com/search/title?title_type=tv_episode&release_date=date[1],date[0]&&sort=year,asc&count=40&start=1'
+        self.active_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&num_votes=10,&&production_status=active&sort=year,asc&count=40&start=1'
+        #self.premiere_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&languages=en&num_votes=10,&release_date=date[60],date[0]&sort=year,asc&count=40&start=1'
+        self.premiere_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&&languages=en&num_votes=10,&release_date=date[60],date[0]&sort=release_date,desc&count=40&start=1'
+        self.rating_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&&num_votes=5000,&release_date=,date[0]&sort=user_rating,desc&count=40&start=1'
+        self.views_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&&num_votes=100,&release_date=,date[0]&sort=num_votes,desc&count=40&start=1'
+        self.person_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&&release_date=,date[0]&role=%s&sort=year,desc&count=40&start=1'
+        self.genre_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&release_date=,date[0]&genres=horror,%s&sort=moviemeter,asc&count=40&start=1&sort=alpha,asc'
+        self.keyword_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&&release_date=,date[0]&keywords=%s&sort=year,asc&count=40&start=1'
+        self.language_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&&num_votes=100,&production_status=released&primary_language=%s&sort=year,asc&count=40&start=1'
+        #self.certification_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&release_date=,date[0]&certificates=us:%s&sort=year,asc&count=40&start=1'
         self.trending_link = 'http://api.trakt.tv/shows/trending?limit=40&page=1'
-
+        self.year_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=comedy&num_votes=100,&production_status=released&year=%s,%s&sort=moviemeter,asc&count=40&start=1'
         self.traktlists_link = 'http://api.trakt.tv/users/me/lists'
         self.traktlikedlists_link = 'http://api.trakt.tv/users/likes/lists?limit=1000000'
         self.traktlist_link = 'http://api.trakt.tv/users/%s/lists/%s/items'
@@ -88,7 +75,11 @@ class tvshows:
         self.imdblist2_link = 'http://www.imdb.com/list/%s/?view=detail&sort=date_added,desc&title_type=tvSeries,miniSeries&start=1'
         self.imdbwatchlist_link = 'http://www.imdb.com/user/ur%s/watchlist?sort=alpha,asc' % self.imdb_user
         self.imdbwatchlist2_link = 'http://www.imdb.com/user/ur%s/watchlist?sort=date_added,desc' % self.imdb_user
-
+        self.certificationtvpg_link = 'https://www.imdb.com/search/title?title_type=tv_series,tv_miniseries&&certificates=US%3ATV-PG'
+        self.certificationtvpgt_link = 'https://www.imdb.com/search/title?title_type=tv_series,tv_miniseries&&certificates=US%3ATV-14'
+        self.certificationtvr_link = 'https://www.imdb.com/search/title?title_type=tv_series,tv_miniseries&&certificates=US%3ATV-MA'
+        self.certificationtvncseven_link = 'https://www.imdb.com/search/title?title_type=tv_series,tv_miniseries&&certificates=US%3ANC-17&adult=include'
+        
 
     def get(self, url, idx=True, create_directory=True):
         try:
@@ -139,7 +130,14 @@ class tvshows:
             return self.list
         except:
             pass
+			
+    def years(self):
+        year = (self.datetime.strftime('%Y'))
 
+        for i in range(int(year)-0, 1900, -1): self.list.append({'name': str(i), 'url': self.year_link % (str(i), str(i)), 'image': 'liu.png', 'action': 'tvshows'})
+        self.addDirectory(self.list)
+        return self.list
+		
     def search(self):
 
         navigator.navigator().addDirectoryItem(32603, 'tvSearchnew', 'search.png', 'DefaultTVShows.png')

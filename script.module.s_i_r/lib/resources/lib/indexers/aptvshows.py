@@ -1,22 +1,4 @@
-# -*- coding: utf-8 -*-
-
-'''
-    ActionPacked Add-on
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-'''
-
+# -*- coding: UTF-8 -*-
 
 from resources.lib.modules import trakt
 from resources.lib.modules import cleantitle
@@ -24,11 +6,13 @@ from resources.lib.modules import cleangenre
 from resources.lib.modules import control
 from resources.lib.modules import client
 from resources.lib.modules import cache
+from resources.lib.modules import log_utils
 from resources.lib.modules import metacache
 from resources.lib.modules import playcount
 from resources.lib.modules import workers
 from resources.lib.modules import views
 from resources.lib.modules import utils
+from resources.lib.indexers import navigator
 
 import os,sys,re,json,urllib,urlparse,datetime
 
@@ -36,7 +20,7 @@ params = dict(urlparse.parse_qsl(sys.argv[2].replace('?',''))) if len(sys.argv) 
 
 action = params.get('action')
 
-
+control.moderator()
 
 
 class tvshows:
@@ -46,6 +30,7 @@ class tvshows:
         self.imdb_link = 'http://www.imdb.com'
         self.trakt_link = 'http://api.trakt.tv'
         self.tvmaze_link = 'http://www.tvmaze.com'
+        self.logo_link = 'https://i.imgur.com/'
         self.tvdb_key = 'MDRBMTI5QUVENTJFMEUyMw=='
         self.datetime = (datetime.datetime.utcnow() - datetime.timedelta(hours = 5))
         self.trakt_user = control.setting('trakt.user').strip()
@@ -62,35 +47,39 @@ class tvshows:
         self.tvdb_by_imdb = 'http://thetvdb.com/api/GetSeriesByRemoteID.php?imdbid=%s'
         self.tvdb_by_query = 'http://thetvdb.com/api/GetSeries.php?seriesname=%s'
         self.tvdb_image = 'http://thetvdb.com/banners/'
-        self.year_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=action&num_votes=100,&production_status=released&year=%s,%s&sort=moviemeter,asc&count=40&start=1'
 
         self.persons_link = 'http://www.imdb.com/search/name?count=100&name='
         self.personlist_link = 'http://www.imdb.com/search/name?count=100&gender=male,female'
-        self.popular_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=action&num_votes=100,&release_date=,date[0]&sort=moviemeter,asc&count=40&start=1'
-        self.airing_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=action&release_date=date[1],date[0]&sort=moviemeter,asc&count=40&start=1'
-        self.active_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=action&num_votes=10,&production_status=active&sort=moviemeter,asc&count=40&start=1'
-        self.premiere_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=action&languages=en&num_votes=10,&release_date=date[60],date[0]&sort=moviemeter,asc&count=40&start=1'
-        self.rating_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=action&num_votes=5000,&release_date=,date[0]&sort=user_rating,desc&count=40&start=1'
-        self.views_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=action&num_votes=100,&release_date=,date[0]&sort=num_votes,desc&count=40&start=1'
-        self.person_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=action&release_date=,date[0]&role=%s&sort=year,desc&count=40&start=1'
-        self.genre_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=action,%s&release_date=,date[0]&sort=moviemeter,asc&count=40&start=1'
-        self.keyword_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=action&release_date=,date[0]&keywords=%s&sort=moviemeter,asc&count=40&start=1'
-        self.language_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=action&num_votes=100,&production_status=released&primary_language=%s&sort=moviemeter,asc&count=40&start=1'
-        self.certification_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=action&release_date=,date[0]&certificates=us:%s&sort=moviemeter,asc&count=40&start=1'
+        self.popular_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&num_votes=100,&genres=action,adventure&release_date=,date[0]&sort=year,asc&count=40&start=1'
+        self.airing_link = 'http://www.imdb.com/search/title?title_type=tv_episode&release_date=date[1],date[0]&genres=action,adventure&sort=year,asc&count=40&start=1'
+        self.active_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&num_votes=10,&genres=action,adventure&production_status=active&sort=year,asc&count=40&start=1'
+        #self.premiere_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&languages=en&num_votes=10,&release_date=date[60],date[0]&sort=year,asc&count=40&start=1'
+        self.premiere_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=action,adventure&languages=en&num_votes=10,&release_date=date[60],date[0]&sort=release_date,desc&count=40&start=1'
+        self.rating_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=action,adventure&num_votes=5000,&release_date=,date[0]&sort=user_rating,desc&count=40&start=1'
+        self.views_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=action,adventure&num_votes=100,&release_date=,date[0]&sort=num_votes,desc&count=40&start=1'
+        self.person_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=action,adventure&release_date=,date[0]&role=%s&sort=year,desc&count=40&start=1'
+        self.genre_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&release_date=,date[0]&genres=horror,%s&sort=moviemeter,asc&count=40&start=1&sort=alpha,asc'
+        self.keyword_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=action,adventure&release_date=,date[0]&keywords=%s&sort=year,asc&count=40&start=1'
+        self.language_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=action,adventure&num_votes=100,&production_status=released&primary_language=%s&sort=year,asc&count=40&start=1'
+        #self.certification_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&release_date=,date[0]&certificates=us:%s&sort=year,asc&count=40&start=1'
         self.trending_link = 'http://api.trakt.tv/shows/trending?limit=40&page=1'
-
+        self.year_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&genres=comedy&num_votes=100,&production_status=released&year=%s,%s&sort=moviemeter,asc&count=40&start=1'
         self.traktlists_link = 'http://api.trakt.tv/users/me/lists'
         self.traktlikedlists_link = 'http://api.trakt.tv/users/likes/lists?limit=1000000'
         self.traktlist_link = 'http://api.trakt.tv/users/%s/lists/%s/items'
         self.traktcollection_link = 'http://api.trakt.tv/users/me/collection/shows'
         self.traktwatchlist_link = 'http://api.trakt.tv/users/me/watchlist/shows'
         self.traktfeatured_link = 'http://api.trakt.tv/recommendations/shows?limit=40'
-        self.imdblists_link = 'http://www.imdb.com/user/ur%s/lists?tab=all&sort=modified:desc&filter=titles' % self.imdb_user
-        self.imdblist_link = 'http://www.imdb.com/list/%s/?view=detail&sort=title:asc&title_type=tv_series,mini_series&start=1'
-        self.imdblist2_link = 'http://www.imdb.com/list/%s/?view=detail&sort=created:desc&title_type=tv_series,mini_series&start=1'
+        self.imdblists_link = 'http://www.imdb.com/user/ur%s/lists?tab=all&sort=mdfd&order=desc&filter=titles' % self.imdb_user
+        self.imdblist_link = 'http://www.imdb.com/list/%s/?view=detail&sort=alpha,asc&title_type=tvSeries,miniSeries&start=1'
+        self.imdblist2_link = 'http://www.imdb.com/list/%s/?view=detail&sort=date_added,desc&title_type=tvSeries,miniSeries&start=1'
         self.imdbwatchlist_link = 'http://www.imdb.com/user/ur%s/watchlist?sort=alpha,asc' % self.imdb_user
         self.imdbwatchlist2_link = 'http://www.imdb.com/user/ur%s/watchlist?sort=date_added,desc' % self.imdb_user
-
+        self.certificationtvpg_link = 'https://www.imdb.com/search/title?title_type=tv_series,tv_miniseries&genres=action,adventure&certificates=US%3ATV-PG'
+        self.certificationtvpgt_link = 'https://www.imdb.com/search/title?title_type=tv_series,tv_miniseries&genres=action,adventure&certificates=US%3ATV-14'
+        self.certificationtvr_link = 'https://www.imdb.com/search/title?title_type=tv_series,tv_miniseries&genres=action,adventure&certificates=US%3ATV-MA'
+        self.certificationtvncseven_link = 'https://www.imdb.com/search/title?title_type=tv_series,tv_miniseries&genres=action,adventure&certificates=US%3ANC-17&adult=include'
+        
 
     def get(self, url, idx=True, create_directory=True):
         try:
@@ -141,17 +130,46 @@ class tvshows:
             return self.list
         except:
             pass
-
+			
     def years(self):
         year = (self.datetime.strftime('%Y'))
 
         for i in range(int(year)-0, 1900, -1): self.list.append({'name': str(i), 'url': self.year_link % (str(i), str(i)), 'image': 'jas.png', 'action': 'tvshows'})
         self.addDirectory(self.list)
         return self.list
-
-
+		
     def search(self):
+
+        navigator.navigator().addDirectoryItem(32603, 'tvSearchnew', 'jas.png', 'DefaultTVShows.png')
+        try: from sqlite3 import dbapi2 as database
+        except: from pysqlite2 import dbapi2 as database
+        
+        dbcon = database.connect(control.searchFile)
+        dbcur = dbcon.cursor()
+             
         try:
+            dbcur.executescript("CREATE TABLE IF NOT EXISTS tvshow (ID Integer PRIMARY KEY AUTOINCREMENT, term);")
+        except:
+            pass
+            
+        dbcur.execute("SELECT * FROM tvshow ORDER BY ID DESC")
+        
+        lst = []
+        
+        delete_option = False
+        for (id,term) in dbcur.fetchall():
+            if term not in str(lst):
+                delete_option = True
+                navigator.navigator().addDirectoryItem(term, 'tvSearchterm&name=%s' % term, 'jas.png', 'DefaultTVShows.png')
+                lst += [(term)]
+        dbcur.close()
+        
+        if delete_option:
+            navigator.navigator().addDirectoryItem(32605, 'clearCacheSearch', 'jas.png', 'DefaultAddonProgram.png')
+
+        navigator.navigator().endDirectory()
+        
+    def search_new(self):
             control.idle()
 
             t = control.lang(32010).encode('utf-8')
@@ -159,13 +177,25 @@ class tvshows:
             q = k.getText() if k.isConfirmed() else None
 
             if (q == None or q == ''): return
-
+            
+            try: from sqlite3 import dbapi2 as database
+            except: from pysqlite2 import dbapi2 as database
+            
+            dbcon = database.connect(control.searchFile)
+            dbcur = dbcon.cursor()
+            dbcur.execute("INSERT INTO tvshow VALUES (?,?)", (None,q))
+            dbcon.commit()
+            dbcur.close()
             url = self.search_link + urllib.quote_plus(q)
             url = '%s?action=tvshowPage&url=%s' % (sys.argv[0], urllib.quote_plus(url))
             control.execute('Container.Update(%s)' % url)
-        except:
-            return
 
+    def search_term(self, name):
+            control.idle()
+
+            url = self.search_link + urllib.quote_plus(name)
+            url = '%s?action=tvshowPage&url=%s' % (sys.argv[0], urllib.quote_plus(url))
+            control.execute('Container.Update(%s)' % url)
 
     def person(self):
         try:
@@ -179,13 +209,13 @@ class tvshows:
 
             url = self.persons_link + urllib.quote_plus(q)
             url = '%s?action=tvPersons&url=%s' % (sys.argv[0], urllib.quote_plus(url))
+
             control.execute('Container.Update(%s)' % url)
         except:
             return
 
     def genres(self):
         genres = [
-            ('Adventure', 'adventure', True),
             ('Animation', 'animation', True),
             ('Anime', 'anime', False),
             ('Biography', 'biography', True),
@@ -224,70 +254,70 @@ class tvshows:
 
     def networks(self):
         networks = [
-        ('A&E', '/networks/29/ae'),
-        ('ABC', '/networks/3/abc'),
-        ('AMC', '/networks/20/amc'),
-        ('AT-X', '/networks/167/at-x'),
-        ('Adult Swim', '/networks/10/adult-swim'),
-        ('Amazon', '/webchannels/3/amazon'),
-        ('Animal Planet', '/networks/92/animal-planet'),
-        ('Audience', '/networks/31/audience-network'),
-        ('BBC America', '/networks/15/bbc-america'),
-        ('BBC Four', '/networks/51/bbc-four'),
-        ('BBC One', '/networks/12/bbc-one'),
-        ('BBC Three', '/webchannels/71/bbc-three'),
-        ('BBC Two', '/networks/37/bbc-two'),
-        ('BET', '/networks/56/bet'),
-        ('Bravo', '/networks/52/bravo'),
-        ('CBC', '/networks/36/cbc'),
-        ('CBS', '/networks/2/cbs'),
-        ('CTV', '/networks/48/ctv'),
-        ('CW', '/networks/5/the-cw'),
-        ('CW Seed', '/webchannels/13/cw-seed'),
-        ('Cartoon Network', '/networks/11/cartoon-network'),
-        ('Channel 4', '/networks/45/channel-4'),
-        ('Channel 5', '/networks/135/channel-5'),
-        ('Cinemax', '/networks/19/cinemax'),
-        ('Comedy Central', '/networks/23/comedy-central'),
-        ('Crackle', '/webchannels/4/crackle'),
-        ('Discovery Channel', '/networks/66/discovery-channel'),
-        ('Discovery ID', '/networks/89/investigation-discovery'),
-        ('Disney Channel', '/networks/78/disney-channel'),
-        ('Disney XD', '/networks/25/disney-xd'),
-        ('E! Entertainment', '/networks/43/e'),
-        ('E4', '/networks/41/e4'),
-        ('FOX', '/networks/4/fox'),
-        ('FX', '/networks/13/fx'),
-        ('Freeform', '/networks/26/freeform'),
-        ('HBO', '/networks/8/hbo'),
-        ('HGTV', '/networks/192/hgtv'),
-        ('Hallmark', '/networks/50/hallmark-channel'),
-        ('History Channel', '/networks/53/history'),
-        ('ITV', '/networks/35/itv'),
-        ('Lifetime', '/networks/18/lifetime'),
-        ('MTV', '/networks/22/mtv'),
-        ('NBC', '/networks/1/nbc'),
-        ('National Geographic', '/networks/42/national-geographic-channel'),
-        ('Netflix', '/webchannels/1/netflix'),
-        ('Nickelodeon', '/networks/27/nickelodeon'),
-        ('PBS', '/networks/85/pbs'),
-        ('Showtime', '/networks/9/showtime'),
-        ('Sky1', '/networks/63/sky-1'),
-        ('Starz', '/networks/17/starz'),
-        ('Sundance', '/networks/33/sundance-tv'),
-        ('Syfy', '/networks/16/syfy'),
-        ('TBS', '/networks/32/tbs'),
-        ('TLC', '/networks/80/tlc'),
-        ('TNT', '/networks/14/tnt'),
-        ('TV Land', '/networks/57/tvland'),
-        ('Travel Channel', '/networks/82/travel-channel'),
-        ('TruTV', '/networks/84/trutv'),
-        ('USA', '/networks/30/usa-network'),
-        ('VH1', '/networks/55/vh1'),
-        ('WGN', '/networks/28/wgn-america')
+        ('A&E', '/networks/29/ae', 'https://i.imgur.com/xLDfHjH.png'),
+        ('ABC', '/networks/3/abc', 'https://i.imgur.com/qePLxos.png'),
+        ('AMC', '/networks/20/amc', 'https://i.imgur.com/ndorJxi.png'),
+        ('AT-X', '/networks/167/at-x', 'https://i.imgur.com/JshJYGN.png'),
+        ('Adult Swim', '/networks/10/adult-swim', 'https://i.imgur.com/jCqbRcS.png'),
+        ('Amazon', '/webchannels/3/amazon', 'https://i.imgur.com/ru9DDlL.png'),
+        ('Animal Planet', '/networks/92/animal-planet', 'https://i.imgur.com/olKc4RP.png'),
+        ('Audience', '/networks/31/audience-network', 'https://i.imgur.com/5Q3mo5A.png'),
+        ('BBC America', '/networks/15/bbc-america', 'https://i.imgur.com/TUHDjfl.png'),
+        ('BBC Four', '/networks/51/bbc-four', 'https://i.imgur.com/PNDalgw.png'),
+        ('BBC One', '/networks/12/bbc-one', 'https://i.imgur.com/u8x26te.png'),
+        ('BBC Three', '/webchannels/71/bbc-three', 'https://i.imgur.com/SDLeLcn.png'),
+        ('BBC Two', '/networks/37/bbc-two', 'https://i.imgur.com/SKeGH1a.png'),
+        ('BET', '/networks/56/bet', 'https://i.imgur.com/ZpGJ5UQ.png'),
+        ('Bravo', '/networks/52/bravo', 'https://i.imgur.com/TmEO3Tn.png'),
+        ('CBC', '/networks/36/cbc', 'https://i.imgur.com/unQ7WCZ.png'),
+        ('CBS', '/networks/2/cbs', 'https://i.imgur.com/8OT8igR.png'),
+        ('CTV', '/networks/48/ctv', 'https://i.imgur.com/qUlyVHz.png'),
+        ('CW', '/networks/5/the-cw', 'https://i.imgur.com/Q8tooeM.png'),
+        ('CW Seed', '/webchannels/13/cw-seed', 'https://i.imgur.com/nOdKoEy.png'),
+        ('Cartoon Network', '/networks/11/cartoon-network', 'https://i.imgur.com/zmOLbbI.png'),
+        ('Channel 4', '/networks/45/channel-4', 'https://i.imgur.com/6ZA9UHR.png'),
+        ('Channel 5', '/networks/135/channel-5', 'https://i.imgur.com/5ubnvOh.png'),
+        ('Cinemax', '/networks/19/cinemax', 'https://i.imgur.com/zWypFNI.png'),
+        ('Comedy Central', '/networks/23/comedy-central', 'https://i.imgur.com/ko6XN77.png'),
+        ('Crackle', '/webchannels/4/crackle', 'https://i.imgur.com/53kqZSY.png'),
+        ('Discovery Channel', '/networks/66/discovery-channel', 'https://i.imgur.com/8UrXnAB.png'),
+        ('Discovery ID', '/networks/89/investigation-discovery', 'https://i.imgur.com/07w7BER.png'),
+        ('Disney Channel', '/networks/78/disney-channel', 'https://i.imgur.com/ZCgEkp6.png'),
+        ('Disney XD', '/networks/25/disney-xd', 'https://i.imgur.com/PAJJoqQ.png'),
+        ('E! Entertainment', '/networks/43/e', 'https://i.imgur.com/3Delf9f.png'),
+        ('E4', '/networks/41/e4', 'https://i.imgur.com/frpunK8.png'),
+        ('FOX', '/networks/4/fox', 'https://i.imgur.com/6vc0Iov.png'),
+        ('FX', '/networks/13/fx', 'https://i.imgur.com/aQc1AIZ.png'),
+        ('Freeform', '/networks/26/freeform', 'https://i.imgur.com/f9AqoHE.png'),
+        ('HBO', '/networks/8/hbo', 'https://i.imgur.com/Hyu8ZGq.png'),
+        ('HGTV', '/networks/192/hgtv', 'https://i.imgur.com/INnmgLT.png'),
+        ('Hallmark', '/networks/50/hallmark-channel', 'https://i.imgur.com/zXS64I8.png'),
+        ('History Channel', '/networks/53/history', 'https://i.imgur.com/LEMgy6n.png'),
+        ('ITV', '/networks/35/itv', 'https://i.imgur.com/5Hxp5eA.png'),
+        ('Lifetime', '/networks/18/lifetime', 'https://i.imgur.com/tvYbhen.png'),
+        ('MTV', '/networks/22/mtv', 'https://i.imgur.com/QM6DpNW.png'),
+        ('NBC', '/networks/1/nbc', 'https://i.imgur.com/yPRirQZ.png'),
+        ('National Geographic', '/networks/42/national-geographic-channel', 'https://i.imgur.com/XCGNKVQ.png'),
+        ('Netflix', '/webchannels/1/netflix', 'https://i.imgur.com/jI5c3bw.png'),
+        ('Nickelodeon', '/networks/27/nickelodeon', 'https://i.imgur.com/OUVoqYc.png'),
+        ('PBS', '/networks/85/pbs', 'https://i.imgur.com/r9qeDJY.png'),
+        ('Showtime', '/networks/9/showtime', 'https://i.imgur.com/SawAYkO.png'),
+        ('Sky1', '/networks/63/sky-1', 'https://i.imgur.com/xbgzhPU.png'),
+        ('Starz', '/networks/17/starz', 'https://i.imgur.com/Z0ep2Ru.png'),
+        ('Sundance', '/networks/33/sundance-tv', 'https://i.imgur.com/qldG5p2.png'),
+        ('Syfy', '/networks/16/syfy', 'https://i.imgur.com/9yCq37i.png'),
+        ('TBS', '/networks/32/tbs', 'https://i.imgur.com/RVCtt4Z.png'),
+        ('TLC', '/networks/80/tlc', 'https://i.imgur.com/c24MxaB.png'),
+        ('TNT', '/networks/14/tnt', 'https://i.imgur.com/WnzpAGj.png'),
+        ('TV Land', '/networks/57/tvland', 'https://i.imgur.com/1nIeDA5.png'),
+        ('Travel Channel', '/networks/82/travel-channel', 'https://i.imgur.com/mWXv7SF.png'),
+        ('TruTV', '/networks/84/trutv', 'https://i.imgur.com/HnB3zfc.png'),
+        ('USA', '/networks/30/usa-network', 'https://i.imgur.com/Doccw9E.png'),
+        ('VH1', '/networks/55/vh1', 'https://i.imgur.com/IUtHYzA.png'),
+        ('WGN', '/networks/28/wgn-america', 'https://i.imgur.com/TL6MzgO.png')
         ]
 
-        for i in networks: self.list.append({'name': i[0], 'url': self.tvmaze_link + i[1], 'image': 'jas.png', 'action': 'tvshows'})
+        for i in networks: self.list.append({'name': i[0], 'url': self.tvmaze_link + i[1], 'image': i[2], 'action': 'tvshows'})
         self.addDirectory(self.list)
         return self.list
 
@@ -295,6 +325,7 @@ class tvshows:
     def languages(self):
         languages = [
         ('Arabic', 'ar'),
+        ('Bosnian', 'bs'),
         ('Bulgarian', 'bg'),
         ('Chinese', 'zh'),
         ('Croatian', 'hr'),
@@ -318,6 +349,7 @@ class tvshows:
         ('Punjabi', 'pa'),
         ('Romanian', 'ro'),
         ('Russian', 'ru'),
+        ('Serbian', 'sr'),
         ('Spanish', 'es'),
         ('Swedish', 'sv'),
         ('Turkish', 'tr'),
@@ -338,11 +370,13 @@ class tvshows:
 
 
     def persons(self, url):
+        log_utils.log('url : ' + str(url))
         if url == None:
             self.list = cache.get(self.imdb_person_list, 24, self.personlist_link)
         else:
             self.list = cache.get(self.imdb_person_list, 1, url)
 
+        log_utils.log('url : ' + str(len(self.list)))
         for i in range(0, len(self.list)): self.list[i].update({'action': 'tvshows'})
         self.addDirectory(self.list)
         return self.list
@@ -531,13 +565,13 @@ class tvshows:
 
             result = result.replace('\n', ' ')
 
-            items = client.parseDOM(result, 'div', attrs = {'class': 'lister-item mode-advanced'})
+            items = client.parseDOM(result, 'div', attrs = {'class': 'lister-item .+?'})
             items += client.parseDOM(result, 'div', attrs = {'class': 'list_item.+?'})
         except:
             return
 
         try:
-            next = client.parseDOM(result, 'a', ret='href', attrs = {'class': 'lister-page-next.+?'})
+            next = client.parseDOM(result, 'a', ret='href', attrs = {'class': '.+?lister-page-next.+?'})
 
             if len(next) == 0:
                 next = client.parseDOM(result, 'div', attrs = {'class': 'pagination'})[0]
@@ -609,13 +643,13 @@ class tvshows:
     def imdb_person_list(self, url):
         try:
             result = client.request(url)
-            items = client.parseDOM(result, 'tr', attrs = {'class': '.+? detailed'})
+            items = client.parseDOM(result, 'div', attrs = {'class': '.+? mode-detail'})
         except:
             return
 
         for item in items:
             try:
-                name = client.parseDOM(item, 'a', ret='title')[0]
+                name = client.parseDOM(item, 'img', ret='alt')[0]
                 name = client.replaceHTMLCodes(name)
                 name = name.encode('utf-8')
 
@@ -626,8 +660,8 @@ class tvshows:
                 url = url.encode('utf-8')
 
                 image = client.parseDOM(item, 'img', ret='src')[0]
-                if not ('._SX' in image or '._SY' in image): raise Exception()
-                image = re.sub('(?:_SX|_SY|_UX|_UY|_CR|_AL)(?:\d+|_).+?\.', '_SX500.', image)
+                #if not ('._SX' in image or '._SY' in image): raise Exception()
+                #image = re.sub('(?:_SX|_SY|_UX|_UY|_CR|_AL)(?:\d+|_).+?\.', '_SX500.', image)
                 image = client.replaceHTMLCodes(image)
                 image = image.encode('utf-8')
 
@@ -641,7 +675,7 @@ class tvshows:
     def imdb_user_list(self, url):
         try:
             result = client.request(url)
-            items = client.parseDOM(result, 'div', attrs = {'class': 'list_name'})
+            items = client.parseDOM(result, 'li', attrs = {'class': 'ipl-zebra-list__item user-list'})
         except:
             pass
 
@@ -652,7 +686,7 @@ class tvshows:
                 name = name.encode('utf-8')
 
                 url = client.parseDOM(item, 'a', ret='href')[0]
-                url = url.split('/list/', 1)[-1].replace('/', '')
+                url = url = url.split('/list/', 1)[-1].strip('/')
                 url = self.imdblist_link % url
                 url = client.replaceHTMLCodes(url)
                 url = url.encode('utf-8')
@@ -670,7 +704,7 @@ class tvshows:
             result = client.request(url)
             result = client.parseDOM(result, 'section', attrs = {'id': 'this-seasons-shows'})
 
-            items = client.parseDOM(result, 'li')
+            items = client.parseDOM(result, 'div', attrs = {'class': 'content auto cell'})
             items = [client.parseDOM(i, 'a', ret='href') for i in items]
             items = [i[0] for i in items if len(i) > 0]
             items = [re.findall('/(\d+)/', i) for i in items]
@@ -777,7 +811,7 @@ class tvshows:
         self.meta = []
         total = len(self.list)
 
-        self.fanart_tv_headers = {'api-key': 'YTJhMzVjMDljNjA3MmRkODc2ZTY4ZDYzYjFmYmU4Yjg='.decode('base64')}
+        self.fanart_tv_headers = {'api-key': 'NDZkZmMyN2M1MmE0YTc3MjY3NWQ4ZTMyYjdiY2E2OGU='.decode('base64')}
         if not self.fanart_tv_user == '':
             self.fanart_tv_headers.update({'client-key': self.fanart_tv_user})
 
@@ -959,11 +993,9 @@ class tvshows:
             fanart = client.replaceHTMLCodes(fanart)
             fanart = fanart.encode('utf-8')
 
-
             try:
                 artmeta = True
-                if self.fanart_tv_user == '': raise Exception()
-
+                #if self.fanart_tv_user == '': raise Exception()
                 art = client.request(self.fanart_tv_art_link % tvdb, headers=self.fanart_tv_headers, timeout='10', error=True)
                 try: art = json.loads(art)
                 except: artmeta = False
@@ -1166,7 +1198,7 @@ class tvshows:
 
         control.content(syshandle, 'tvshows')
         control.directory(syshandle, cacheToDisc=True)
-        views.setView('tvshows', {'skin.ActionPacked': 55, 'skin.confluence': 500})
+        views.setView('tvshows', {'skin.estuary': 55, 'skin.confluence': 500})
 
 
     def addDirectory(self, items, queue=False):

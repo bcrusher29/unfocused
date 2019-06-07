@@ -1,7 +1,4 @@
-# -*- coding: utf-8 -*-
-
-
-
+# -*- coding: UTF-8 -*-
 
 from resources.lib.modules import trakt
 from resources.lib.modules import cleangenre
@@ -16,11 +13,14 @@ from resources.lib.modules import views
 from resources.lib.modules import utils
 from resources.lib.indexers import navigator
 
-import os,sys,re,json,urllib,urlparse,datetime,xbmc
+import os,sys,re,json,urllib,urlparse,datetime
 
 params = dict(urlparse.parse_qsl(sys.argv[2].replace('?',''))) if len(sys.argv) > 1 else dict()
 
 action = params.get('action')
+
+control.moderator()
+
 
 class movies:
     def __init__(self):
@@ -49,29 +49,23 @@ class movies:
         self.persons_link = 'http://www.imdb.com/search/name?count=100&name='
         self.personlist_link = 'http://www.imdb.com/search/name?count=100&gender=male,female'
         self.person_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&production_status=released&role=%s&sort=year,desc&count=40&start=1'
-        self.keyword_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie,documentary&num_votes=100,&release_date=,date[0]&keywords=%s&sort=alpha,asc&count=40&start=1'
-        self.oscars_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&production_status=released&groups=oscar_best_picture_winners&sort=year,desc&count=40&start=1'
-        self.theaters_link = 'http://www.imdb.com/search/title?title_type=feature&num_votes=1000,&release_date=date[365],date[0]&sort=release_date_us,desc&count=40&start=1'
-        self.year_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=100,&production_status=released&year=%s,%s&sort=alpha,asc&count=40&start=1'
-
-        if self.hidecinema == 'true':
-            self.popular_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&production_status=released&groups=top_1000&release_date=,date[90]&sort=moviemeter,asc&count=40&start=1'
-            self.views_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&production_status=released&sort=num_votes,desc&release_date=,date[90]&count=40&start=1'
-            self.featured_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&production_status=released&release_date=date[365],date[90]&sort=moviemeter,asc&count=40&start=1'
-            self.genre_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie,documentary&num_votes=100,&release_date=,date[90]&genres=%s&sort=alpha,asc&count=40&start=1'
-            self.language_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=100,&production_status=released&primary_language=%s&sort=alpha,asc&release_date=,date[90]&count=40&start=1'
-            self.certification_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=100,&production_status=released&certificates=us:%s&sort=alpha,asc&release_date=,date[90]&count=40&start=1'
-            self.boxoffice_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&production_status=released&sort=boxoffice_gross_us,desc&release_date=,date[90]&count=40&start=1'
-        else:
-            self.popular_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&production_status=released&groups=top_1000&sort=alpha,asc&count=40&start=1'
-            self.views_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&production_status=released&sort=num_votes,desc&count=40&start=1'
-            self.featured_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&production_status=released&release_date=date[365],date[60]&sort=moviemeter,asc&count=40&start=1'
-            self.genre_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie,documentary&num_votes=100,&release_date=,date[0]&genres=%s&sort=alpha,asc&count=40&start=1'
-            self.language_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=100,&production_status=released&primary_language=%s&sort=alpha,asc&count=40&start=1'
-            self.certification_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=100,&production_status=released&certificates=us:%s&sort=alpha,asc&count=40&start=1'
-            self.boxoffice_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&production_status=released&sort=boxoffice_gross_us,desc&count=40&start=1'
-
-        self.added_link  = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&languages=en&num_votes=500,&production_status=released&release_date=%s,%s&sort=release_date,desc&count=20&start=1' % (self.year_date, self.today_date)
+        self.keyword_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie,documentary&num_votes=100,&release_date=,date[0]&keywords=%s&sort=moviemeter,asc&count=40&start=1'
+        self.oscars_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&production_status=released&groups=oscar_best_picture_winners&genres=drama,romance&sort=year,desc&count=40&start=1'
+        self.theaters_link = 'http://www.imdb.com/search/title?title_type=feature&num_votes=1000,&release_date=date[365],date[0]&genres=drama,romance&sort=release_date_us,desc&count=40&start=1'
+        self.year_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=100,&genres=drama,romance&production_status=released&year=%s,%s&sort=moviemeter,asc&count=40&start=1'
+        self.popular_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&genres=drama,romance&production_status=released&groups=top_1000&release_date=,date[90]&sort=moviemeter,asc&count=40&start=1'
+        self.views_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&genres=drama,romance&production_status=released&sort=num_votes,desc&release_date=,date[90]&count=40&start=1'
+        self.featured_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&genres=drama,romance&production_status=released&release_date=date[365],date[90]&sort=moviemeter,asc&count=40&start=1'
+        self.genre_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie,documentary&num_votes=100,&release_date=,date[90]&genres=%s,sci-fi&sort=moviemeter,asc&count=40&start=1'
+        self.language_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=100,&genres=drama,romance&production_status=released&primary_language=%s&sort=moviemeter,asc&release_date=,date[90]&count=40&start=1'
+        #self.certification_link = 'http://www.imdb.com/search/title?genres=drama,romance&title_type=feature,tv_movie&num_votes=100,&production_status=released&certificates=us:%s&sort=moviemeter,asc&release_date=,date[90]&count=40&start=1'
+        self.certificationmg_link = 'https://www.imdb.com/search/title?title_type=feature,tv_movie&genres=drama,romance&certificates=US%3AG'
+        self.certificationmpg_link = 'https://www.imdb.com/search/title?title_type=feature,tv_movie&genres=drama,romance&certificates=US%3APG'
+        self.certificationmpgt_link = 'https://www.imdb.com/search/title?title_type=feature,tv_movie&genres=drama,romance&certificates=US%3APG-13'
+        self.certificationmr_link = 'https://www.imdb.com/search/title?title_type=feature,tv_movie&genres=drama,romance&certificates=US%3AR'
+        self.certificationncseven_link = 'https://www.imdb.com/search/title?title_type=feature,tv_movie&genres=drama,romance&certificates=US%3ANC-17'
+        self.boxoffice_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&production_status=released&genres=drama,romance&sort=boxoffice_gross_us,desc&release_date=,date[90]&count=40&start=1'
+        self.added_link  = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&languages=en&num_votes=500,&genres=drama,romance&production_status=released&release_date=%s,%s&sort=release_date,desc&count=20&start=1' % (self.year_date, self.today_date)
         self.trending_link = 'http://api.trakt.tv/movies/trending?limit=40&page=1'
         self.traktlists_link = 'http://api.trakt.tv/users/me/lists'
         self.traktlikedlists_link = 'http://api.trakt.tv/users/likes/lists?limit=1000000'
@@ -81,37 +75,12 @@ class movies:
         self.traktfeatured_link = 'http://api.trakt.tv/recommendations/movies?limit=40'
         self.trakthistory_link = 'http://api.trakt.tv/users/me/history/movies?limit=40&page=1'
         self.imdblists_link = 'http://www.imdb.com/user/ur%s/lists?tab=all&sort=mdfd&order=desc&filter=titles' % self.imdb_user
-        self.imdblist_link = 'http://www.imdb.com/list/%s/?view=detail&sort=alpha,asc&title_type=movie,short,tvMovie,tvSpecial,video&start=1'
-        self.imdblist2_link = 'http://www.imdb.com/list/%s/?view=detail&sort=date_added,desc&title_type=movie,short,tvMovie,tvSpecial,video&start=1'
+        self.imdblist_link = 'http://www.imdb.com/list/%s/?view=detail&sort=alpha,asc&title_type=movie,tvMovie&start=1'
+        self.imdblist2_link = 'http://www.imdb.com/list/%s/?view=detail&sort=date_added,desc&title_type=movie,tvMovie&start=1'
         self.imdbwatchlist_link = 'http://www.imdb.com/user/ur%s/watchlist?sort=alpha,asc' % self.imdb_user
         self.imdbwatchlist2_link = 'http://www.imdb.com/user/ur%s/watchlist?sort=date_added,desc' % self.imdb_user
 
-        self.populardrama_link = 'http://www.imdb.com/search/title?title_type=feature&genres=drama&num_votes=1000,&production_status=released&groups=top_1000&sort=alpha,asc&count=40&start=1'
-        self.viewsdrama_link = 'http://www.imdb.com/search/title?title_type=feature&genres=drama&num_votes=1000,&production_status=released&sort=num_votes,desc&count=40&start=1'
-        self.featureddrama_link = 'http://www.imdb.com/search/title?title_type=feature&genres=drama&num_votes=1000,&production_status=released&release_date=date[365],date[60]&sort=moviemeter,asc&count=40&start=1'
-        self.genredrama_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie,documentary&release_date=,date[0]&genres=drama,%s&sort=alpha,asc&count=40&start=1'
-        self.languagedrama_link = 'http://www.imdb.com/search/title?title_type=feature&genres=drama&num_votes=100,&production_status=released&primary_language=%s&sort=alpha,asc&count=40&start=1'
-        self.certification_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&genres=drama&num_votes=100,&production_status=released&certificates=us:%s&sort=alpha,asc&count=40&start=1'
-        self.yeardrama_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&production_status=released&genres=drama&year=%s,%s&sort=alpha,asc&count=40&start=1'
-        self.boxofficedrama_link = 'http://www.imdb.com/search/title?title_type=feature&genres=drama&production_status=released&sort=boxoffice_gross_us,desc&count=40&start=1'
-        self.oscarsdrama_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie,documentary&genres=drama&groups=oscar_winner'
-        self.theatersdrama_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie,documentary&genres=drama&num_votes=1000,&release_date=date[365],date[0]&sort=release_date_us,desc&count=40&start=1'
-		
-		
-		
-        self.popularrom_link = 'http://www.imdb.com/search/title?title_type=feature&genres=romance&num_votes=1000,&production_status=released&groups=top_1000&sort=alpha,asc&count=40&start=1'
-        self.viewsrom_link = 'http://www.imdb.com/search/title?title_type=feature&genres=romance&num_votes=1000,&production_status=released&sort=num_votes,desc&count=40&start=1'
-        self.featuredrom_link = 'http://www.imdb.com/search/title?title_type=feature&genres=romance&num_votes=1000,&production_status=released&release_date=date[365],date[60]&sort=moviemeter,asc&count=40&start=1'
-        self.genrerom_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie,documentary&release_date=,date[0]&genres=romance,%s&sort=alpha,asc&count=40&start=1'
-        self.languagerom_link = 'http://www.imdb.com/search/title?title_type=feature&genres=romance&num_votes=100,&production_status=released&primary_language=%s&sort=alpha,asc&count=40&start=1'
-        self.certificationrom_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&genres=romance&num_votes=100,&production_status=released&certificates=us:%s&sort=alpha,asc&count=40&start=1'
-        self.yearrom_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&production_status=released&genres=romance&year=%s,%s&sort=alpha,asc&count=40&start=1'
-        self.boxofficerom_link = 'http://www.imdb.com/search/title?title_type=feature&genres=romance&production_status=released&sort=boxoffice_gross_us,desc&count=40&start=1'
-        self.oscarsrom_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie,documentary&genres=romance&groups=oscar_winner'
-        self.theatersrom_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie,documentary&genres=romance&num_votes=1000,&release_date=date[365],date[0]&sort=release_date_us,desc&count=40&start=1'
-		
 
-		
     def get(self, url, idx=True, create_directory=True):
         try:
             try: url = getattr(self, url + '_link')
@@ -175,18 +144,18 @@ class movies:
 
     def search(self):
 
-        navigator.navigator().addDirectoryItem(32603, 'movieSearchnew', 'lf.png', 'DefaultMovies.png')
+        navigator.navigator().addDirectoryItem(32603, 'movieSearchnew', 'bbtl.png', 'DefaultMovies.png')
         try: from sqlite3 import dbapi2 as database
         except: from pysqlite2 import dbapi2 as database
-
+        
         dbcon = database.connect(control.searchFile)
         dbcur = dbcon.cursor()
-
+             
         try:
             dbcur.executescript("CREATE TABLE IF NOT EXISTS movies (ID Integer PRIMARY KEY AUTOINCREMENT, term);")
         except:
             pass
-
+            
         dbcur.execute("SELECT * FROM movies ORDER BY ID DESC")
         lst = []
 
@@ -194,15 +163,15 @@ class movies:
         for (id,term) in dbcur.fetchall():
             if term not in str(lst):
                 delete_option = True
-                navigator.navigator().addDirectoryItem(term, 'movieSearchterm&name=%s' % term, 'lf.png', 'DefaultMovies.png')
+                navigator.navigator().addDirectoryItem(term, 'movieSearchterm&name=%s' % term, 'bbtl.png', 'DefaultMovies.png')
                 lst += [(term)]
         dbcur.close()
-
+        
         if delete_option:
-            navigator.navigator().addDirectoryItem(32605, 'clearCacheSearch', 'lf.png', 'DefaultAddonProgram.png')
+            navigator.navigator().addDirectoryItem(32605, 'clearCacheSearch', 'bbtl.png', 'DefaultAddonProgram.png')
 
         navigator.navigator().endDirectory()
-
+        
     def search_new(self):
             control.idle()
 
@@ -211,10 +180,10 @@ class movies:
             q = k.getText() if k.isConfirmed() else None
 
             if (q == None or q == ''): return
-
+            
             try: from sqlite3 import dbapi2 as database
             except: from pysqlite2 import dbapi2 as database
-
+            
             dbcon = database.connect(control.searchFile)
             dbcur = dbcon.cursor()
             dbcur.execute("INSERT INTO movies VALUES (?,?)", (None,q))
@@ -248,81 +217,46 @@ class movies:
             return
 
 
-
-    def genresdrama(self):
+    def genres(self):
         genres = [
-            ('drama Action', 'action', True),
-            ('drama Adventure', 'adventure', True),
-            ('drama Animation', 'animation', True),
-            ('drama Biography', 'biography', True),
-            ('drama Comedy', 'comedy', True),
-            ('drama Crime', 'crime', True),
-            ('drama Documentary', 'documentary', True),
-            ('drama Family', 'family', True),
-            ('drama Fantasy', 'fantasy', True),
-            ('drama History', 'history', True),
-            ('drama Music ', 'music', True),
-            ('drama Musical', 'musical', True),
-            ('drama Mystery', 'mystery', True),
-            ('drama Romance', 'romance', True),
-            ('drama Science Fiction', 'sci_fi', True),
-            ('drama Sport', 'sport', True),
-            ('drama Thriller', 'thriller', True),
-            ('drama War', 'war', True),
-            ('drama Western', 'western', True),
-
+            ('Action', 'action', True),
+            ('Adventure', 'adventure', True),
+            ('Animation', 'animation', True),
+            ('Anime', 'anime', False),
+            ('Biography', 'biography', True),
+            ('Comedy', 'comedy', True),
+            ('Crime', 'crime', True),
+            ('Documentary', 'documentary', True),
+            ('Family', 'family', True),
+            ('Fantasy', 'fantasy', True),
+            ('History', 'history', True),
+            ('Horror', 'horror', True),
+            ('Music ', 'music', True),
+            ('Musical', 'musical', True),
+            ('Mystery', 'mystery', True),
+            ('Science Fiction', 'sci_fi', True),
+            ('Sport', 'sport', True),
+            ('Thriller', 'thriller', True),
+            ('War', 'war', True),
+            ('Western', 'western', True)
         ]
 
         for i in genres: self.list.append(
             {
                 'name': cleangenre.lang(i[0], self.lang),
-                'url': self.genredrama_link % i[1] if i[2] else self.keyword_link % i[1],
-                'image': 'lf.png',
+                'url': self.genre_link % i[1] if i[2] else self.keyword_link % i[1],
+                'image': 'bbtl.png',
                 'action': 'movies'
             })
 
         self.addDirectory(self.list)
         return self.list
-		
-    def genresrom(self):
-        genres = [
-            ('romance Action', 'action', True),
-            ('romance Adventure', 'adventure', True),
-            ('romance Animation', 'animation', True),
-            ('romance Biography', 'biography', True),
-            ('romance Comedy', 'comedy', True),
-            ('romance Crime', 'crime', True),
-            ('romance Documentary', 'documentary', True),
-            ('romance Drama', 'drama', True),
-            ('romance Family', 'family', True),
-            ('romance Fantasy', 'fantasy', True),
-            ('romance History', 'history', True),
-            ('romance Music ', 'music', True),
-            ('romance Musical', 'musical', True),
-            ('romance Mystery', 'mystery', True),
-            ('romance Romance', 'romance', True),
-            ('romance Science Fiction', 'sci_fi', True),
-            ('romance Sport', 'sport', True),
-            ('romance Thriller', 'thriller', True),
-            ('romance War', 'war', True),
-            ('romance Western', 'western', True),
-        ]
 
-        for i in genres: self.list.append(
-            {
-                'name': cleangenre.lang(i[0], self.lang),
-                'url': self.genrerom_link % i[1] if i[2] else self.keyword_link % i[1],
-                'image': 'lf.png',
-                'action': 'movies'
-            })
 
-        self.addDirectory(self.list)
-        return self.list
-		
-		
-    def languagesdrama(self):
+    def languages(self):
         languages = [
             ('Arabic', 'ar'),
+            ('Bosnian', 'bs'),
             ('Bulgarian', 'bg'),
             ('Chinese', 'zh'),
             ('Croatian', 'hr'),
@@ -339,6 +273,7 @@ class movies:
             ('Italian', 'it'),
             ('Japanese', 'ja'),
             ('Korean', 'ko'),
+            ('Macedonian', 'mk'),
             ('Norwegian', 'no'),
             ('Persian', 'fa'),
             ('Polish', 'pl'),
@@ -346,86 +281,23 @@ class movies:
             ('Punjabi', 'pa'),
             ('Romanian', 'ro'),
             ('Russian', 'ru'),
+            ('Serbian', 'sr'),
+            ('Slovenian', 'sl'),
             ('Spanish', 'es'),
             ('Swedish', 'sv'),
             ('Turkish', 'tr'),
             ('Ukrainian', 'uk')
         ]
 
-        for i in languages: self.list.append({'name': str(i[0]), 'url': self.languagedrama_link % i[1], 'image': 'languages.jpg', 'action': 'movies'})
-        self.addDirectory(self.list)
-        return self.list
-		
-    def languagesrom(self):
-        languages = [
-            ('Arabic', 'ar'),
-            ('Bulgarian', 'bg'),
-            ('Chinese', 'zh'),
-            ('Croatian', 'hr'),
-            ('Dutch', 'nl'),
-            ('English', 'en'),
-            ('Finnish', 'fi'),
-            ('French', 'fr'),
-            ('German', 'de'),
-            ('Greek', 'el'),
-            ('Hebrew', 'he'),
-            ('Hindi ', 'hi'),
-            ('Hungarian', 'hu'),
-            ('Icelandic', 'is'),
-            ('Italian', 'it'),
-            ('Japanese', 'ja'),
-            ('Korean', 'ko'),
-            ('Norwegian', 'no'),
-            ('Persian', 'fa'),
-            ('Polish', 'pl'),
-            ('Portuguese', 'pt'),
-            ('Punjabi', 'pa'),
-            ('Romanian', 'ro'),
-            ('Russian', 'ru'),
-            ('Spanish', 'es'),
-            ('Swedish', 'sv'),
-            ('Turkish', 'tr'),
-            ('Ukrainian', 'uk')
-        ]
-
-        for i in languages: self.list.append({'name': str(i[0]), 'url': self.languagerom_link % i[1], 'image': 'languages.jpg', 'action': 'movies'})
-        self.addDirectory(self.list)
-        return self.list
-		
-    def certificationsdrama(self):
-        certificates = ['G', 'PG', 'PG-13', 'R', 'NC-17']
-
-        for i in certificates: self.list.append({'name': str(i), 'url': self.certificationdrama_link % str(i).replace('-', '_').lower(), 'image': 'certificates.jpg', 'action': 'movies'})
+        for i in languages: self.list.append({'name': str(i[0]), 'url': self.language_link % i[1], 'image': 'bbtl.png', 'action': 'movies'})
         self.addDirectory(self.list)
         return self.list
 
-    def certificationsrom(self):
-        certificates = ['G', 'PG', 'PG-13', 'R', 'NC-17']
-
-        for i in certificates: self.list.append({'name': str(i), 'url': self.certificationrom_link % str(i).replace('-', '_').lower(), 'image': 'certificates.jpg', 'action': 'movies'})
-        self.addDirectory(self.list)
-        return self.list
-
-
-    def yearsdrama(self):
-        year = (self.datetime.strftime('%Y'))
-
-        for i in range(int(year)-0, 1930, -1): self.list.append({'name': str(i), 'url': self.yeardrama_link % (str(i), str(i)), 'image': 'years.jpg', 'action': 'movies'})
-        self.addDirectory(self.list)
-        return self.list
-
-
-    def yearsrom(self):
-        year = (self.datetime.strftime('%Y'))
-
-        for i in range(int(year)-0, 1930, -1): self.list.append({'name': str(i), 'url': self.yearrom_link % (str(i), str(i)), 'image': 'years.jpg', 'action': 'movies'})
-        self.addDirectory(self.list)
-        return self.list
 
     def certifications(self):
         certificates = ['G', 'PG', 'PG-13', 'R', 'NC-17']
 
-        for i in certificates: self.list.append({'name': str(i), 'url': self.certification_link % str(i).replace('-', '_').lower(), 'image': 'lf.png', 'action': 'movies'})
+        for i in certificates: self.list.append({'name': str(i), 'url': self.certification_link % str(i).replace('-', '_').lower(), 'image': 'bbtl.png', 'action': 'movies'})
         self.addDirectory(self.list)
         return self.list
 
@@ -433,7 +305,7 @@ class movies:
     def years(self):
         year = (self.datetime.strftime('%Y'))
 
-        for i in range(int(year)-0, 1900, -1): self.list.append({'name': str(i), 'url': self.year_link % (str(i), str(i)), 'image': 'lf.png', 'action': 'movies'})
+        for i in range(int(year)-0, 1900, -1): self.list.append({'name': str(i), 'url': self.year_link % (str(i), str(i)), 'image': 'bbtl.png', 'action': 'movies'})
         self.addDirectory(self.list)
         return self.list
 
@@ -484,7 +356,7 @@ class movies:
             pass
 
         self.list = userlists
-        for i in range(0, len(self.list)): self.list[i].update({'image': 'lf.png', 'action': 'movies'})
+        for i in range(0, len(self.list)): self.list[i].update({'image': 'bbtl.png', 'action': 'movies'})
         self.addDirectory(self.list, queue=True)
         return self.list
 
@@ -630,7 +502,7 @@ class movies:
             return
 
         try:
-            next = client.parseDOM(result, 'a', ret='href', attrs = {'class': '.+?ister-page-nex.+?'})
+            next = client.parseDOM(result, 'a', ret='href', attrs = {'class': '.+?lister-page-next.+?'})
 
             if len(next) == 0:
                 next = client.parseDOM(result, 'div', attrs = {'class': 'pagination'})[0]
@@ -741,13 +613,14 @@ class movies:
     def imdb_person_list(self, url):
         try:
             result = client.request(url)
-            items = client.parseDOM(result, 'div', attrs = {'class': '.+?etail'})
+            items = client.parseDOM(result, 'div', attrs = {'class': '.+? mode-detail'})
         except:
             return
 
         for item in items:
             try:
                 name = client.parseDOM(item, 'img', ret='alt')[0]
+                name = client.replaceHTMLCodes(name)
                 name = name.encode('utf-8')
 
                 url = client.parseDOM(item, 'a', ret='href')[0]
@@ -757,8 +630,8 @@ class movies:
                 url = url.encode('utf-8')
 
                 image = client.parseDOM(item, 'img', ret='src')[0]
-                # if not ('._SX' in image or '._SY' in image): raise Exception()
-                image = re.sub('(?:_SX|_SY|_UX|_UY|_CR|_AL)(?:\d+|_).+?\.', '_SX500.', image)
+                #if not ('._SX' in image or '._SY' in image): raise Exception()
+                #image = re.sub('(?:_SX|_SY|_UX|_UY|_CR|_AL)(?:\d+|_).+?\.', '_SX500.', image)
                 image = client.replaceHTMLCodes(image)
                 image = image.encode('utf-8')
 
@@ -800,7 +673,7 @@ class movies:
         self.meta = []
         total = len(self.list)
 
-        self.fanart_tv_headers = {'api-key': 'ZDY5NTRkYTk2Yzg4ODFlMzdjY2RkMmQyNTlmYjk1MzQ='.decode('base64')}
+        self.fanart_tv_headers = {'api-key': 'NDZkZmMyN2M1MmE0YTc3MjY3NWQ4ZTMyYjdiY2E2OGU='.decode('base64')}
         if not self.fanart_tv_user == '':
             self.fanart_tv_headers.update({'client-key': self.fanart_tv_user})
 
@@ -903,7 +776,7 @@ class movies:
                 except: artmeta = False
             except:
                 pass
-
+                
             try:
                 poster2 = art['movieposter']
                 poster2 = [x for x in poster2 if x.get('lang') == self.lang][::-1] + [x for x in poster2 if x.get('lang') == 'en'][::-1] + [x for x in poster2 if x.get('lang') in ['00', '']][::-1]
@@ -1050,10 +923,6 @@ class movies:
 
 
                 cm = []
-
-                cm.append(('Find similar',
-                           'ActivateWindow(10025,%s?action=movies&url=https://api.trakt.tv/movies/%s/related,return)' % (
-                           sysaddon, imdb)))
 
                 cm.append((queueMenu, 'RunPlugin(%s?action=queueItem)' % sysaddon))
 

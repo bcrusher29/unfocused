@@ -198,18 +198,18 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.s_i_r" version="1.0.0" name="Still i Rise" provider-name="BoneCrusher">
+<addon id="plugin.video.s_i_r" version="1.0.1" name="Still i Rise" provider-name="BoneCrusher">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.s_i_r" />
-		<import addon="script.s_i_r.artwork" version="1.0.0" />
+		<import addon="script.s_i_r.artwork" />
 		<import addon="script.module.crucialmindsscrapers"/>
-		<import addon="script.s_i_r.metadata" version="1.0.0" />
-		<import addon="script.module.resolveurl" version="3.0.0" />
+		<import addon="script.s_i_r.metadata" />
+		<import addon="script.module.resolveurl" />
 		<import addon="script.module.requests" />
-		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="script.module.metahandler" />
 	</requires>
-	<extension point="xbmc.python.pluginsource" library="example.py">
+	<extension point="xbmc.python.pluginsource" library="s_i_r.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="startup" />
@@ -709,7 +709,7 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
   </extension>
 </addon>
 
-<addon id="script.module.s_i_r" name="Still i Rise Module" version="1.0.0" provider-name="BoneCrusher">
+<addon id="script.module.s_i_r" name="Still i Rise Module" version="1.0.1" provider-name="BoneCrusher">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
@@ -804,7 +804,7 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
 	</extension>
 </addon>
 
-<addon id="script.s_i_r.artwork" version="1.0.0" name="Still i Rise Artwork" provider-name="BoneCrusher">
+<addon id="script.s_i_r.artwork" version="1.0.1" name="Still i Rise Artwork" provider-name="BoneCrusher">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
