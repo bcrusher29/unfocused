@@ -44,6 +44,38 @@
   </extension>
 </addon>
 
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.43" provider-name="spoyser">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.metahandler" optional="true" />
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio executable image</provides>
+  </extension>
+
+  <extension point="xbmc.service" library="service.py" start="startup" />
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
+    <description lang="en">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
+    <website></website>
+    <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
+    <email>seanpoyser at gmail.com</email>
+  </extension>
+
+  <extension point="kodi.context.item" library="capture.py">
+      <item>
+        <label>30000</label>
+        <visible>true</visible>
+      </item>
+    </extension>
+</addon>
+
 <addon id="plugin.video.AnArchy" version="7.7.7" name="[COLOR white]A[/COLOR][COLOR red]n[/COLOR][COLOR white]A[/COLOR][COLOR red]r[/COLOR][COLOR white]C[/COLOR][COLOR red]h[/COLOR][COLOR white]Y[/COLOR]" provider-name="E-G Boogeyman">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -104,6 +136,82 @@
 		</assets>
 		<news></news>
 	</extension>
+</addon>
+
+<addon id="plugin.video.boneplayer" name="Bone Player" version="1.0.0" provider-name="Bonecrusher">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.requests" version="2.9.1"/>
+		<import addon="script.module.futures" version="2.2.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video audio</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="login">
+	</extension>
+	<extension point="kodi.context.item">
+		<menu id="kodi.core.main">
+			<menu>
+				<label>boneplayer</label>
+				<item library="context_toggle.py">
+					<label>Preferred toggle</label>
+					<visible>!System.HasAddon(context.boneplayer) + !Skin.HasSetting(Toggling)</visible>
+				</item>
+				<item library="context_movie.py">
+					<label>$ADDON[plugin.video.boneplayer 30602]</label>
+					<visible>String.IsEqual(ListItem.dbtype,movie) + String.Contains(ListItem.Path, plugin.video.boneplayer)</visible>
+				</item>
+				<item library="context_tvshow.py">
+					<label>$ADDON[plugin.video.boneplayer 30602]</label>
+					<visible>String.IsEqual(ListItem.dbtype,tvshow) + String.Contains(ListItem.Path, plugin.video.boneplayer)</visible>
+				</item>
+				<item library="context_live.py">
+					<label>$ADDON[plugin.video.boneplayer 30602]</label>
+					<visible>[String.Contains(ListItem.FileNameAndPath, plugin.video.boneplayer\\Live) | String.Contains(ListItem.FileNameAndPath, plugin.video.boneplayer\\Live)]</visible>
+				</item>
+				<item library="context_playable.py">
+					<label>$ADDON[plugin.video.boneplayer 30622]</label>
+					<visible>!System.HasAddon(context.boneplayer) + !Skin.HasSetting(Contexting)</visible>
+				</item>
+			</menu>
+		</menu>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<language></language>
+		<summary lang="en">This addon is a fork of metal gear for the upcoming build im doing. This Addon allows you to browse and search for media and then pass that to whatever addon you want to play it with</summary>
+		<description lang="en">This Addon allows you to browse and search for media and then pass that to whatever addon you want to play it with. [COLOR cyan]I take no Credit for 99.99% of this code. Without the original developers,  this add-on would never exist. Thanks for all they have doen to the community.[/COLOR]</description>
+		<supportedcontent>
+			<content>movies</content>
+			<content>tvshows</content>
+			<content>episodes</content>
+			<content>musicvideos</content>
+			<content>music</content>
+			<content>livetv</content>
+		</supportedcontent>
+		<genre>movies,tv,music,livetv</genre>
+		<!--<video_guide>yt-id</video_guide>
+		<video_preview>yt-id</video_preview>-->
+		<forum></forum>
+		<source></source>
+		<email></email>
+		<news></news>
+                <website></website>
+
+		<source></source>
+
+		<assets>
+
+			<icon>icon.png</icon>
+
+			<fanart>fanart.jpg</fanart>
+
+		</assets>
+
+		<news></news>
+
+	</extension>
+
 </addon>
 
 <addon id="plugin.video.genesisresurrected" version="7.7.8" name="genesisresurrected" provider-name="NecroMancer">
@@ -733,6 +841,29 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
     <summary lang="en">Collection of commonly used addon routines</summary>
     <description lang="en">Collection of commonly used addon routines to simplify addon development.</description>
   </extension>
+</addon>
+
+<addon id="script.module.youtube.dl" name="youtube-dl Control" version="18.1107.0" provider-name="Rick Phillips (ruuk)">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.addon.signals" version="0.0.1"/>
+    </requires>
+    <extension point="xbmc.python.script" library="control.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Module providing access to youtube-dl video stream extraction</summary>
+        <description lang="en">Module providing access to youtube-dl video stream extraction for hundreds of sites. Version is based on youtube-dl date version: YY.MDD.V where V is the addon specific sub-version. Also provides downloading with the option for background downloading with a queue and queue manager.</description>
+        <summary lang="el">Βοηθητική μονάδα πρόσβασης στους επιλυτές youtube-dl για την εξαγωγή ροών βίντεο</summary>
+        <description lang="el">Βοηθητική μονάδα πρόσβασης στους επιλυτές youtube-dl για την εξαγωγή ροών βίντεο από εκατοντάδες ιστότοπους. Η έκδοση βασίζεται στην έκδοση ημερομηνίας του youtube-dl: EE.MHH.EK όπου ΕΚ η υπό-έκδοση συγκεκριμένα για το πρόσθετο. Επιπλέον δίνει δυνατότητα μεταφόρτωσης στο παρασκήνιο με ουρά και διαχειριστή αυτής.</description>
+        <summary lang="es">Módulo que proporciona acceso a YouTube-dl para la extracción de flujos de video</summary>
+        <description lang="es">Módulo que proporciona acceso a YouTube-dl para la extracción de flujos de video de cientos de sitios. La versión está basada en la versión de fecha youtube-dl: YY.MDD.V donde V es la subversión específica del complemento. También permite descargas con la opción de descarga en segundo plano con una cola y un administrador de colas.</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=200877</forum>
+        <source>http://github.com/ruuk/script.module.youtube.dl</source>
+    </extension>
 </addon>
 
 <addon id="script.odin.artwork" version="1.0.2" name="odin Artwork" provider-name="B.C S.S">
