@@ -340,6 +340,38 @@
 	</extension>
 </addon>
 
+<addon id="plugin.video.watchdogs" version="1.0.0" name="[B][COLOR red]Watchdogs[/COLOR] Video[/B]" provider-name="Leatherface">
+   <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.watchdogs" />
+        <import addon="script.watchdogs.artwork" />
+        <import addon="script.watchdogs.metadata" />
+        <import addon="script.module.resolveurl" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.metahandler" />
+        <import addon="plugin.video.youtube"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="watchdogs.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en"></summary>
+        <description lang="en">This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.gif</icon>
+        <fanart>fanart.jpg</fanart>
+        <screenshot>resources/screenshots/1.png</screenshot>
+        <screenshot>resources/screenshots/2.png</screenshot>
+        <screenshot>resources/screenshots/3.png</screenshot>
+    </assets>
+    <news></news>
+    </extension>
+</addon>
+
 <addon id="resource.images.recordlabels.white" name="Recordlabel Icons - White" version="0.0.7" provider-name="Team Kodi">
 	<extension point="kodi.resource.images" compile="true" type="recordlabels" />
 	<requires>
@@ -843,6 +875,32 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
   </extension>
 </addon>
 
+<addon id="script.module.watchdogs" version="5.0.28" name="[B][COLOR red]Watchdogs[/COLOR] Script.Module[/B]" provider-name="nobody">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.dateutil" />
+        <import addon="script.module.futures" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+    <summary lang="en">[B][COLOR red]Watchdogs[/COLOR] Script.Module[/B] is a free portal  to see the best stuff.</summary>
+    <description lang="en">This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart></fanart>
+        <screenshot></screenshot>
+        <screenshot></screenshot>
+        <screenshot></screenshot>
+    </assets>
+    <news></news>
+    </extension>
+</addon>
+
 <addon id="script.module.youtube.dl" name="youtube-dl Control" version="18.1107.0" provider-name="Rick Phillips (ruuk)">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
@@ -957,6 +1015,50 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
 		<description>Metadata for Still i Rise are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="script.watchdogs.artwork" version="5.0.0" name="[B][COLOR red]Watchdogs[/COLOR] Artwork[/B]" provider-name="The Alchemist">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+    <summary lang="en">[B][COLOR red]Watchdogs[/COLOR] Artwork[/B] is a free portal to see the best stuff.</summary>
+    <description lang="en">This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart></fanart>
+        <screenshot></screenshot>
+        <screenshot></screenshot>
+        <screenshot></screenshot>
+    </assets>
+    <news></news>
+    </extension>
+</addon>
+
+<addon id="script.watchdogs.metadata" version="5.0.0" name="[B][COLOR red]Watchdogs[/COLOR] Metadata[/B]" provider-name="nobody">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[B][COLOR red]Watchdogs[/COLOR] Metadata[/B] is a free portal to see the best stuff.</summary>
+    <description lang="en">This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart></fanart>
+        <screenshot></screenshot>
+        <screenshot></screenshot>
+        <screenshot></screenshot>
+    </assets>
+    <news></news>
+    </extension>
 </addon>
 
 <addon id="service.library.data.provider" name="Library Data Provider" provider-name="BigNoid" version="0.3.2">
