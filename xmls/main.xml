@@ -6,7 +6,7 @@
 
 <title>247 mov</title>
 
-<link>http://localhost/xmltest/247mov.xml</link>
+<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/247mov.xml</link>
 
 <thumbnail></thumbnail>
 
@@ -18,7 +18,7 @@
 
 <title>ShadowNet</title>
 
-<link>http://localhost/xmltest/sdn/sdnmain.xml</link>
+<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/sdn/sdnmain.xml</link>
 
 <thumbnail></thumbnail>
 
@@ -30,7 +30,7 @@
 
 <title>firstone</title>
 
-<link>http://localhost/xmltest/FIRSTONE.m3u</link>
+<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/FIRSTONE.m3u</link>
 
 <thumbnail></thumbnail>
 
@@ -42,7 +42,7 @@
 
 <title>pltv</title>
 
-<link>http://localhost/xmltest/PLTV.m3u</link>
+<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/PLTV.m3u</link>
 
 <thumbnail></thumbnail>
 
@@ -54,7 +54,7 @@
 
 <title>pluto</title>
 
-<link>http://localhost/xmltest/PLUTO.m3u</link>
+<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/PLUTO.m3u</link>
 
 <thumbnail></thumbnail>
 
@@ -66,7 +66,7 @@
 
 <title>uktv</title>
 
-<link>http://localhost/xmltest/UKTV.m3u</link>
+<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/UKTV.m3u</link>
 
 <thumbnail></thumbnail>
 
@@ -78,7 +78,7 @@
 
 <title>usnewslive</title>
 
-<link>http://localhost/xmltest/USNEWSLIVE.m3u</link>
+<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/USNEWSLIVE.m3u</link>
 
 <thumbnail></thumbnail>
 
@@ -90,7 +90,7 @@
 
 <title>daily</title>
 
-<link>http://localhost/xmltest/daily.xml</link>
+<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/daily.xml</link>
 
 <thumbnail></thumbnail>
 
@@ -102,7 +102,7 @@
 
 <title>fromhot</title>
 
-<link>http://localhost/xmltest/fromHOT.m3u</link>
+<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/fromHOT.m3u</link>
 
 <thumbnail></thumbnail>
 
@@ -114,7 +114,7 @@
 
 <title>horror</title>
 
-<link>http://localhost/xmltest/horror.xml</link>
+<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/horror.xml</link>
 
 <thumbnail></thumbnail>
 
@@ -126,7 +126,7 @@
 
 <title>247 net</title>
 
-<link>http://localhost/xmltest/networks.xml</link>
+<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/networks.xml</link>
 
 <thumbnail></thumbnail>
 
@@ -138,7 +138,7 @@
 
 <title>tvshows 247</title>
 
-<link>http://localhost/xmltest/shows247.xml</link>
+<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/shows247.xml</link>
 
 <thumbnail></thumbnail>
 
@@ -150,7 +150,7 @@
 
 <title>text</title>
 
-<link>http://localhost/xmltest/text.m3u</link>
+<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/text.m3u</link>
 
 <thumbnail></thumbnail>
 
@@ -162,7 +162,7 @@
 
 <title>sports</title>
 
-<link>http://localhost/xmltest/sports-stream.net.m3u</link>
+<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/sports-stream.net.m3u</link>
 
 <thumbnail></thumbnail>
 
@@ -174,7 +174,7 @@
 
 <title>tvonline</title>
 
-<link>http://localhost/xmltest/tvonlinestreams.xml</link>
+<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/tvonlinestreams.xml</link>
 
 <thumbnail></thumbnail>
 
@@ -186,7 +186,7 @@
 
 <title>ustv247</title>
 
-<link>http://localhost/xmltest/ustv247.m3u</link>
+<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/ustv247.m3u</link>
 
 <thumbnail></thumbnail>
 
