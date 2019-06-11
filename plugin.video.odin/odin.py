@@ -100,7 +100,7 @@ elif 'youtube' in str(action):
     from resources.lib.indexers import lists
     lists.indexer().youtube(url, action)
 
-elif action == 'play':
+elif action == 'play2':
     from resources.lib.indexers import lists
     lists.player().play(url, content)
 
@@ -617,31 +617,7 @@ elif action == 'trailer':
 elif action == 'clearCache1':
     from resources.lib.modules import cache
     cache.clear()   
-######################tunes player#################################
-	
-elif action == 'radios':
-    from resources.lib.indexers import odintunes
-    odintunes.radios()
 
-elif action == 'radioResolve':
-    from resources.lib.indexers import odintunes
-    odintunes.radioResolve(url)
-
-elif action == 'radio1fm':
-    from resources.lib.indexers import odintunes
-    odintunes.radio1fm()
-
-elif action == 'radio181fm':
-    from resources.lib.indexers import odintunes
-    odintunes.radio181fm()
-
-elif action == 'radiocast':
-    from resources.lib.indexers import odintunes
-    odintunes.kickinradio()
-
-elif action == 'kickinradiocats':
-    from resources.lib.indexers import odintunes
-    odintunes.kickinradiocats(url)
 ######################IMDB SCRAPER#################################
 
 if action == None:
@@ -1028,90 +1004,29 @@ elif action == 'service':
     from resources.lib.modules import libtools
     libtools.libepisodes().service()
 
-##############################odintoons test ####################################################################
-elif action == 'cartoon':
-    from resources.lib.indexers import navigator
-    navigator.navigator().toons()
+##############################odin tunes test ####################################################################
 
-elif action == 'toonmovieNavigator':
-    from resources.lib.indexers import odintoons
-    odintoons.movies().genres()
+elif action == 'radios':
+    from resources.lib.indexers import phradios
+    phradios.radios()
 
-elif action == 'animemovieNavigator':
-    from resources.lib.indexers import odintoons
-    odintoons.movies().animegenres()
+elif action == 'radioResolve':
+    from resources.lib.indexers import phradios
+    phradios.radioResolve(url)
 
-elif action == 'animetvNavigator':
-    from resources.lib.indexers import odintvtoons
-    odintvtoons.tvshows().animegenres()
+elif action == 'radio1fm':
+    from resources.lib.indexers import phradios
+    phradios.radio1fm()
 
-elif action == 'toonstvNavigator':
-    from resources.lib.indexers import odintvtoons
-    odintvtoons.tvshows().genres()
-##################################action packed###################################3
+elif action == 'radio181fm':
+    from resources.lib.indexers import phradios
+    phradios.radio181fm()
 
-elif action == 'apacked':
-    from resources.lib.indexers import navigator
-    navigator.navigator().apacked()
+elif action == 'radiocast':
+    from resources.lib.indexers import phradios
+    phradios.kickinradio()
 
-elif action == 'apmovies':
-    from resources.lib.indexers import apmovies
-    apmovies.movies().get(url)
-
-elif action == 'apmovieGenres':
-    from resources.lib.indexers import apmovies
-    apmovies.movies().genres()
-	
-	
-elif action == 'aptvshows':
-    from resources.lib.indexers import aptvshows
-    aptvshows.tvshows().get(url)
-
-elif action == 'aptvGenres':
-    from resources.lib.indexers import aptvshows
-    aptvshows.tvshows().genres()
-##############################laughing hour###################################
-
-elif action == 'lhour':
-    from resources.lib.indexers import navigator
-    navigator.navigator().lhour()
-
-elif action == 'lhmovies':
-    from resources.lib.indexers import lhmovies
-    lhmovies.movies().get(url)
-
-elif action == 'lhmovieGenres':
-    from resources.lib.indexers import lhmovies
-    lhmovies.movies().genres()
-	
-elif action == 'lhtvshows':
-    from resources.lib.indexers import lhtvshows
-    lhtvshows.tvshows().get(url)
-
-elif action == 'lhtvGenres':
-    from resources.lib.indexers import lhtvshows
-    lhtvshows.tvshows().genres()
-############################3wild west####################
-
-elif action == 'wild':
-    from resources.lib.indexers import navigator
-    navigator.navigator().wild()
-
-elif action == 'wwmovies':
-    from resources.lib.indexers import wwmovies
-    wwmovies.movies().get(url)
-
-elif action == 'wwmovieGenres':
-    from resources.lib.indexers import wwmovies
-    wwmovies.movies().genres()
-
-
-elif action == 'wwtvshows':
-    from resources.lib.indexers import wwtvshows
-    wwtvshows.tvshows().get(url)
-
-
-elif action == 'wwtvGenres':
-    from resources.lib.indexers import wwtvshows
-    wwtvshows.tvshows().genres()
+elif action == 'kickinradiocats':
+    from resources.lib.indexers import phradios
+    phradios.kickinradiocats(url)
 

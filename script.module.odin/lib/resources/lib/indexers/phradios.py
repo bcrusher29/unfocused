@@ -24,19 +24,18 @@ from resources.lib.modules import control
 from resources.lib.modules import client
 
 
-radio1fmicon = 'http://46.29.166.80/ads/odin/music/tunes.png'
-radio1fmfanart = 'http://46.29.166.80/ads/odin/music/fanart.jpg'
-radio181fmicon = 'http://46.29.166.80/ads/odin/music/tunes.png'
-radio181fmfanart = 'http://46.29.166.80/ads/odin/music/fanart.jpg'
-radiocasticon = 'http://46.29.166.80/ads/odin/music/tunes.png'
-#radiocastfanart = 'http://46.29.166.80/ads/odin/music/fanart.jpg'
+radio1fmicon = 'http://phoenixtv.offshorepastebin.com/art/radio1fm/icon.png'
+radio1fmfanart = 'http://phoenixtv.offshorepastebin.com/art/radio1fm/fanart.jpg'
+radio181fmicon = 'http://phoenixtv.offshorepastebin.com/art/radio181fm/icon.png'
+radio181fmfanart = 'http://phoenixtv.offshorepastebin.com/art/radio181fm/fanart.jpg'
+radiocasticon = 'http://phoenixtv.offshorepastebin.com/art/radiocast/icon.png'
+radiocastfanart = 'http://phoenixtv.offshorepastebin.com/art/radiocast/fanart.jpg'
 
 
 def radios():
     addCategoryItem('1FM', 'radio1fm', radio1fmicon, radio1fmfanart)
     addCategoryItem('181FM', 'radio181fm', radio181fmicon, radio181fmfanart)
     addCategoryItem('Radiocast','radiocast', radiocasticon, radiocastfanart)
-    addCategoryItem('Index Tunes','lists6', radiocasticon, radiocastfanart)
     endCategory()
 
 
@@ -146,7 +145,7 @@ def kickinradiocats(url):
         url = urlparse.urljoin('https://www.internet-radio.com', url)
 
         result = client.request(url)
-        result = client.parseDOM(result, 'div', attrs={'class': 'jp_container_17'})
+        result = client.parseDOM(result, 'div', attrs={'class': 'col-md-7'})
 
         a = client.parseDOM(result, 'h4', attrs={'class': 'text-danger'})
         b = client.parseDOM(result, 'samp')
