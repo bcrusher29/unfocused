@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?> 
+<?xml-stylesheet href="hide-it.xsl" type="text/xsl"?>
+<layoutype>fuckOFF</layoutype>
+<fanart>https://s20.postimg.org/lxjjs1nsd/fanart.jpg</fanart>
+<SetViewMode>1</SetViewMode>
+
+
+<item>
+
+<title>[B]Most Popular Horror Feature Films[/B]</title>
+
+<thumbnail>http://phoenixtv.offshorepastebin.com/art/tv/phoenixmoviestoprated.png</thumbnail>
+
+<link>$doregex[makelist]</link>
+
+<regex>
+
+  <name>makelist</name>
+
+  <listrepeat><![CDATA[
+
+        <title>[B][makelist.param1][/B]</title>
+
+        <link>
+
+        <sublink>search</sublink>
+
+        <sublink>searchsd</sublink>
+
+        <thumbnail>[makelist.param2]</thumbnail>
+
+        </link>
+
+        <meta>
+
+        <content>movie</content>
+
+        <imdb>[makelist.param3]</imdb>
+
+        <title>[makelist.param1]</title>
+
+        <year>[makelist.param4]</year>
+
+        </meta>
+
+]]></listrepeat>
+
+<expres><![CDATA[#$pyFunction
+
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+
+    from resources.lib.modules import client,control
+
+    import re,urllib
+
+    url = ''
+
+    url += client.request('https://www.imdb.com/search/title?title=Rick+and+Morty&title_type=tv_series')
+
+    url += client.request('https://www.imdb.com/search/title?title=Beavis+and+Butt-Head+Do+America&title_type=feature&sort=moviemeter,asc')
+	
+    url += client.request('https://www.imdb.com/search/title?title=Dracula+contra+Frankenstein&title_type=feature&sort=moviemeter,asc')
+	
+    url += client.request('https://www.imdb.com/search/title?title=Billy+Frankenstein&title_type=feature&sort=moviemeter,asc')
+	
+    url += client.request('https://www.imdb.com/search/title?title=Blondie&title_type=feature&sort=moviemeter,asc')
+	
+    url += client.request('https://www.imdb.com/search/title?title=Ham+and+the+Masked+Marvel&title_type=feature&sort=moviemeter,asc')
+	
+    url += client.request('https://www.imdb.com/search/title?title=The+Musical+Marvel&title_type=feature&sort=moviemeter,asc')
+	
+    url += client.request('https://www.imdb.com/search/title?title=Azuloscurocasinegro&title_type=feature&sort=moviemeter,asc')
+	
+    url += client.request('https://www.imdb.com/search/title?title=D-Day+on+Mars&title_type=feature&sort=moviemeter,asc')
+	
+    url += client.request('https://www.imdb.com/search/title?title=El+Camino+de+las+Hormigas&title_type=feature&sort=moviemeter,asc')
+	
+    url += client.request('https://www.imdb.com/search/title?title=Novecento&title_type=feature&sort=moviemeter,asc')
+	
+
+    express = re.findall('(?s)class="lister-item-image float-left">.+?alt="(.+?)".+?loadlate="(.+?)".+?data-tconst="(.+?)".+?unbold">(.+?)<', url)
+
+    return express
+
+]]></expres>
+
+<page></page>
+
+</regex>
+
+</item>

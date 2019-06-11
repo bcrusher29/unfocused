@@ -1,0 +1,20 @@
+#EXTM3U
+#EXTINF:-1**************************************************shadownet***************************************** ########
+
+#EXTINF:-1,RSI La 1
+plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http:http://www.sdw-net.me/channels/RSI-La-1.html
+
+#EXTINF:-1,RSI La 2
+plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http:http://www.sdw-net.me/channels/RSI-La-2.html
+
+#EXTINF:-1,RTS Deux
+plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http:http://www.sdw-net.me/channels/RTS-Deux.html
+
+#EXTINF:-1,RTS Un
+plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http:http://www.sdw-net.me/channels/RTS-Un.html
+
+#EXTINF:-1,SRF 1
+plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http:http://www.sdw-net.me/channels/SRF-1.html
+
+#EXTINF:-1,SRF 2
+plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http:http://www.sdw-net.me/channels/SRF-2.html
