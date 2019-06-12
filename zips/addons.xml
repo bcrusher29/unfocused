@@ -320,37 +320,27 @@
 
 </addon>
 
-<addon id="plugin.video.odin" version="1.0.3" name="odin" provider-name="B.C S.S">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.module.odin" />
-		<import addon="script.odin.artwork" />
-		<import addon="script.odin.metadata" />
-		<import addon="script.module.resolveurl" />
-		<import addon="script.module.requests" />
-		<import addon="script.module.metahandler" version="1.0.0" />
-		<import addon="script.module.crucialmindsscrapers"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="odin.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">odin</summary>
-		<description lang="en">odin</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<forum></forum>
-		<website></website>
-		<source></source>
-		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-		<news>
-		</news>
-	</extension>
+<addon id="plugin.video.maddebrid"
+       name="Mad Debrid"
+       version="1.0.0"
+       provider-name="BoneCrusher AkA The Big Bad Wolf">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0"/>
+    <import addon="script.module.requests" version="2.12.4"/>
+    <import addon="script.module.six" version="1.9.0"/>
+    <import addon="script.module.resolveurl" version="5.0.06"/>
+    <import addon="script.module.xbmcswift2" version="1.3.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  <summary lang="en">Video plugin for Real-Debrid.com</summary>
+   <description lang="en">Explore and stream your downloads folder on real-debrid.com --works on Xbox ONE - Kodi 18</description>
+  <disclaimer lang="en">free addon - not for sale</disclaimer>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
 </addon>
 
 <addon
@@ -787,30 +777,6 @@
     </extension>
 </addon>
 
-<addon id="script.module.crucialmindsscrapers" name="Crucialminds scraping Module" version="1.1.1" provider-name="Crucialminds">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="script.module.beautifulsoup4"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.python.pluginsource" library="lib/default.py">
-        <provides>executable</provides>
-    </extension>
-        <extension point="xbmc.addon.metadata">
-            <platform>all</platform>
-            <summary lang="en">Scrapers Module</summary>
-            <description></description>
-                <disclaimer lang="en"></disclaimer>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart></fanart>
-    </assets>
-    <news></news>
-    </extension>
-</addon>
-
 <addon id="script.module.livestreamer"
        name="livestreamer"
        version="1.12.0"
@@ -852,23 +818,6 @@
     <platform>all</platform>
     <source>https://github.com/Giftie/script.module.mutagen</source>
   </extension>
-</addon>
-
-<addon id="script.module.odin" name="odin Module" version="1.0.4" provider-name="B.C S.S">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.beautifulsoup4"/>
-		<import addon="script.module.simplejson"/>
-		<import addon="script.module.python.koding.aio" version="0.9.6.6" />
-		<import addon="script.module.requests" version="2.9.1" />
-		<import addon="script.module.xmltodict" version="0.9.0" />
-		<import addon="plugin.video.SportsDevil"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">odin Plugin For Movies TV Shows Playlists</summary>
-	</extension>
 </addon>
 
 <addon id="script.module.pyamf"
