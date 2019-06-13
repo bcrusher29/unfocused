@@ -405,7 +405,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.s_i_r" version="1.0.1" name="Still i Rise" provider-name="BoneCrusher">
+<addon id="plugin.video.s_i_r" version="1.0.2" name="Still i Rise" provider-name="BoneCrusher">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.s_i_r" />
@@ -978,7 +978,7 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
   </extension>
 </addon>
 
-<addon id="script.module.s_i_r" name="Still i Rise Module" version="1.0.1" provider-name="BoneCrusher">
+<addon id="script.module.s_i_r" name="Still i Rise Module" version="1.0.2" provider-name="BoneCrusher">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>

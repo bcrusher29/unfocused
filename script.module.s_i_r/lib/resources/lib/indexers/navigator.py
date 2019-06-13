@@ -45,7 +45,7 @@ class navigator:
         self.addDirectoryItem('Buffalo Bills True Love', 'bbtlNavigator', 'bbtl.png', 'DefaultMovies.png')
         self.addDirectoryItem('Jasons Camping Activites', 'jcanavigator', 'jas.png', 'DefaultMovies.png')
         self.addDirectoryItem('Deep Space', 'deepnavigator', 'ds.png', 'DefaultMovies.png')
-        self.addDirectoryItem('Haddonfield Murder Mysteries', 'hddmnavigator', 'hdd.png', 'DefaultMovies.png')
+        self.addDirectoryItem('Haddonfield Murder Mysteries', 'hddnavigator', 'hdd.png', 'DefaultMovies.png')
         self.addDirectoryItem('Laughing IT Up', 'liunavigator', 'liu.png', 'DefaultMovies.png')
         self.addDirectoryItem('Leatherfaces Crime Scenes ', 'lfcsnavigator', 'lf.png', 'DefaultMovies.png')
         self.addDirectoryItem('Dracula And Friends', 'dracnavigator', 'drac.png', 'DefaultMovies.png')

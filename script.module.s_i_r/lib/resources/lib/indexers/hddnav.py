@@ -39,7 +39,7 @@ queueMenu = control.lang(32065).encode('utf-8')
 
 class navigator:
     def root(self):
-        self.addDirectoryItem(32001, 'hddmNavigator', 'hdd.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32001, 'hddmovieovieNavigator', 'hdd.png', 'DefaultMovies.png')
         self.addDirectoryItem(32002, 'hddtvNavigator', 'hdd.png', 'DefaultTVShows.png')
         #self.addDirectoryItem('NightMare Reborn', 'nightNavigator', 'hdd.png', 'DefaultMovies.png')
         #if not control.setting('lists.widget') == '0':
@@ -66,11 +66,11 @@ class navigator:
 
 
     def movies(self, lite=False):
-        self.addDirectoryItem(32011, 'hddmGenres', 'hdd.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32012, 'hddmYears', 'hdd.png', 'DefaultMovies.png')
-        #self.addDirectoryItem(32013, 'hddmPersons', 'hdd.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32014, 'hddmLanguages', 'hdd.png', 'DefaultMovies.png')
-        self.addDirectoryItem(32015, 'hddmCertificates', 'hdd.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32011, 'hddmovieGenres', 'hdd.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32012, 'hddmovieYears', 'hdd.png', 'DefaultMovies.png')
+        #self.addDirectoryItem(32013, 'hddmoviePersons', 'hdd.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32014, 'hddmovieLanguages', 'hdd.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32015, 'hddmovieCertificates', 'hdd.png', 'DefaultMovies.png')
         self.addDirectoryItem(32017, 'hmmm&url=trending', 'hdd.png', 'DefaultRecentlyAddedMovies.png')
         self.addDirectoryItem(32018, 'hmmm&url=popular', 'hdd.png', 'DefaultMovies.png')
         self.addDirectoryItem(32019, 'hmmm&url=views', 'hdd.png', 'DefaultMovies.png')

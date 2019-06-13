@@ -643,7 +643,7 @@ elif action == 'deeptvYears':
 	
 
 ################################################################Buffalo Bills True Love#######################################################
-if action == 'hddmnavigator':
+if action == 'hddnavigator':
     from resources.lib.indexers import hddnav
     hddnav.navigator().root()
 
