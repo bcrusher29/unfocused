@@ -16,21 +16,9 @@
 
 <dir>
 
-<title>ShadowNet</title>
+<title>Due to recent events anything with eyepeetv will be removed from all my addons sorry </title>
 
-<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/sdn/sdnmain.xml</link>
-
-<thumbnail></thumbnail>
-
-<fanart></fanart>
-
-</dir>
-
-<dir>
-
-<title>firstone</title>
-
-<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/FIRSTONE.m3u</link>
+<link>http://no_link</link>
 
 <thumbnail></thumbnail>
 
@@ -38,17 +26,6 @@
 
 </dir>
 
-<dir>
-
-<title>pltv</title>
-
-<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/PLTV.m3u</link>
-
-<thumbnail></thumbnail>
-
-<fanart></fanart>
-
-</dir>
 
 <dir>
 
@@ -62,55 +39,6 @@
 
 </dir>
 
-<dir>
-
-<title>uktv</title>
-
-<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/UKTV.m3u</link>
-
-<thumbnail></thumbnail>
-
-<fanart></fanart>
-
-</dir>
-
-<dir>
-
-<title>usnewslive</title>
-
-<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/USNEWSLIVE.m3u</link>
-
-<thumbnail></thumbnail>
-
-<fanart></fanart>
-
-</dir>
-
-<dir>
-
-<title>daily</title>
-
-<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/daily.xml</link>
-
-<thumbnail></thumbnail>
-
-<fanart></fanart>
-
-</dir>
-
-<dir>
-
-<title>fromhot</title>
-
-<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/fromHOT.m3u</link>
-
-<thumbnail></thumbnail>
-
-<fanart></fanart>
-
-</dir>
-
-<dir>
 
 <title>horror</title>
 
@@ -146,41 +74,6 @@
 
 </dir>
 
-<dir>
-
-<title>text</title>
-
-<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/text.m3u</link>
-
-<thumbnail></thumbnail>
-
-<fanart></fanart>
-
-</dir>
-
-<dir>
-
-<title>sports</title>
-
-<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/sports-stream.net.m3u</link>
-
-<thumbnail></thumbnail>
-
-<fanart></fanart>
-
-</dir>
-
-<dir>
-
-<title>tvonline</title>
-
-<link>https://raw.githubusercontent.com/bcrusher29/unfocused/master/xmls/tvonlinestreams.xml</link>
-
-<thumbnail></thumbnail>
-
-<fanart></fanart>
-
-</dir>
 
 <dir>
 
