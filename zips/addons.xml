@@ -471,7 +471,7 @@
     </extension>
 </addon>
 
-<addon id="repository.Madhouse" name="Madhouse" version="1.0.33" provider-name="stitches">
+<addon id="repository.Madhouse" name="Madhouse" version="1.0.34" provider-name="stitches">
 	<extension point="xbmc.addon.repository" name="Madhouse REPO">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/bcrusher29/unfocused/master/zips/addons.xml</info>
@@ -924,7 +924,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.odin" name="odin Module" version="1.0.6" provider-name="B.C S.S">
+<addon id="script.module.odin" name="odin Module" version="1.0.7" provider-name="B.C S.S">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4"/>

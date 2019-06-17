@@ -26,7 +26,7 @@ class navigator:
         self.addDirectoryItem(32002, 'tvNavigator', 'tvshows.png', 'DefaultTVShows.png')
         self.addDirectoryItem('test iptv zone', 'lists', 'iptv.png', 'DefaultTVShows.png')
         self.addDirectoryItem('Tunes', 'radios', 'tunes.png', 'DefaultTVShows.png')
-        self.addDirectoryItem('Bone Cruser Old', 'bcoldnavNavigator', 'bcicon.png', 'Defaulttvshows.png')
+        self.addDirectoryItem('Bone Crusher Old', 'bcoldnavNavigator', 'bcicon.png', 'Defaulttvshows.png')
         if not control.setting('lists.widget') == '0':
             self.addDirectoryItem(32003, 'mymovieNavigator', 'mymovies.png', 'DefaultVideoPlaylists.png')
             self.addDirectoryItem(32004, 'mytvNavigator', 'mytvshows.png', 'DefaultVideoPlaylists.png')
