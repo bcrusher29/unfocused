@@ -26,11 +26,7 @@ class navigator:
         self.addDirectoryItem(32002, 'tvNavigator', 'tvshows.png', 'DefaultTVShows.png')
         self.addDirectoryItem('test iptv zone', 'lists', 'iptv.png', 'DefaultTVShows.png')
         self.addDirectoryItem('Tunes', 'radios', 'tunes.png', 'DefaultTVShows.png')
-        #self.addDirectoryItem('live tv and sports', 'tvnav', 'iptv.png', 'DefaultTVShows.png')
-        #self.addDirectoryItem('Toons and anime', 'cartoon', 'toons.png', 'DefaultTVShows.png')
-        #self.addDirectoryItem('action packed ', 'apacked', 'toons.png', 'DefaultTVShows.png')
-        #self.addDirectoryItem('laughing hour ', 'lhour', 'toons.png', 'DefaultTVShows.png')
-        #self.addDirectoryItem('Wild West ', 'wild', 'toons.png', 'DefaultTVShows.png')
+        self.addDirectoryItem('Bone Cruser Old', 'bcoldnavNavigator', 'bcicon.png', 'Defaulttvshows.png')
         if not control.setting('lists.widget') == '0':
             self.addDirectoryItem(32003, 'mymovieNavigator', 'mymovies.png', 'DefaultVideoPlaylists.png')
             self.addDirectoryItem(32004, 'mytvNavigator', 'mytvshows.png', 'DefaultVideoPlaylists.png')
@@ -76,6 +72,17 @@ class navigator:
 
         self.endDirectory()
 
+    def bcold(self):
+        self.addDirectoryItem('Krests Wishes', 'KrestsNavigator', 'Krests Wishes.png', 'decepticons.png')
+        self.addDirectoryItem('team', 'teamNavigator', 'team.png', 'decepticons.png')
+        self.addDirectoryItem('classics', 'classicsNavigator', 'classics.png', 'decepticons.png')
+        self.addDirectoryItem('box sets', 'boxsetsNavigator', 'box sets.png', 'decepticons.png')
+        self.addDirectoryItem('Kids zone', 'kids2Navigator', 'Kids zone.png', 'decepticons.png')
+        self.addDirectoryItem('Users requests', 'oddsNavigator', 'Users requests.png', 'decepticons.png')
+        self.addDirectoryItem('documentary', 'docs2navNavigator', 'documentary.png', 'decepticons.png')
+        self.addDirectoryItem('heavenly gifts', 'giftsNavigator', 'gifts1.png', 'decepticons.png')
+        self.addDirectoryItem('Odds And Ends', 'oddsNavigator', 'BC MOVIES.png', 'decepticons.png')
+        self.endDirectory()
 
     def mymovies(self, lite=False):
         self.accountCheck()
