@@ -1,2 +1,0 @@
-v3.0.[COLOR yellow]1[/COLOR]
-- Rebranded and forked to boneplayer
